@@ -1,0 +1,127 @@
+Received: from YQBPR0101MB6321.CANPRD01.PROD.OUTLOOK.COM
+ (2603:10b6:c01:38::13) by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with
+ HTTPS; Mon, 12 May 2025 09:20:52 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YQBPR0101MB6321.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:38::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8722.30; Mon, 12 May
+ 2025 09:20:51 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%7]) with mapi id 15.20.8722.027; Mon, 12 May 2025
+ 09:20:51 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: "Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>, Earl Tamayo
+	<EarlTamayo@cmail.carleton.ca>
+CC: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>
+Subject: Slide deck for Deep Research
+Thread-Topic: Slide deck for Deep Research
+Thread-Index: AQHbwx7S0S6lKrTTC0qiaaL2xjLi1LPOt9uz
+Date: Mon, 12 May 2025 09:20:51 +0000
+Message-ID:
+	<YQBPR0101MB44598BF2051014F6CAF6CCFC9B97A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References: <385335A3-35C3-4234-84FA-F82FE4ED3E4F@cmail.carleton.ca>
+ <A2F39C29-8438-4052-824C-B6C491F67943@cmail.carleton.ca>
+ <YQBPR0101MB44591D787990560F512283A69B97A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB4459E0DF4563270073FCC4A49B97A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB445900C708D18FF24F3323879B97A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<YQBPR0101MB445900C708D18FF24F3323879B97A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	e912ce36-3241-4f65-1fe5-08dd91364a5c
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	SVvdm/huciz0sYI5Vo3F77bel0BPwwBeBsM+95yR4N/GGcT5YxbCIgSOxjzl97sRyBk1SNKF/f4MqhiY1a9kjAlmdjRii/Vm19iRjDd/OmpTdxFZuJTUrfSVwCiXQYoLEYE3Q0OTGAuDDNWlr7dyU7e1QNTcs3t0C1W6HzOcWksGAVG/bUb1RdwgGsA5nUur4sYrEKzu4vglAorVtPNJPvtoqPiVBVdax4FZBeSTF8VybzXvGrwMm4AFztJbnkV76Kz534sNQjBYjzgVCtKvcEIxfalHJw8Ad6bZUaPPwvZoXa6hy09lc5H9QkWgc2VDZpa8h5ITrmVX+FXUyNF1oxDUYGMSZRvPwLGKgW4jvkrS/aieU4fQvbIDqtihh1rQlADGPNDI2XfAg6Rt4y2Ium2+VAeBfWB3Dl1HuQIzbaSBAfYGQB9TZGp8SqlBKfA83CwNbFEcHR6MRg5pXfQCkgz+OouIIU1uq7+oqvQyKJ0LBJSHYGz33WrcZmZ0Bx/Da/XDguAI3/kYQKcsg+aqo4dw4uBINGQDVzCDkEMMTUja1+T3iGo4plJ1fpSjIlitAxJVOSUmE16mcpQ03uy6QToF6JuI563aLXYnkO9clSICNdewTDbK6hmp99xJhC8S16Uwj9ROHaDrPhEy87U66qlqP80d+bGuNhoKbXu6UfzOSMboQnrwQ6aYvC3FhAX/mh8fd/z+jV/sr79muC/VzFIvoQ52Pv2ECgKPClC/TPJJpX4qElDz8IkC56yi/VwwOuGT+fngMIXRsArtbTy7Pwy0pzOas+nGouRgZw3yjIM=
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB44598BF2051014F6CAF6CCFC9B97AYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB44598BF2051014F6CAF6CCFC9B97AYQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Joe and Earl, good morning!
+
+Please send the slide deck on deep research that you will present this afte=
+rnoon to Dan Premachuk. When presenting, make sure to clearly explain the v=
+alue your team brings to the Core product and the overall project.
+Please send the PPTX file to Dan Premachuk right away so he can integrate a=
+ll the files into a single presentation. This will help minimize any downti=
+me between sessions.
+Good luck today =97 you've got this!
+Best,
+Tony B.
+
+
+
+--_000_YQBPR0101MB44598BF2051014F6CAF6CCFC9B97AYQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Joe and Earl, good morning!</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: bla=
+ck;">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: bla=
+ck;">
+Please send the slide deck on deep research that you will present this afte=
+rnoon to Dan Premachuk. When presenting, make sure to clearly explain the v=
+alue your team brings to the Core product and the overall project.&nbsp;</d=
+iv>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; backgroun=
+d-color: white; margin: 1em 0px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: =
+black;">
+Please send the PPTX file to Dan Premachuk right away so he can integrate a=
+ll the files into a single presentation. This will help minimize any downti=
+me between sessions.</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; backgroun=
+d-color: white; margin: 1em 0px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: =
+black;">
+Good luck today =97 you've got this!</div>
+<div style=3D"direction: ltr; text-align: left; text-indent: 0px; backgroun=
+d-color: white; margin: 1em 0px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: =
+black;">
+Best,<br>
+Tony B.</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb=
+(0, 0, 0);">
+<br>
+</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB44598BF2051014F6CAF6CCFC9B97AYQBPR0101MB4459_--

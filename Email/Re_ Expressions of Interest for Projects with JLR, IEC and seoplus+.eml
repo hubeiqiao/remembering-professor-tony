@@ -1,0 +1,1096 @@
+Received: from YQBPR0101MB9248.CANPRD01.PROD.OUTLOOK.COM
+ (2603:10b6:c01:62::17) by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with
+ HTTPS; Tue, 9 Sep 2025 17:09:18 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YQBPR0101MB9248.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:62::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9094.22; Tue, 9 Sep
+ 2025 17:09:16 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%6]) with mapi id 15.20.9094.021; Tue, 9 Sep 2025
+ 17:09:16 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>
+CC: Jia Shao <JiaShao@cmail.carleton.ca>, Yaqi Zhao
+	<YaqiZhao@cmail.carleton.ca>, Hridesh Kapur <HrideshKapur@cmail.carleton.ca>,
+	Earl Tamayo <EarlTamayo@cmail.carleton.ca>, Lizhao Luo
+	<LizhaoLuo@cmail.carleton.ca>, Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>,
+	"Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>
+Subject: Re: Expressions of Interest for Projects with JLR, IEC and seoplus+
+Thread-Topic: Expressions of Interest for Projects with JLR, IEC and seoplus+
+Thread-Index: AdwhhTPyhQA2anvzQcGGBhrtS3R7oAAIa0/oAABNaqoAAGQ0kAAACxzL
+Date: Tue, 9 Sep 2025 17:09:16 +0000
+Message-ID:
+	<YQBPR0101MB4459DCFA565AEE861D0085D49B0FA@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References:
+	<YQBPR0101MB42119B437D556C8F7DC7B380880FA@YQBPR0101MB4211.CANPRD01.PROD.OUTLOOK.COM>
+ <YT1PR01MB4251E0B18AB356D8505CD186820FA@YT1PR01MB4251.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB44590E86C8B5E3895D9C38159B0FA@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB421157D3B65FC94DBE6F5D17880FA@YQBPR0101MB4211.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<YQBPR0101MB421157D3B65FC94DBE6F5D17880FA@YQBPR0101MB4211.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	88dbd16e-f24a-40b7-2cbd-08ddefc39b95
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	UVbbX1TV2xlNStvenhSUm/r51Z+f9FPWSzFoFLfl2GDaLVupT8+c/oCgUJbkRntPG05408xXuc4UPs1PXOya3H3Lv80bA7ow0YS+6wVCj+xs325TXHwwbFEa3ADM9Hg+yxHzYznDNxB4qQYQ2Kpg8ZiqMsRU8tWPjfhGnJfCYqHc5Fo4VyBnRo4cdBCAALazvkmTBw+sM8KX23pHtpfd96dBhKWyoTvEsdX2NjBsmmDqFWmLdpva2iRHWAjX+nAYdAg1q4kNTwofCEBaA9mh6veG74OIte7e9ewEXrB62osJWkFCzU/BQNx+gSmz0yag36O7hlobwP6iGdUmuV9Oe9HnS5/YZvAMIe3Z8bKB5C+66TWdxbGftj3vv/FJByneNFaQYrUjnHRUUvDwPr26l4bolbHAsdx3+qwd9lUV2DieiDIBiIoQXw5CmNGLNMdgwco5UGtMo1LtciRE8agx8NLDCb3IW6ScnTuFolXdUMXrHzJRGRlp6y8MGw3pa16w18tujWPvyEncrUMOARh7kKylanC98HzB3bManw75uYTRu9ExeHEmxXQ259ZjYJWPAlCU5jSqlAdGhLKsKmk/2R+LnKMNUhuc12b8KNmIMOjlLc1oBTjCiKfblXtk//RI+izY0si3OEK+5PTshpEbmldiiAXAhzpkDUyRh4ugq2ikpLRAjX6URtBzfDc0sP14T3h9XagX7/2ufuG3jH6Cq56iDL/avCEm0qHlJmrgJc6S4El34WCfmgmhsS7Ch5WDAFWzaMIipF5vRv/NYrlPCRRCkIm93xs6Ikhen0NUw0A=
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB4459DCFA565AEE861D0085D49B0FAYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB4459DCFA565AEE861D0085D49B0FAYQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Dan, thanks.
+
+I=92m filled with joy this morning and wanted to share with you some wonder=
+ful news. We had a major win at Ross Video today: TIM student Anni Bhasker =
+presented her TIM project report to the Ross Video team =97 and she absolut=
+ely knocked it out of the park! The Ross folks were delighted with her work=
+ and are already asking for more.
+This success is a powerful reminder of what our TIM students are capable of=
+. When we bring interesting opportunities to them, set high expectations, s=
+upport them to stretch, and challenge them to rise to the occasion, they tr=
+uly can move mountains. Anni=92s achievement is just one example of the gre=
+at things we can expect from our TIM students when standards, mentorship, a=
+nd good opportunities come together.
+I=92m very proud of our TIM students =97 and excited for the many more vict=
+ories they will have ahead.
+Warm regards,
+Tony, a very happy TIM Academic Director
+
+
+
+________________________________
+From: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>
+Sent: Tuesday, September 9, 2025 12:49 PM
+To: Tony Bailetti <TonyBailetti@cunet.carleton.ca>; Yaqi Zhao <YaqiZhao@cma=
+il.carleton.ca>; Earl Tamayo <EarlTamayo@cmail.carleton.ca>; Lizhao Luo <Li=
+zhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>; Hride=
+sh Kapur <HrideshKapur@cmail.carleton.ca>
+Subject: RE: Expressions of Interest for Projects with JLR, IEC and seoplus=
++
+
+
+Hello Tony,
+
+
+
+Sounds great! We will meet with the clients and go from there.
+
+
+
+I am excited about these opportunities as well.
+
+
+
+Best,
+
+
+
+[A red and black logo    Description automatically generated]
+
+
+
+Dan Premachuk BA (Hons.), BEd
+Program Administrator
+
+Technology Innovation Management Program (TIM)
+
+613-520-2600 ex. 8659<tel:613-520-2600%20ex.%204263>
+
+www.timprogram.ca<https://can01.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fwww.timprogram.ca%2F&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.=
+ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C=
+0%7C0%7C638930345609488657%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUs=
+IlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C=
+%7C%7C&sdata=3D%2Fi%2FHd7vLHkursJCXjeE3VdlKT0%2BF15ZdKn%2FWpF%2BlMn8%3D&res=
+erved=3D0>
+
+NI 5061, 1125 Colonel By Drive, Ottawa ON, Canada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discover Grad Studies at Carleton! Create Your TIM Program Viewbook in Seco=
+nds Here.<https://customviewbook.carleton.ca/>
+
+
+
+The information in this message, including all attachments, is privileged a=
+nd may contain confidential information intended only for the person(s) nam=
+ed above. Any other distribution, copying or disclosure is strictly prohibi=
+ted. If you are not the intended recipient or have received this message in=
+ error, please notify Carleton University immediately by reply email at the=
+ contact listed above and permanently delete the original transmission from=
+ us, including any attachments, without making a copy. Carleton University =
+is fully compliant with the Freedom of Information and Protection of Privac=
+y Act and appreciates your cooperation in this matter.
+
+
+
+[https://res.public.onecdn.static.microsoft/assets/bookwithme/misc/Calendar=
+Person20px.png]<https://can01.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e434ba3284bcbb953d063c=
+3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthenabled%26ep%3DbwmEma=
+ilSignature&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88dbd16ef24a40=
+b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C63893034560=
+9538407%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCI=
+sIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3D3qps=
+4Om1mUZ7lSrKk%2F68Rl7RGhLiD9WnwnCsDtTBh2E%3D&reserved=3D0>
+
+Book time to meet with me<https://can01.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e434ba3284bc=
+bb953d063c3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthenabled%26e=
+p%3DbwmEmailSignature&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88db=
+d16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C6=
+38930345609575915%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sd=
+ata=3DJnuFwgnHfCfePJl7tpWI0uQ%2B%2F4tOLU0IQV5jSftcPAs%3D&reserved=3D0>
+
+
+
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+Sent: September 9, 2025 12:40 PM
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>; Dan Premachuk <DanPremachuk@CUN=
+ET.CARLETON.CA>; Earl Tamayo <EarlTamayo@cmail.carleton.ca>; Lizhao Luo <Li=
+zhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>; Hride=
+sh Kapur <HrideshKapur@cmail.carleton.ca>
+Subject: Re: Expressions of Interest for Projects with JLR, IEC and seoplus=
++
+
+
+
+To all, super excited about all these opportunities coming your way!
+
+
+
+IMPORTANT: Suggest we meet the clients first, then you produce slide decks.=
+ Again, produce the slide decks AFTER we meet the clients.
+
+
+
+My best.
+
+Tony B
+
+
+
+
+
+________________________________
+
+From: Yaqi Zhao <YaqiZhao@cmail.carleton.ca<mailto:YaqiZhao@cmail.carleton.=
+ca>>
+Sent: Tuesday, September 9, 2025 12:30 PM
+To: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA<mailto:DanPremachuk@CUNET=
+.CARLETON.CA>>; Earl Tamayo <EarlTamayo@cmail.carleton.ca<mailto:EarlTamayo=
+@cmail.carleton.ca>>; Lizhao Luo <LizhaoLuo@cmail.carleton.ca<mailto:Lizhao=
+Luo@cmail.carleton.ca>>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca<mailto:Jiu=
+huiCai@cmail.carleton.ca>>; Hridesh Kapur <HrideshKapur@cmail.carleton.ca<m=
+ailto:HrideshKapur@cmail.carleton.ca>>
+Cc: Tony Bailetti <TonyBailetti@cunet.carleton.ca<mailto:TonyBailetti@cunet=
+.carleton.ca>>
+Subject: Re: Expressions of Interest for Projects with JLR, IEC and seoplus=
++
+
+
+
+
+
+Hi Dan,
+
+
+
+Thank you for bringing these great project opportunities to us.
+
+I=92ll finish my slide deck as soon as I can and send it over.
+
+
+
+Best regards,
+
+Rachel Yaqi Zhao
+
+________________________________
+
+From: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA<mailto:DanPremachuk@CUN=
+ET.CARLETON.CA>>
+Sent: September 9, 2025 10:05
+To: Earl Tamayo <EarlTamayo@cmail.carleton.ca<mailto:EarlTamayo@cmail.carle=
+ton.ca>>; Lizhao Luo <LizhaoLuo@cmail.carleton.ca<mailto:LizhaoLuo@cmail.ca=
+rleton.ca>>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca<mailto:JiuhuiCai@cmail=
+.carleton.ca>>; Yaqi Zhao <YaqiZhao@cmail.carleton.ca<mailto:YaqiZhao@cmail=
+.carleton.ca>>; Hridesh Kapur <HrideshKapur@cmail.carleton.ca<mailto:Hrides=
+hKapur@cmail.carleton.ca>>
+Cc: Tony Bailetti <TonyBailetti@cunet.carleton.ca<mailto:TonyBailetti@cunet=
+.carleton.ca>>
+Subject: Expressions of Interest for Projects with JLR, IEC and seoplus+
+
+
+
+Good Morning,
+
+
+
+Thank you for reviewing and responding to the projects I sent on the weeken=
+d.
+
+
+
+Current Expressions of Interest:
+
+  *   IEC =3D Richard
+  *   seoplus+ =3D Hridesh, Yaqi, Sonny, Richard
+  *   JLR:
+
+     *   Project 1 =3D Earl
+     *   Project 2 =3D Sonny
+
+
+
+I am planning to book initial meetings with the clients as early as this Fr=
+iday and into next week. Our Up Our Game meeting will be cancelled this Fri=
+day (Sep. 12th) to accommodate for client meetings.
+
+
+
+Next is to prepare a slide deck that describes the project to discuss. The =
+slide deck should be comprised of 2-4 slides that describe your proposed pr=
+oject and include:
+
+
+
+=95                    Title
+
+=95                    Your name, pathway, and date
+
+=95                    Problem your project addresses
+
+=95                    Objective
+
+=95                    Deliverables
+
+=95                    Novelty
+
+=95                    Questions for the client
+
+
+
+Best,
+
+
+
+[A red and black logo    Description automatically generated]
+
+
+
+Dan Premachuk BA (Hons.), BEd
+Program Administrator
+
+Technology Innovation Management Program (TIM)
+
+613-520-2600 ex. 8659<tel:613-520-2600%20ex.%204263>
+
+www.timprogram.ca<https://can01.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fwww.timprogram.ca%2F&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.=
+ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C=
+0%7C0%7C638930345609607794%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUs=
+IlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C=
+%7C%7C&sdata=3D5TxnnuFmGTlsJzp3rmZBM02j5nb7X4iD8DVwqGXK6nw%3D&reserved=3D0>
+
+NI 5061, 1125 Colonel By Drive, Ottawa ON, Canada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discover Grad Studies at Carleton! Create Your TIM Program Viewbook in Seco=
+nds Here.<https://customviewbook.carleton.ca/>
+
+
+
+The information in this message, including all attachments, is privileged a=
+nd may contain confidential information intended only for the person(s) nam=
+ed above. Any other distribution, copying or disclosure is strictly prohibi=
+ted. If you are not the intended recipient or have received this message in=
+ error, please notify Carleton University immediately by reply email at the=
+ contact listed above and permanently delete the original transmission from=
+ us, including any attachments, without making a copy. Carleton University =
+is fully compliant with the Freedom of Information and Protection of Privac=
+y Act and appreciates your cooperation in this matter.
+
+
+
+[https://res.public.onecdn.static.microsoft/assets/bookwithme/misc/Calendar=
+Person20px.png]<https://can01.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e434ba3284bcbb953d063c=
+3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthenabled%26ep%3DbwmEma=
+ilSignature&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88dbd16ef24a40=
+b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C63893034560=
+9655490%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCI=
+sIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DAM1j=
+fNhuxPkawh4f0OZpeBwWCv99IDIgTgfm%2FKRag%2Fk%3D&reserved=3D0>
+
+Book time to meet with me<https://can01.safelinks.protection.outlook.com/?u=
+rl=3Dhttps%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e434ba3284bc=
+bb953d063c3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthenabled%26e=
+p%3DbwmEmailSignature&data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88db=
+d16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C6=
+38930345609697826%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sd=
+ata=3DJdSM1zmfEOfmqy5ixxws625NWqE39Fpxk9SKlVcTI8Y%3D&reserved=3D0>
+
+
+
+This email contains links to content or websites. Always be cautious when o=
+pening external links or attachments.
+
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.
+
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat
+
+-----End of Disclaimer-----
+
+
+
+--_000_YQBPR0101MB4459DCFA565AEE861D0085D49B0FAYQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+Dan, thanks.</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+I=92m filled with joy this morning and wanted to share with you some wonder=
+ful news. We had a major win at Ross Video today: TIM student Anni Bhasker&=
+nbsp;presented her TIM project report to the Ross Video team =97 and she ab=
+solutely knocked it out of the park! The
+ Ross folks were delighted with her work and are already asking for more.</=
+div>
+<div style=3D"margin-top: 1em; margin-bottom: 1em; font-family: Aptos, Apto=
+s_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-s=
+ize: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+This success is a powerful reminder of what our TIM students are capable of=
+. When we bring interesting opportunities to them, set high expectations, s=
+upport them to stretch, and challenge them to rise to the occasion, they tr=
+uly can move mountains. Anni=92s achievement
+ is just one example of the great things we can expect from our TIM student=
+s when standards, mentorship, and good opportunities come together.</div>
+<div style=3D"margin-top: 1em; margin-bottom: 1em; font-family: Aptos, Apto=
+s_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-s=
+ize: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+I=92m very proud of our TIM students =97 and excited for the many more vict=
+ories they will have ahead.&nbsp;</div>
+<div style=3D"margin-top: 1em; margin-bottom: 1em; font-family: Aptos, Apto=
+s_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-s=
+ize: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Warm regards,<br>
+Tony, a very happy TIM Academic Director</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Dan Premachuk &lt;Dan=
+Premachuk@CUNET.CARLETON.CA&gt;<br>
+<b>Sent:</b> Tuesday, September 9, 2025 12:49 PM<br>
+<b>To:</b> Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;; Yaqi Zhao =
+&lt;YaqiZhao@cmail.carleton.ca&gt;; Earl Tamayo &lt;EarlTamayo@cmail.carlet=
+on.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai &lt;J=
+iuhuiCai@cmail.carleton.ca&gt;; Hridesh Kapur &lt;HrideshKapur@cmail.carlet=
+on.ca&gt;<br>
+<b>Subject:</b> RE: Expressions of Interest for Projects with JLR, IEC and =
+seoplus+</font>
+<div>&nbsp;</div>
+</div>
+<style>
+<!--
+@font-face
+	{font-family:"Cambria Math"}
+@font-face
+	{font-family:Calibri}
+@font-face
+	{font-family:Aptos}
+p.x_MsoNormal, li.x_MsoNormal, div.x_MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif}
+a:link, span.x_MsoHyperlink
+	{color:blue;
+	text-decoration:underline}
+p.x_xxmsonormal, li.x_xxmsonormal, div.x_xxmsonormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif}
+p.x_xxmsolistparagraph, li.x_xxmsolistparagraph, div.x_xxmsolistparagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif}
+span.x_EmailStyle24
+	{font-family:"Aptos",sans-serif;
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal}
+.x_MsoChpDefault
+	{font-size:10.0pt}
+@page WordSection1
+	{margin:72.0pt 72.0pt 72.0pt 72.0pt}
+div.x_WordSection1
+	{}
+ol
+	{margin-bottom:0cm}
+ul
+	{margin-bottom:0cm}
+-->
+</style>
+<div lang=3D"EN-CA" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:break=
+-word">
+<div class=3D"x_WordSection1">
+<p class=3D"x_MsoNormal"><span style=3D"">Hello Tony,</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"">Sounds great! We will meet with t=
+he clients and go from there.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"">I am excited about these opportun=
+ities as well.
+</span></p>
+<div>
+<div>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal"><a name=3D"x_x__MailAutoSig">Best,</a></p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"left" width=3D"698" style=3D"width:523.45pt; background:wh=
+ite; margin-left:6.75pt; margin-right:6.75pt; margin-bottom:1.25pt">
+<tbody>
+<tr style=3D"height:83.9pt">
+<td width=3D"305" valign=3D"top" style=3D"width:228.4pt; padding:0cm 7.5pt =
+0cm 0cm; height:83.9pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><span style=3D"color:bl=
+ack"><img width=3D"302" height=3D"65" id=3D"x__x0000_i1030" alt=3D"A red an=
+d black logo
+
+Description automatically generated" style=3D"width:3.1458in; height:.677in=
+" src=3D"file:///C:/Users/danpremachuk/AppData/Roaming/Microsoft/Signatures=
+/Dan%201%20(DanPremachuk@cunet.carleton.ca)_files/image001.jpg"></span></p>
+</td>
+<td valign=3D"top" style=3D"border:none; border-right:solid #45668E 1.0pt; =
+padding:0cm 0cm 0cm 0cm; height:83.9pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><span style=3D"font-siz=
+e:13.5pt; line-height:105%; font-family:&quot;Arial&quot;,sans-serif; color=
+:black">&nbsp;</span></p>
+</td>
+<td width=3D"387" valign=3D"top" style=3D"width:290.45pt; padding:0cm 7.5pt=
+ 0cm 7.5pt; height:83.9pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><b><span style=3D"font-=
+size:16.0pt; line-height:105%; color:black">Dan Premachuk BA (Hons.), BEd</=
+span></b><span style=3D"color:#646464"><br>
+</span><b><span style=3D"color:#C00000">Program Administrator</span></b><sp=
+an style=3D"color:#646464">&nbsp;</span></p>
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><b><span style=3D"color=
+:#646464">Technology Innovation Management Program (TIM)</span></b></p>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"368" style=3D"width:275.8pt">
+<tbody>
+<tr style=3D"height:13.45pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:13.45pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><a href=3D"tel:613-520-=
+2600%20ex.%204263"><span style=3D"color:#8D8D8D">613-520-2600 ex. 8659</spa=
+n></a></p>
+</td>
+</tr>
+<tr style=3D"height:2.8pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:2.8pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><a href=3D"https://can0=
+1.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.timprogram.ca%2F=
+&amp;data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88dbd16ef24a40b72cbd0=
+8ddefc39b95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638930345609488657=
+%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi=
+JXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D%2Fi%2F=
+Hd7vLHkursJCXjeE3VdlKT0%2BF15ZdKn%2FWpF%2BlMn8%3D&amp;reserved=3D0" origina=
+lsrc=3D"http://www.timprogram.ca/" originalsrc=3D"http://www.timprogram.ca/=
+">www.timprogram.ca</a></p>
+</td>
+</tr>
+<tr style=3D"height:3.95pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:3.95pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:105%"><span style=3D"color:#8=
+D8D8D">NI 5061, 1125 Colonel By Drive, Ottawa ON, Canada</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal"><a href=3D"https://customviewbook.carleton.ca/"><s=
+pan lang=3D"EN-US" style=3D"color:red">Discover Grad Studies at Carleton! C=
+reate Your TIM Program Viewbook in Seconds Here.</span></a></p>
+<p class=3D"x_MsoNormal"><i><span lang=3D"EN-US">&nbsp;</span></i></p>
+<p class=3D"x_MsoNormal"><i><span lang=3D"EN-US">The information in this me=
+ssage, including all attachments, is privileged and may contain confidentia=
+l information intended only for the person(s) named above. Any other distri=
+bution, copying or disclosure is strictly
+ prohibited. If you are not the intended recipient or have received this me=
+ssage in error, please notify Carleton University immediately by reply emai=
+l at the contact listed above and permanently delete the original transmiss=
+ion from us, including any attachments,
+ without making a copy. Carleton University is fully compliant with the Fre=
+edom of Information and Protection of Privacy Act and appreciates your coop=
+eration in this matter.</span></i></p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<p class=3D"x_MsoNormal"><a href=3D"https://can01.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e4=
+34ba3284bcbb953d063c3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthe=
+nabled%26ep%3DbwmEmailSignature&amp;data=3D05%7C02%7CBeiqiaoHu%40cmail.carl=
+eton.ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc85=
+30%7C0%7C0%7C638930345609538407%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnR=
+ydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7=
+C0%7C%7C%7C&amp;sdata=3D3qps4Om1mUZ7lSrKk%2F68Rl7RGhLiD9WnwnCsDtTBh2E%3D&am=
+p;reserved=3D0" originalsrc=3D"https://outlook.office.com/bookwithme/user/2=
+77e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?anonymous&amp;ismsaljsaut=
+henabled&amp;ep=3DbwmEmailSignature" originalsrc=3D"https://outlook.office.=
+com/bookwithme/user/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?anon=
+ymous&amp;ismsaljsauthenabled&amp;ep=3DbwmEmailSignature"><span style=3D"te=
+xt-decoration:none"><img border=3D"0" width=3D"20" height=3D"20" id=3D"x__x=
+0000_i1029" style=3D"width:.2083in; height:.2083in" src=3D"https://res.publ=
+ic.onecdn.static.microsoft/assets/bookwithme/misc/CalendarPerson20px.png"><=
+/span></a></p>
+</td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt"></td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<p class=3D"x_MsoNormal"><a href=3D"https://can01.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277e4=
+34ba3284bcbb953d063c3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsauthe=
+nabled%26ep%3DbwmEmailSignature&amp;data=3D05%7C02%7CBeiqiaoHu%40cmail.carl=
+eton.ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc85=
+30%7C0%7C0%7C638930345609575915%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnR=
+ydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7=
+C0%7C%7C%7C&amp;sdata=3DJnuFwgnHfCfePJl7tpWI0uQ%2B%2F4tOLU0IQV5jSftcPAs%3D&=
+amp;reserved=3D0" originalsrc=3D"https://outlook.office.com/bookwithme/user=
+/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?anonymous&amp;ismsaljsa=
+uthenabled&amp;ep=3DbwmEmailSignature" originalsrc=3D"https://outlook.offic=
+e.com/bookwithme/user/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?an=
+onymous&amp;ismsaljsauthenabled&amp;ep=3DbwmEmailSignature"><span style=3D"=
+color:#0078D4; text-decoration:none">Book
+ time to meet with me</span></a></p>
+</td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<table class=3D"x_MsoNormalTable" border=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:.75pt .75pt .75pt .75pt"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class=3D"x_MsoNormal"><span style=3D"">&nbsp;</span></p>
+<div>
+<div style=3D"border:none; border-top:solid #E1E1E1 1.0pt; padding:3.0pt 0c=
+m 0cm 0cm">
+<p class=3D"x_MsoNormal"><b><span lang=3D"EN-US" style=3D"font-size:11.0pt;=
+ font-family:&quot;Calibri&quot;,sans-serif">From:</span></b><span lang=3D"=
+EN-US" style=3D"font-size:11.0pt; font-family:&quot;Calibri&quot;,sans-seri=
+f"> Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;
+<br>
+<b>Sent:</b> September 9, 2025 12:40 PM<br>
+<b>To:</b> Yaqi Zhao &lt;YaqiZhao@cmail.carleton.ca&gt;; Dan Premachuk &lt;=
+DanPremachuk@CUNET.CARLETON.CA&gt;; Earl Tamayo &lt;EarlTamayo@cmail.carlet=
+on.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai &lt;J=
+iuhuiCai@cmail.carleton.ca&gt;; Hridesh Kapur &lt;HrideshKapur@cmail.carlet=
+on.ca&gt;<br>
+<b>Subject:</b> Re: Expressions of Interest for Projects with JLR, IEC and =
+seoplus+</span></p>
+</div>
+</div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">To all, super excited =
+about all these opportunities coming your way!</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">IMPORTANT: Suggest we =
+meet the clients first, then you produce slide decks. Again, produce the sl=
+ide decks AFTER we meet the clients.</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">My best.</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">Tony B</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div class=3D"x_MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"x_divRplyFwdMsg">
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:11.0pt; font-family:&q=
+uot;Calibri&quot;,sans-serif; color:black">From:</span></b><span style=3D"f=
+ont-size:11.0pt; font-family:&quot;Calibri&quot;,sans-serif; color:black"> =
+Yaqi Zhao &lt;<a href=3D"mailto:YaqiZhao@cmail.carleton.ca">YaqiZhao@cmail.=
+carleton.ca</a>&gt;<br>
+<b>Sent:</b> Tuesday, September 9, 2025 12:30 PM<br>
+<b>To:</b> Dan Premachuk &lt;<a href=3D"mailto:DanPremachuk@CUNET.CARLETON.=
+CA">DanPremachuk@CUNET.CARLETON.CA</a>&gt;; Earl Tamayo &lt;<a href=3D"mail=
+to:EarlTamayo@cmail.carleton.ca">EarlTamayo@cmail.carleton.ca</a>&gt;; Lizh=
+ao Luo &lt;<a href=3D"mailto:LizhaoLuo@cmail.carleton.ca">LizhaoLuo@cmail.c=
+arleton.ca</a>&gt;;
+ Jiuhui Cai &lt;<a href=3D"mailto:JiuhuiCai@cmail.carleton.ca">JiuhuiCai@cm=
+ail.carleton.ca</a>&gt;; Hridesh Kapur &lt;<a href=3D"mailto:HrideshKapur@c=
+mail.carleton.ca">HrideshKapur@cmail.carleton.ca</a>&gt;<br>
+<b>Cc:</b> Tony Bailetti &lt;<a href=3D"mailto:TonyBailetti@cunet.carleton.=
+ca">TonyBailetti@cunet.carleton.ca</a>&gt;<br>
+<b>Subject:</b> Re: Expressions of Interest for Projects with JLR, IEC and =
+seoplus+</span>
+</p>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">Hi Dan,</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">Thank you for bringing=
+ these great project opportunities to us.&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">I=92ll finish my slide=
+ deck as soon as I can and send it over.</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">Best regards,</span></=
+p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">Rachel Yaqi Zhao</span=
+></p>
+</div>
+<div class=3D"x_MsoNormal" align=3D"center" style=3D"text-align:center">
+<hr size=3D"2" width=3D"98%" align=3D"center">
+</div>
+<div id=3D"x_x_divRplyFwdMsg">
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:11.0pt; font-family:&q=
+uot;Calibri&quot;,sans-serif; color:black">From:</span></b><span style=3D"f=
+ont-size:11.0pt; font-family:&quot;Calibri&quot;,sans-serif; color:black"> =
+Dan Premachuk &lt;<a href=3D"mailto:DanPremachuk@CUNET.CARLETON.CA">DanPrem=
+achuk@CUNET.CARLETON.CA</a>&gt;<br>
+<b>Sent:</b> September 9, 2025 10:05<br>
+<b>To:</b> Earl Tamayo &lt;<a href=3D"mailto:EarlTamayo@cmail.carleton.ca">=
+EarlTamayo@cmail.carleton.ca</a>&gt;; Lizhao Luo &lt;<a href=3D"mailto:Lizh=
+aoLuo@cmail.carleton.ca">LizhaoLuo@cmail.carleton.ca</a>&gt;; Jiuhui Cai &l=
+t;<a href=3D"mailto:JiuhuiCai@cmail.carleton.ca">JiuhuiCai@cmail.carleton.c=
+a</a>&gt;;
+ Yaqi Zhao &lt;<a href=3D"mailto:YaqiZhao@cmail.carleton.ca">YaqiZhao@cmail=
+.carleton.ca</a>&gt;; Hridesh Kapur &lt;<a href=3D"mailto:HrideshKapur@cmai=
+l.carleton.ca">HrideshKapur@cmail.carleton.ca</a>&gt;<br>
+<b>Cc:</b> Tony Bailetti &lt;<a href=3D"mailto:TonyBailetti@cunet.carleton.=
+ca">TonyBailetti@cunet.carleton.ca</a>&gt;<br>
+<b>Subject:</b> Expressions of Interest for Projects with JLR, IEC and seop=
+lus+</span>
+</p>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">Good Morning,</=
+span></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">Thank you for r=
+eviewing and responding to the projects I sent on the weekend.
+</span></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">Current Express=
+ions of Interest:</span></p>
+<ul type=3D"disc" style=3D"margin-top:0cm">
+<li class=3D"x_xxmsolistparagraph" style=3D"margin-left:0cm"><span style=3D=
+"font-size:12.0pt">IEC =3D Richard</span></li><li class=3D"x_xxmsolistparag=
+raph" style=3D"margin-left:0cm"><span style=3D"font-size:12.0pt">seoplus+ =
+=3D Hridesh, Yaqi, Sonny, Richard</span></li><li class=3D"x_xxmsolistparagr=
+aph" style=3D"margin-left:0cm"><span style=3D"font-size:12.0pt">JLR:</span>=
+</li></ul>
+<ul type=3D"disc" style=3D"margin-top:0cm">
+<ul type=3D"circle" style=3D"margin-top:0cm">
+<li class=3D"x_xxmsolistparagraph" style=3D"margin-left:0cm"><span style=3D=
+"font-size:12.0pt">Project 1 =3D Earl</span></li><li class=3D"x_xxmsolistpa=
+ragraph" style=3D"margin-left:0cm"><span style=3D"font-size:12.0pt">Project=
+ 2 =3D Sonny</span></li></ul>
+</ul>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">I am planning t=
+o book initial meetings with the clients as early as this Friday and into n=
+ext week. Our Up Our Game meeting will be cancelled this Friday (Sep. 12<su=
+p>th</sup>) to accommodate for client
+ meetings. &nbsp;</span></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">Next is to prep=
+are a slide deck that describes the project to discuss. The slide deck shou=
+ld be comprised of 2-4 slides that describe your proposed project and inclu=
+de:</span></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Title</span></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Your name, pathway, and date </span=
+></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Problem your project addresses</spa=
+n></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Objective</span></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Deliverables</span></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Novelty</span></p>
+<p class=3D"x_xxmsolistparagraph" style=3D"margin-left:54.0pt; text-indent:=
+-36.0pt"><span style=3D"font-size:12.0pt">=95</span><span style=3D"font-siz=
+e:7.0pt; font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;
+</span><span style=3D"font-size:12.0pt">Questions for the client</span></p>
+<div>
+<div>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><a name=3D"x_x_x_x__MailAutoSig"><span style=3D"=
+font-size:12.0pt">Best,</span></a></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"left" width=3D"698" style=3D"width:523.45pt; background:wh=
+ite; margin-left:6.75pt; margin-right:6.75pt">
+<tbody>
+<tr style=3D"height:83.9pt">
+<td width=3D"305" valign=3D"top" style=3D"width:228.4pt; padding:0cm 7.5pt =
+0cm 0cm; height:83.9pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><span style=3D"font-s=
+ize:12.0pt; line-height:105%; color:black"><img border=3D"0" width=3D"302" =
+height=3D"65" id=3D"x__x0000_i1028" alt=3D"A red and black logo
+
+Description automatically generated" style=3D"width:3.1458in; height:.677in=
+" src=3D"file:///C:/Users/danpremachuk/AppData/Roaming/Microsoft/Signatures=
+/Dan%201%20(DanPremachuk@cunet.carleton.ca)_files/image001.jpg"></span></p>
+</td>
+<td valign=3D"top" style=3D"border:none; border-right:solid #45668E 1.0pt; =
+padding:0cm 0cm 0cm 0cm; height:83.9pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><span style=3D"font-s=
+ize:13.5pt; line-height:105%; font-family:&quot;Arial&quot;,sans-serif; col=
+or:black">&nbsp;</span></p>
+</td>
+<td width=3D"387" valign=3D"top" style=3D"width:290.45pt; padding:0cm 7.5pt=
+ 0cm 7.5pt; height:83.9pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><b><span style=3D"fon=
+t-size:16.0pt; line-height:105%; color:black">Dan Premachuk BA (Hons.), BEd=
+</span></b><span style=3D"font-size:12.0pt; line-height:105%; color:#646464=
+"><br>
+</span><b><span style=3D"font-size:12.0pt; line-height:105%; color:#C00000"=
+>Program Administrator</span></b><span style=3D"font-size:12.0pt; line-heig=
+ht:105%; color:#646464">&nbsp;</span></p>
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><b><span style=3D"fon=
+t-size:12.0pt; line-height:105%; color:#646464">Technology Innovation Manag=
+ement Program (TIM)</span></b></p>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"368" style=3D"width:275.8pt">
+<tbody>
+<tr style=3D"height:13.45pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:13.45pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><span style=3D"font-s=
+ize:12.0pt; line-height:105%"><a href=3D"tel:613-520-2600%20ex.%204263"><sp=
+an style=3D"color:#8D8D8D">613-520-2600 ex. 8659</span></a></span></p>
+</td>
+</tr>
+<tr style=3D"height:2.8pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:2.8pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><span style=3D"font-s=
+ize:12.0pt; line-height:105%"><a href=3D"https://can01.safelinks.protection=
+.outlook.com/?url=3Dhttp%3A%2F%2Fwww.timprogram.ca%2F&amp;data=3D05%7C02%7C=
+BeiqiaoHu%40cmail.carleton.ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895=
+de06485ebc51fce126cc8530%7C0%7C0%7C638930345609607794%7CUnknown%7CTWFpbGZsb=
+3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFp=
+bCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D5TxnnuFmGTlsJzp3rmZBM02j5nb7X=
+4iD8DVwqGXK6nw%3D&amp;reserved=3D0" originalsrc=3D"http://www.timprogram.ca=
+/" originalsrc=3D"http://www.timprogram.ca/">www.timprogram.ca</a></span></=
+p>
+</td>
+</tr>
+<tr style=3D"height:3.95pt">
+<td style=3D"padding:0cm 0cm 0cm 0cm; height:3.95pt">
+<p class=3D"x_xxmsonormal" style=3D"line-height:105%"><span style=3D"font-s=
+ize:12.0pt; line-height:105%; color:#8D8D8D">NI 5061, 1125 Colonel By Drive=
+, Ottawa ON, Canada</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt"><a href=3D"http=
+s://customviewbook.carleton.ca/"><span lang=3D"EN-US" style=3D"color:red">D=
+iscover Grad Studies at Carleton! Create Your TIM Program Viewbook in Secon=
+ds Here.</span></a></span></p>
+<p class=3D"x_xxmsonormal"><i><span lang=3D"EN-US" style=3D"font-size:12.0p=
+t">&nbsp;</span></i></p>
+<p class=3D"x_xxmsonormal"><i><span lang=3D"EN-US" style=3D"font-size:12.0p=
+t">The information in this message, including all attachments, is privilege=
+d and may contain confidential information intended only for the person(s) =
+named above. Any other distribution, copying
+ or disclosure is strictly prohibited. If you are not the intended recipien=
+t or have received this message in error, please notify Carleton University=
+ immediately by reply email at the contact listed above and permanently del=
+ete the original transmission from
+ us, including any attachments, without making a copy. Carleton University =
+is fully compliant with the Freedom of Information and Protection of Privac=
+y Act and appreciates your cooperation in this matter.</span></i></p>
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt">&nbsp;</span></=
+p>
+</div>
+<table class=3D"x_MsoNormalTable" border=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<p class=3D"x_xxmsonormal"><a href=3D"https://can01.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Foutlook.office.com%2Fbookwithme%2Fuser%2F277=
+e434ba3284bcbb953d063c3bfeb61%40CUNET.CARLETON.CA%3Fanonymous%26ismsaljsaut=
+henabled%26ep%3DbwmEmailSignature&amp;data=3D05%7C02%7CBeiqiaoHu%40cmail.ca=
+rleton.ca%7C88dbd16ef24a40b72cbd08ddefc39b95%7C6ad91895de06485ebc51fce126cc=
+8530%7C0%7C0%7C638930345609655490%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiO=
+nRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D=
+%7C0%7C%7C%7C&amp;sdata=3DAM1jfNhuxPkawh4f0OZpeBwWCv99IDIgTgfm%2FKRag%2Fk%3=
+D&amp;reserved=3D0" originalsrc=3D"https://outlook.office.com/bookwithme/us=
+er/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?anonymous&amp;ismsalj=
+sauthenabled&amp;ep=3DbwmEmailSignature" originalsrc=3D"https://outlook.off=
+ice.com/bookwithme/user/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARLETON.CA?=
+anonymous&amp;ismsaljsauthenabled&amp;ep=3DbwmEmailSignature"><span style=
+=3D"font-size:12.0pt; text-decoration:none"><img border=3D"0" width=3D"20" =
+height=3D"20" id=3D"x__x0000_i1027" style=3D"width:.2083in; height:.2083in"=
+ src=3D"https://res.public.onecdn.static.microsoft/assets/bookwithme/misc/C=
+alendarPerson20px.png"></span></a></p>
+</td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt"></td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<p class=3D"x_xxmsonormal"><span style=3D"font-size:12.0pt"><a href=3D"http=
+s://can01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Foutlook.off=
+ice.com%2Fbookwithme%2Fuser%2F277e434ba3284bcbb953d063c3bfeb61%40CUNET.CARL=
+ETON.CA%3Fanonymous%26ismsaljsauthenabled%26ep%3DbwmEmailSignature&amp;data=
+=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7C88dbd16ef24a40b72cbd08ddefc39b=
+95%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638930345609697826%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DJdSM1zmfEOfmqy5i=
+xxws625NWqE39Fpxk9SKlVcTI8Y%3D&amp;reserved=3D0" originalsrc=3D"https://out=
+look.office.com/bookwithme/user/277e434ba3284bcbb953d063c3bfeb61@CUNET.CARL=
+ETON.CA?anonymous&amp;ismsaljsauthenabled&amp;ep=3DbwmEmailSignature" origi=
+nalsrc=3D"https://outlook.office.com/bookwithme/user/277e434ba3284bcbb953d0=
+63c3bfeb61@CUNET.CARLETON.CA?anonymous&amp;ismsaljsauthenabled&amp;ep=3Dbwm=
+EmailSignature"><span style=3D"color:#0078D4; text-decoration:none">Book
+ time to meet with me</span></a></span></p>
+</td>
+<td style=3D"padding:.75pt .75pt .75pt .75pt">
+<table class=3D"x_MsoNormalTable" border=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:.75pt .75pt .75pt .75pt"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"x_xxmsonormal">&nbsp;</p>
+</div>
+<table class=3D"x_MsoNormalTable" border=3D"1" cellpadding=3D"0" width=3D"1=
+00%" id=3D"x_x_x_tableStyle" style=3D"width:100.0%; background:#FFFFE6; bor=
+der:none; border-left:solid red 6.0pt">
+<tbody>
+<tr>
+<td style=3D"border:none; padding:2.0pt 2.0pt 2.0pt 2.0pt">
+<p class=3D"x_MsoNormal" style=3D"line-height:11.0pt"><span style=3D"font-s=
+ize:10.0pt; font-family:&quot;Calibri&quot;,sans-serif; color:black">This e=
+mail contains links to content or websites. Always be cautious when opening=
+ external links or attachments.<br>
+<br>
+Please visit <a href=3D"https://carleton.ca/its/help-centre/report-phishing=
+/">https://carleton.ca/its/help-centre/report-phishing/</a> for information=
+ on reporting phishing messages.<br>
+<br>
+When in doubt, the ITS Service Desk can provide assistance. <a href=3D"http=
+s://carleton.ca/its/chat">
+https://carleton.ca/its/chat</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id=3D"x_x_x_div2">
+<p class=3D"x_MsoNormal"><span style=3D"font-size:1.0pt; color:white">-----=
+End of Disclaimer-----</span></p>
+</div>
+<p class=3D"x_MsoNormal">&nbsp; </p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB4459DCFA565AEE861D0085D49B0FAYQBPR0101MB4459_--

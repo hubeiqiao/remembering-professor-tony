@@ -1,0 +1,1574 @@
+Received: from SEYPR06MB6902.apcprd06.prod.outlook.com (2603:1096:101:1da::9)
+ by TYSPR06MB6752.apcprd06.prod.outlook.com with HTTPS; Mon, 13 Jan 2025
+ 13:08:59 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=w/jrkWQho6IVdJDm1XOOPi/Y9X6JPDk/PqwcSmwMVs++10XYNmv/mYdpyPTGDGqVJv13U5cPSaVzXDJ2dLRRHZubsCwjBC1ER/Lf5OuF7PbPEaudY633+IC218J/X8lkOjbZtC/x5bRo/8RXoNDt6rGDUfA1PD7lk81vsy7mU+BDhios4xWEkdDBRv4x6cAaUdBEgUSW7EIFXoVtWeicJ97dulFJDxPCAUHxeMOXfNRlHrVyhanhKuLX9jEaSPQiyZKNTgjhpDPIo1lGs6047SHgBxEF1o5s3MTZhQtkBLbMywVjVdD1dp77mwXDhrOHNEJ4XKKvkjyg9+bIwrX8pQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=VFUK9gHKCBo9M5+WpGkGKXVzvfV3KPV3fbLRmKj8s34=;
+ b=oQm5aqep0CUuU+qBhQNCzjbRRxOOA+QzshYlS8KczTEpita+RNgYd8bLjpaDDE0ISBEw8UynsBaGHTkbOOBoyKctc7fD50RIQk7jSNc/laa7eIm4kexabyBK30bDA+AvQ2mJwsEcuEWeYFDc8fHTjBgp0Ob+C5IC/vqhk5OLrPxCRcMd6mxLI2FSd9OZ2q4RIDTSENivvfMS0c7KfZnSvQ49fD6J0NNl/Q1MatK4c64GtjoHw+Gajh66zJ4ntd91snsQWRtrVRiuOn0tvvOGVKt3wO6TbkCqn5pizo7HIXVlHRbFpUixZrM8kVx3Lz26gRoMoVJSXRhCU8IBu6swnQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.192.125) smtp.rcpttodomain=hotmail.com
+ smtp.mailfrom=cunet.carleton.ca; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=cunet.carleton.ca; dkim=pass (signature was verified)
+ header.d=cunet.carleton.ca; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=cunet.carleton.ca]
+ dkim=[1,1,header.d=cunet.carleton.ca]
+ dmarc=[1,1,header.from=cunet.carleton.ca])
+Received: from SJ0PR05CA0208.namprd05.prod.outlook.com (2603:10b6:a03:330::33)
+ by SEYPR06MB6902.apcprd06.prod.outlook.com (2603:1096:101:1da::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8356.11; Mon, 13 Jan
+ 2025 13:08:57 +0000
+Received: from SJ1PEPF000023CF.namprd02.prod.outlook.com
+ (2603:10b6:a03:330:cafe::87) by SJ0PR05CA0208.outlook.office365.com
+ (2603:10b6:a03:330::33) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8356.10 via Frontend Transport; Mon,
+ 13 Jan 2025 13:08:56 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.192.125)
+ smtp.mailfrom=cunet.carleton.ca; dkim=pass (signature was verified)
+ header.d=cunet.carleton.ca;dmarc=pass action=none
+ header.from=cunet.carleton.ca;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of cunet.carleton.ca
+ designates 40.107.192.125 as permitted sender)
+ receiver=protection.outlook.com; client-ip=40.107.192.125;
+ helo=YT5PR01CU002.outbound.protection.outlook.com; pr=C
+Received: from YT5PR01CU002.outbound.protection.outlook.com (40.107.192.125)
+ by SJ1PEPF000023CF.mail.protection.outlook.com (10.167.244.11) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8356.11
+ via Frontend Transport; Mon, 13 Jan 2025 13:08:56 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:7D6BEE45A41C38063FEDDF598100FE0A752AFD49638DE6D2EC029E475188DE7C;UpperCasedChecksum:66EBE1BAADF780195F7E31798A4D720C26C345D36C9603E8794A79B401C7FDD6;SizeAsReceived:9276;Count:43
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=gVJzKyl+uwzIsRtWPVMbRPvDJr+cgoSmPAPBoe9uMURJcL6RQJuB8vk2l7vDKuwnsp+d4SVQMlFMowyny4e6ktURg+WWkTBTBgaeZ1G8Z3VBYE1auQy0nE8klV43veuqXYHYLwv2XpT3n84xQTfNnQMyibILWNO1Xzqwggqd+1f/s0WsAHGOivrNPUym93YQavWbIbOepFPqJgvj+HhR3l2Lyyh3kXlWHD9q7A++t6azPI+hurRPImRKq4cShsQ1c/r2GR44dWcuG3j1AUE7WLN25+Ob2i3lbziHkckAMXuTkC5ajUNkOJDS3Tl3T2GEg7k8tE2dLeoodEX/J/+vIg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=VFUK9gHKCBo9M5+WpGkGKXVzvfV3KPV3fbLRmKj8s34=;
+ b=IDRGvGP9U4/d5lUljgS69cU8uaiI9KF48lqvW23IkmVMvtusmaWXZX6behM3O0kMrlj1CMbfHOkgknDwSF6/NqOY5fSgfQLt3ofUAKl6SibCIwEFuoKEXI4DU9Piwxo+Y5Uo3YNDY9ma4QuGbakHcW5NdGfIn853y5Meg9IrCEvGFl41dKuGNC7av2nz2ZeHFwGMFkfmWL4YjzUtfhYfewe+G/xbAgNM7M4fCPMCmeWInVTUuJJze7amw97AkxzFzDBsneQNQGSLIIw2fMX/i6M0PTYBhO/fRGBaKH8iFfcmxeyWRCBvTKbzPMTVpnfUpd3XTNoXsNOwDS/uccewrQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cunet.carleton.ca; dmarc=pass action=none
+ header.from=cunet.carleton.ca; dkim=pass header.d=cunet.carleton.ca; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cunet.carleton.ca;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=VFUK9gHKCBo9M5+WpGkGKXVzvfV3KPV3fbLRmKj8s34=;
+ b=TVlOert5cEDY4wJrkAxSQYKI9N4xno2cuzotdrl2hYNNdWiFxZqzRKd0KIZUEIguqvPlj1sMeEauR6nKvuvzdZHpdLALEMUsFO98pKS9tPnDx/dPE8PqBJTfMxffLXs6l7/ZrrhhE6Omhgl+8KG15kff66uMrpn7CQIKamRydJ8=
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YQBPR0101MB9934.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:7a::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8335.18; Mon, 13 Jan
+ 2025 13:08:54 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%6]) with mapi id 15.20.8335.017; Mon, 13 Jan 2025
+ 13:08:54 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: John Nelson <JohnNelson@Cunet.Carleton.Ca>, Joe Hu
+	<joe.hu.tech@hotmail.com>, Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>
+Subject: Fw: Request for Support: Perplexity Sharing Session at the Innovation
+ Hub
+Thread-Topic: Request for Support: Perplexity Sharing Session at the
+ Innovation Hub
+Thread-Index: AQHbYEltk9W2W0LBuUacZ/GzAwNkQLMUbM3wgABKJcA=
+Date: Mon, 13 Jan 2025 13:08:54 +0000
+Message-ID: <YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References: <A6B0018C-0C02-44E2-885C-45CF8743F0E7@cmail.carleton.ca>
+ <YT3PR01MB9043E7DDDBB23A13E0C805108B1F2@YT3PR01MB9043.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To: <YT3PR01MB9043E7DDDBB23A13E0C805108B1F2@YT3PR01MB9043.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US, en-CA
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=cunet.carleton.ca;
+x-ms-traffictypediagnostic: YQBPR0101MB4459:EE_|YQBPR0101MB9934:EE_|SJ1PEPF000023CF:EE_|SEYPR06MB6902:EE_|TYSPR06MB6752:EE_
+X-MS-Office365-Filtering-Correlation-Id: b842ff67-182f-42f5-8dd8-08dd33d36fc5
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;ARA:13230040|376014|1800799024|10070799003|366016|8096899003|38070700018;
+X-Microsoft-Antispam-Message-Info-Original: =?us-ascii?Q?3MTNC+7659mrtSPTDVQXcVhwcoe0QJBtd3kfCqXvosTfOphH+wBgeK8PTwwg?=
+ =?us-ascii?Q?LsXSRAvqM8NBQzDBPYua45unoANQNZ74L8LlK8Iac7QmDinlhbvc38E/apD8?=
+ =?us-ascii?Q?4CvsAbyev2UHApo/Hl9eOJQOS5Y1blWJC6iYVg9HVlsavFCgZ4aGip4ZPyGb?=
+ =?us-ascii?Q?MrxLm3jNrYqZ5LuL1hF6pQtxVspilFDBbvtYD1KVJ7QbKoJueNAq5LQh8rAX?=
+ =?us-ascii?Q?rHLhl2phhT/wTmRb0G6gEir7M52Qv1d5KjP10A05n5QpRkPpx+wv7RUF5HaF?=
+ =?us-ascii?Q?2gdiVEnsq8ioZ8lxCNU+etFImI8JZksXRerSPkLpjVD7FAjKAty/ylcSKvMF?=
+ =?us-ascii?Q?Avb412HI7YLH0r76sdRGNoWdAKy1UXYr/YvoWGJ4XE6vt84+QQJxzOAMM7/6?=
+ =?us-ascii?Q?bexIxIrqSL7l+QmFDUG4aAH6V9DKA16+9Vel1vQXycwM/gF3k/U8DO9OgSGw?=
+ =?us-ascii?Q?WK6gnWp2TIZvDCulkf+RWSgkyM87iJiAQPOC1/4q0tsAbBgVba4zyWuq/82w?=
+ =?us-ascii?Q?p2u7QxXLkWIf3UGQE2ofL6jIW1WXAc6Mj+IIRMKx9y+bVd2P0FdNngAPkLm9?=
+ =?us-ascii?Q?Gy5/zTUhysiqmpDz/dZ00OeDbvwksX/iy0e2h/GKL6n55eacUuNFgIEVa9bv?=
+ =?us-ascii?Q?wh0Xz0Eu9p1e2t3ZwQFWRaAuIfvYK1sc6K8cmoMMbnp83JvyqCbGEeH7OErU?=
+ =?us-ascii?Q?Wyi0DAX7YUg+BmW11yqSZdQJunPBa0hMmXRzSGerKyRXhuVkaqWJWdrGlHKa?=
+ =?us-ascii?Q?9bVJKs6IK11hXYeq5v/gX0/4HWrps/TSFxLwQnioGCz1pZbxLxYqqrCfywzo?=
+ =?us-ascii?Q?tXrTQeaNRkJnOKa25Kw3/Yo9Eike+E6AlKIS6LnbGHN78bNJjOevLy85AIW+?=
+ =?us-ascii?Q?GEXs9X7/QGZdfEW8fhEP3SnEbLTGFZoBfUgJBXMVKvXMcJNSt589sTdtjZsS?=
+ =?us-ascii?Q?Es7HytHDI9vA9z0li5cKoEZ0bUNssp2ix57Ak1yyOpiBOf0U1xU+muMB3ad+?=
+ =?us-ascii?Q?3/xg0uabsM3Ste6F/HbGSpSASAbBQjGyWSDZ+PGCQVTjF7YUzekHIYCgNf4I?=
+ =?us-ascii?Q?rZVKrLppU9mp1Sz7ROMdaEpG9pSUsZtefj/RjmF3rudULPRXKNJBWxozvljQ?=
+ =?us-ascii?Q?ySjf8RhnxzRyKLBBPZ3l4dR0R63RQZlhxr//1gW+ZzFAwH4bq1Gc5LQg95Fs?=
+ =?us-ascii?Q?gqHQKk9zNgnkglkwhzE3QkTc6bdOKdAKhRUJrUZrNhEonJysKxZNuSqII02j?=
+ =?us-ascii?Q?ZUxye/iY+lq9gPYmfCh0AXAoZLhneWpahtDzoRFVQXRVdoDGOIEM1TLUW+d+?=
+ =?us-ascii?Q?QRL9yOnVIXUY2c2+XSRjtFlXa/dn60B7hOjb8DQE4LkEoxAoqejBeI2PZr7x?=
+ =?us-ascii?Q?sc7148W7CEXJTmuxZMR226MTWYAoHt+HZ+OyahszatNh5qaJsQ=3D=3D?=
+X-Forefront-Antispam-Report-Untrusted: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230040)(376014)(1800799024)(10070799003)(366016)(8096899003)(38070700018);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: =?us-ascii?Q?deUiw/QQ6fW9D3jQSvSencNk0w699X+BaEbDfBzZfhuqusWuDBoKNO0GsZvA?=
+ =?us-ascii?Q?C/dVp391PkcvnVbu3H+7vFbjMYyD6W5ouCov/TSPMgj0mLHG7K5LLAf+PCCG?=
+ =?us-ascii?Q?cchckpt6Qq0LCiQyTolyfO9rrn6ZBBewu8YvSDMx0126ZqEFCV4AhOoAMzfE?=
+ =?us-ascii?Q?YHfg6XMSO53c4vBlkXodh2LxA8xcjeTwbM17vO6nhUxz057OFPHdvwpxHxIG?=
+ =?us-ascii?Q?lH1XZlZsByjG66kYIG/20tIHVlUNGLhcGZOeIzyBw0b/WsOtEjLRk3tLchRV?=
+ =?us-ascii?Q?+6q5CYrmITRYzpl1VsfDJrhgVtjyamrN5vVmAHW+9vRTz7hNh/QjzBZjW3Gx?=
+ =?us-ascii?Q?Fq2NMIv/zQQJmuhQ8qnbHlZrvFBcXy02QcHyi67rREuNrts+SQxwgG6oWtBx?=
+ =?us-ascii?Q?YqVHf5NTkQku3yPNBiVkm2gCHJyGNyf2WWu8x21Jps3QY4ITNxus7yrWO+YC?=
+ =?us-ascii?Q?PflcVeIqzNYg/I3lOC44ajYKxs8wOPYcvOSkRbBDJ9ld0aALebjTjQbQgPUP?=
+ =?us-ascii?Q?PBmjr65T6AJMu+fID/Y8Ys6YodcW1zGHCbyqO3sz3Jelsw7dvZeHXzDsWovm?=
+ =?us-ascii?Q?REjF9Nf+IUkHEbymgCNn93/uZYDhpyFRmAk5DKLT7uc3p2lyTBJyDZfeKQlR?=
+ =?us-ascii?Q?XoS87Q8CBmdlhA08ZWf78hpcmY2PWKnThSeWdrpBfq5hO1YUuOxKE142RXI0?=
+ =?us-ascii?Q?i1mSxAEeJtst344x0wIaNnlIYG/Is0hp3IJi0o+nFqKYLnctk1KlMvxj3Qnw?=
+ =?us-ascii?Q?peaq8GwXLzpsSW5Voi89NLxM+EeT7F97gpDPK4ALzh+fkt5oQZIKx7wAfZaT?=
+ =?us-ascii?Q?wBPZHro3QJP6wyeAa3In2ojO/rPrewFSsJnGtc1pmOKSB5j14iv4YyBVwV84?=
+ =?us-ascii?Q?MzSwsbg3k1q/iJLw2DxUpbmhjcQOXmOqb3IOIklUCieH6JF5t6g/lqmXUJ0w?=
+ =?us-ascii?Q?b2h815RF72LoKWGcyKM+qUDe/SpgHAciJ/aRC/VBbiB6hs80NHCntrNxo/qj?=
+ =?us-ascii?Q?EwsWAESxXv8Kfw3XODJaYjaOP++5envnXjMgl4WZkmQLRymTlb5S0AbW9XxJ?=
+ =?us-ascii?Q?wwoXXqa/YKiP5lWcxtZVDT2PB3WkjAdGj9TT5Z+RHbUbweZgFfMLGLDxHsax?=
+ =?us-ascii?Q?Ubb/wttkWHGTVLb63PFYHCrI4qCl6JJkAT43w8XmX6e+GNCFl75Y+lTOaNe/?=
+ =?us-ascii?Q?tEDQXjMM0qPxmrvBZzEt2EXL7/bAU5LgcvzJLpzjQJxOVBblFBRLxcvIEcEN?=
+ =?us-ascii?Q?8jPFbAYEd6o1LGlqC5LY8bqKRxVgobeom0KbVAkwRDh3BNkHMUsMD/pMw/XD?=
+ =?us-ascii?Q?yVBKC1EoctNlqR/mIp+jiq3oIdyR5saRFFM0eldLrvHJGZX7/cHTSTCJH1jR?=
+ =?us-ascii?Q?9hBK4aVnPpozdSF+aSbKxIYp98F7cMmnYkmJT11qbmV1Ibq7YafhpHXWplTD?=
+ =?us-ascii?Q?GR2JgxQJP7e22/y78g4jYXW9fl+ImB53xmNrQI8fV+Qy1ajIkLYX6dHzg5Ju?=
+ =?us-ascii?Q?ito2azXuxN8vPnGJxv+Aclb0yXtKtUCGfE2a04vKkvyBCD4+CimXs+FYewmm?=
+ =?us-ascii?Q?a8vbKtJWiMYfucEBYzUHKw8/IFApLRS6E2o0T4cPnf9wIsVro4y8E4uKSCrj?=
+ =?us-ascii?Q?rZaqX09XYk3EQggXKan/WzkhnRB/iXJVihu8BPnCi8eYHiVCsAtY7sB+8qxn?=
+ =?us-ascii?Q?S63Vxg=3D=3D?=
+Content-Type: multipart/related;
+	boundary="_004_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_";
+	type="multipart/alternative"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: YQBPR0101MB9934
+X-IncomingHeaderCount: 43
+Return-Path: TonyBailetti@cunet.carleton.ca
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Jan 2025 13:08:56.2812
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: b842ff67-182f-42f5-8dd8-08dd33d36fc5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: SJ1PEPF000023CF.namprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: SJ1PEPF000023CF.namprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: SJ1PEPF000023CF.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 1/13/2025 9:21:04 AM
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 570cf620-3122-4301-b726-08dd33d36eba
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.107.192.125
+X-SID-PRA: TONYBAILETTI@CUNET.CARLETON.CA
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:1444111002|9400799030|10300799035|50300799015|11020799009|461199028|67000799015|13020799006|47200799021|58200799018|6092099012|4302099013|3412199025|440099028|1370799030|1360799030|1380799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Jan 2025 13:08:56.1093
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b842ff67-182f-42f5-8dd8-08dd33d36fc5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: SJ1PEPF000023CF.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEYPR06MB6902
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.8727788
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8356.008
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000308)(920221119095)(90000117)(920221120095)(90013020)(91025020)(91040095)(9050020)(9065024)(9100341)(944500132)(2008001181)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NE1ETlhtajBjYS9CUXF5ckYxSGhLdkdiNXhtWmRNTHBSV3k3NWJMOFV4aVBj?=
+ =?utf-8?B?dVhXYWJmWGlmU0ZxUFdOZFh4bUIyVzBJbnp0VjM0SjlDcW1VYlMvL1NKWk1t?=
+ =?utf-8?B?VU52b3E0dUdaUFltVFRpNjNOSmdYZFZBY2ZOVit6ZysrQ1F4RU96WE9rZFhU?=
+ =?utf-8?B?N3NOb3pPS215TzhXSm1ucDBTejJ4KzhQY0x5cUJZU3JZY25ZcHZXRGUvYmN0?=
+ =?utf-8?B?ODFpRDhkOVZrakpGOTRRWitMT1lFbUR3a1REaENPNmFwNFJGTGcxN0JzbWdv?=
+ =?utf-8?B?aHpBOVU3NmppdGZ1Q01PR1MydWpTODZJNkU3eXNXZnJDSkFwY0hlYlJFWWpo?=
+ =?utf-8?B?V21naitBa2RZSkM1Qkg3aFpmV1FyVWs0allUbXNlZy9zLzJ5ZlI5aTVUMFRw?=
+ =?utf-8?B?WThOL1Nwby83RlFZczZHb1ZnTFRRMzd4RVBRWWY1TGxhT0xUTmcxZjFVc0xE?=
+ =?utf-8?B?ckdlSE9WS0JnTWZwNmplM0ducGltS1lRRVNyR1QvNk9DOVBLRzU0SFhSZHlX?=
+ =?utf-8?B?dEc4YURlck5SSlMyc3ROYmtlQUdGWFA0ZE45azVVWElwdkZKcDJENHNsWTZt?=
+ =?utf-8?B?OVVDaEtudUFYZWxBK0Q5Zm55SHIya0QrVHlmOVAweW1tWk9KZTlxRXMxMkJJ?=
+ =?utf-8?B?ZHl4dkdEM0dmSW5PSXRtaTl5T2R0NlB4Rk9IcVFCbWEzVnNKUDRmdTUzM2Ey?=
+ =?utf-8?B?enlJK01vUUx0aFdxSmZNSXE0R1F1WTVDU09zeGZUUzVOdkdlUnYzT2htREVJ?=
+ =?utf-8?B?NkpnS0x2dzFJVDFmY1h3SFEvM0lWNW5UWVM1Y2EvTy9nemN5NDdkUEZ6Sytt?=
+ =?utf-8?B?aXJNdmtKY0FDYm1EcFN4ZTJXVDZpWlRXZUhJUE5NY2xJZEhWRGQvOHRTS1Za?=
+ =?utf-8?B?L0o3aU1kTCtYc0FZT3locTN1R04xeHVjL3VKUGpnOE9JRlZlTnpMSkNHYkFo?=
+ =?utf-8?B?NXB3cEg1SEhrVkFJdjNVemNVNmFRSTR0bVVmQ2IvVENFOXhIcDRCaWYvRS9X?=
+ =?utf-8?B?Nllzbk9lOGlsdTBCYXBoaUZmaHBkaDdVWFM0Sk9JQXI4MDROZVl0YVMwS0V6?=
+ =?utf-8?B?Nm5yaFNmNjBtc1d3eVhsY0dVd2VMM2FyOHdZN3FkMDA1OWdMUkFsdlBqS2c4?=
+ =?utf-8?B?OEcwZ0xXNzg3d3cyc0FXZzBZbnEzMHpUL3ZwdFp0d25tQTBZSmZWSkJiV0pa?=
+ =?utf-8?B?QktmeXljcmpSc0dMaEszUTBtQ0ZBa3pYcjczVGNIbXY2UTIwVTA2QkY0aGN3?=
+ =?utf-8?B?NDBObnZQdUpVRFA4ZkRMU25na3VmWUcwaVdPZFRBRW1RdENqTzJMUVJTbnFz?=
+ =?utf-8?B?aVVxZjF3VjB6ZWtDMFU3MlBnd2ZkK3h1dFRvRENlOEFDbmZQM1k4eFJCQWhj?=
+ =?utf-8?B?TFNMd1hXN1diK2RtRkN1eUkwY1J6cW1IcHFZblMyd2RSaUZQNjNFajE1L1k2?=
+ =?utf-8?B?bC9oMUl3b3Q3OWQzM1FKMnloV3p0S2dnU1l5WWJ2eTNuYjJONFhCczhLNXRa?=
+ =?utf-8?B?ZE9LaUtjVTA4L3FWcGZNeEhPZXdNYjlLQ3ZSaGtRNGsxYzIrOXQxY25YNEZ1?=
+ =?utf-8?B?RzRpajlyQzAyTkpNL1dXTTlVd2wwcWpzYmtvOG5LRS83aFRJbFkwSjZWSFVw?=
+ =?utf-8?B?UkIvb1JxZzNxbmVJZ05zOFRZRU8vMXQyVStoeHhDTGNlOFZXRlJuYjhzMC9v?=
+ =?utf-8?B?dzJ4bXlURW4rQ2ErNnlveG5ZUWdYcW9PRFVodURkdmVzeDJFSGpOYStscG9C?=
+ =?utf-8?B?SU5wZWZJRmRrRVM5SHFRMGczWlRYSm10ZW9kZnYwVkdaNGNDcW5TZVk0NXlQ?=
+ =?utf-8?B?L2Jmbys4V01qekFMV3NmN2pySkJNWnVncFBZMFozS0JSaU5nbVFuRktVU1ZI?=
+ =?utf-8?B?cXJmR3ZIUnAzR00yWHQ3UVVxbm1qSU1RbWtpVUsyeGltZzFLMHRVYlkzTnZZ?=
+ =?utf-8?B?cXo4REJzaStLUElqUldYazBRdUE0dDU0TjlpZ2Y2WFQrSFdKS1ZhQk1panhn?=
+ =?utf-8?B?V2dneER1eHoxVHVNR25pUlJXWThtYXJQVk1OcFB5cGlnNjlSMDVQOEtrdjg4?=
+ =?utf-8?B?MlFFUDI3dkJKMDJqSnJxdWdmYWJPNUhlRHNvNXRTOGp5MjYzSGlIZkNPVG80?=
+ =?utf-8?B?bnpBRXBXdmdoRnRZYTFLVUZQM05pUS9UNTlYOUplZ3R6RmZhaldzRm5LWEJH?=
+ =?utf-8?B?ZWxaOW9ob2lnK2FqSlFOOEhra01DdDRPRjRNUjJ0T1N3OFJaQk55cWlPL25i?=
+ =?utf-8?B?NUxiSjR5eDFRMGo0T3lvZzZHWmtRSzRpenNiQmlWTzVaM1F2S2tWQWZnZU9n?=
+ =?utf-8?B?V1pIVmx4ODJjSnFkWW5VWTFHa0sxODhLVGxmYlp4SUI4aTdDMkxVME1aTTJF?=
+ =?utf-8?B?cWVhV3RweCt1RzgxNU9TVHM2RWhwdkl6TklzeE9zSy9tTnNoSGJEQm1BcUYz?=
+ =?utf-8?B?ZVI4QWxxTWZZSlJYZC9td3FHbTgwZXdpLzZnZzVSWXd0YkhGNjIwQzVSbnpw?=
+ =?utf-8?Q?MosBiDeXFXi?=
+MIME-Version: 1.0
+
+--_004_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_"
+
+--_000_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+John, thank you for sharing your email to Joe.
+
+Dan and Joe, please move the Perplexity workshop to SP 102. Let me know who=
+ will attend the workshop and day/time in which it will be delivered. I pla=
+n to attend the workshop, please check my calendar.
+
+Thank you all.
+
+Tony B.
+________________________________
+From: John Nelson <JohnNelson@Cunet.Carleton.Ca>
+Sent: Monday, January 13, 2025 4:28 AM
+To: Joe(Beiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>
+Cc: Tony Bailetti <TonyBailetti@cunet.carleton.ca>; Dan Premachuk <DanPrema=
+chuk@CUNET.CARLETON.CA>
+Subject: RE: Request for Support: Perplexity Sharing Session at the Innovat=
+ion Hub
+
+
+Hello Joe,
+
+ I need to have a quick chat about the Perplexity session that you had orig=
+inally planned to have in the Innovation Hub on Tuesday January 20.   I ant=
+icipated a few challenges as we got things set up given the university=92s =
+approach to introducing new AI tools for widespread use on campus and as ex=
+pected, the event (in its current form) has been flagged for two main reaso=
+ns.
+
+
+
+Challenges
+
+
+
+  1.  First and foremost, Perplexity has not yet been through the universit=
+y=92s security and privacy assessment process<https://carleton.ca/its/secur=
+ity/services/risk-assessment/>.
+     *   A Data Protection Risk Assessment (DPRA) is a process involving th=
+e Service Delivery & Quality group, the Information Security group, and the=
+ Privacy Office that is used to determine the level of risk to security and=
+ privacy of data associated with the purchase and use of an IT system or se=
+rvice. The outcome of a DPRA is a detailed report that lists the risks asso=
+ciated with the IT system or service, a score identifying the risk level, a=
+nd recommendation(s) to address any significant risks identified. With this=
+ report, the client is able to make informed decisions about the purchase o=
+f an IT system or service to protect the users of the system, and the unive=
+rsity as a whole.
+     *   Before the Hub can be involved in a session that actively promotes=
+ the use of one specific tool over another, that tool needs to be taken thr=
+ough the university=92s process.  As I mentioned before, Microsoft Copilot =
+is the University=92s Recommended Generative AI Platform<https://carleton.c=
+a/its/2024/copilot-university-recommended-generative-ai-platform/> so as we=
+ continue to explore other options, we need to ensure that  the same level =
+of due diligence is used.
+  2.  Secondly, it is important that this session includes some references =
+to the appropriate use of AI in academic work and the importance of accommo=
+dating for academic integrity to be maintained. This continues to be an imp=
+ortant topic on campus and a number of faculty members are working alongsid=
+e students and staff to find appropriate ways to help students leverage the=
+ use of AI tools appropriately.
+     *   The Carleton University Senate met  in 2023<https://charlatan.ca/c=
+arleton-senate-explores-generative-ai-in-academia/> to discuss the challeng=
+es of generative artificial intelligence (AI) and considered recommendation=
+s for its integration in an academic setting. One of the articles written i=
+n the Charleton<https://charlatan.ca/carleton-senate-explores-generative-ai=
+-in-academia/> noted that =93alongside other post-secondary institutions, C=
+arleton University is exploring the use of AI technology in education, whic=
+h previously posed academic integrity concerns.  The working group on the u=
+se of AI in teaching and learning at Carleton University proposed their rep=
+ort at a meeting on September 23, 2023. The group consisted of Carleton ins=
+tructors, students and staff aiming to assess AI tools in education as new =
+research becomes available.=94
+
+
+
+Opportunities
+
+
+
+With those two considerations in mind, I think this creates a fantastic opp=
+ortunity for us to work with students and faculty in the TIM program to kic=
+kstart a really cool conversation on campus about using AI tools appropriat=
+ely to increase the efficiency in the way that they work, and by extension,=
+ in the way that we tackle assignments, projects and problems in all facets=
+ of their lives.   I=92ve been really impressed with how the TIM program ha=
+s embraced the use of AI and its exploration of a number of tools that are =
+currently available for a host of different tasks and challenges.  This wil=
+l continue to be an asset for all of us in the future.  I know that other d=
+epartments like Computer Science have also included the use of AI in their =
+curriculum as it is changing the way their industries/academic spaces opera=
+te.
+
+
+
+I am going to ask Tony, Eduardo and a few other faculty members to help me =
+facilitate a series of talks in the Innovation Hub that helps to open this =
+conversation through an Innovation lens, and I propose that your session be=
+ one of the first sessions to kickstart that series.  In addition to introd=
+ucing some of the really good things about Perplexity and the ways that can=
+ be used by students in the future, we can include some snippets from other=
+ units/voices on campus to make sure that the conversation is always balanc=
+ed.  This shifts the presentation from being one that focuses solely on Per=
+plexity (I know that could be a challenge given your position as a campus r=
+ep with Perplexity) and focuses mainly on innovative ways to leverage AI to=
+ols while learning about that rapidly increasing number of options availabl=
+e.
+
+
+
+To make your own role easier, and dare I say more accepted on campus by oth=
+er groups, we  need to  ensure that your team has also taken the time to co=
+mplete the university=92s security and privacy assessment process<https://c=
+arleton.ca/its/security/services/risk-assessment/>. I am sure that your col=
+leagues will be able to help you provide the information the university nee=
+ds to assess Perplexity.
+
+
+
+I am happy to adjust the description of the session so that we can include =
+a few other voices.
+
+
+
+If you need to keep the session in its current form, then you should hold i=
+t in a classroom instead of the Hub and then we will incorporate you into t=
+he other series once it gets up and running.
+
+
+
+Looking forward to continuing this conversation this week.
+
+
+
+John Nelson
+
+Director, Innovation Hub
+
+[cid:image001.png@01DB656D.37CB90D0]
+
+  Book time to meet with me<https://outlook.office365.com/owa/calendar/Meet=
+ingswithJohn@cmail.carleton.ca/bookings/>
+
+
+
+
+
+
+
+From: Joe(Beiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>
+Sent: January 6, 2025 9:44 AM
+To: John Nelson <JohnNelson@Cunet.Carleton.Ca>
+Subject: Request for Support: Perplexity Sharing Session at the Innovation =
+Hub
+
+
+
+Hi John,
+
+
+
+Happy new year!
+
+
+
+As I mentioned earlier, I=92m organizing a Perplexity Sharing Session at th=
+e Innovation Hub this month to showcase how Perplexity can enhance academic=
+, professional, and personal tasks. The session will focus on interactive d=
+emonstrations and practical tips for using Perplexity Spaces in assignments=
+. I=92ve attached the event plan and my slides for your review.
+
+
+
+---
+
+
+
+Here=92s what I need your input on:
+
+
+
+1 . Schedule
+
+  *   I=92m planning to host the session on either January 13, 14, 20, or 2=
+1 in the afternoon or evening at Innovation Hub, depending on the schedule.
+  *   My preference is January 14 from 4:30=966:00 PM (register can start f=
+rom 4 PM), if that works for you. If that=92s too soon, we can consider Jan=
+uary 20 or 21.
+
+
+
+2. Registration: Should we use the Innovation Hub=92s system, or could we t=
+ry Luma for better usability? We=92ll need participant emails to share slid=
+es and articles. (or I can share a QR Code for participants for those walk-=
+in attendees.)
+
+
+
+3. Promotion: Could you help list the event on the Innovation Hub website a=
+nd share it on LinkedIn and Instagram? I will provide the information and t=
+he poster.
+
+
+
+4. Front Desk: We=92ll need to hand out Perplexity stickers, raffle numbers=
+, and provide name tag stickers and pens for attendees. (I=92ve requested P=
+erplexity merchandise for this session.)
+
+
+
+Thanks for your support! This will be my first sharing session in Canada an=
+d also my first one in English. I=92m looking forward to making it a succes=
+s with your help.
+
+
+
+Best,
+
+
+
+
+
+
+
+________________________________
+
+Joe (Beiqiao) Hu (he/his)
+
+Technology Innovation Management Student at Carleton University
+
+
+
+Carleton ID: 101290610
+
+
+
+??+1 579-484-8802
+
+??1125 Colonel By Dr, Ottawa, ON K1S 5B6
+
+??=9E??hubeiqiao.com
+
+
+
+
+
+
+
+
+
+
+
+This email contains links to content or websites. Always be cautious when o=
+pening external links or attachments.
+
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.
+
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat
+
+-----End of Disclaimer-----
+
+
+--_000_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_
+Content-Type: text/html; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+John, thank you for sharing your email to Joe.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Dan and Joe, please move the Perplexity workshop to SP 102. Let me know who=
+ will attend the workshop and day/time in which it will be delivered. I pla=
+n to attend the workshop, please check my calendar.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Thank you all.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Tony B.&nbsp;</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> John Nelson &lt;JohnN=
+elson@Cunet.Carleton.Ca&gt;<br>
+<b>Sent:</b> Monday, January 13, 2025 4:28 AM<br>
+<b>To:</b> Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carleton.ca&gt;<br>
+<b>Cc:</b> Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;; Dan Premac=
+huk &lt;DanPremachuk@CUNET.CARLETON.CA&gt;<br>
+<b>Subject:</b> RE: Request for Support: Perplexity Sharing Session at the =
+Innovation Hub</font>
+<div>&nbsp;</div>
+</div>
+<style>
+<!--
+@font-face
+	{font-family:Helvetica}
+@font-face
+	{font-family:Wingdings}
+@font-face
+	{font-family:"Cambria Math"}
+@font-face
+	{font-family:Calibri}
+@font-face
+	{font-family:Aptos}
+@font-face
+	{font-family:"Segoe UI Emoji"}
+@font-face
+	{font-family:"Apple Color Emoji"}
+@font-face
+	{font-family:"Microsoft YaHei"}
+p.x_MsoNormal, li.x_MsoNormal, div.x_MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif}
+a:link, span.x_MsoHyperlink
+	{color:#467886;
+	text-decoration:underline}
+p.x_MsoListParagraph, li.x_MsoListParagraph, div.x_MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif}
+span.x_EmailStyle18
+	{font-family:"Aptos",sans-serif;
+	color:windowtext}
+.x_MsoChpDefault
+	{font-size:10.0pt}
+@page WordSection1
+	{margin:72.0pt 72.0pt 72.0pt 72.0pt}
+div.x_WordSection1
+	{}
+ol
+	{margin-bottom:0cm}
+ul
+	{margin-bottom:0cm}
+-->
+</style>
+<div lang=3D"EN-CA" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:b=
+reak-word">
+<div class=3D"x_WordSection1">
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">Hello Joe, </span=
+></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;I need to h=
+ave a quick chat about the Perplexity session that you had originally plann=
+ed to have in the Innovation Hub on Tuesday January 20.&nbsp; &nbsp;I antic=
+ipated a few challenges as we got things set up given
+ the university=92s approach to introducing new AI tools for widespread use=
+ on campus and as expected, the event (in its current form) has been flagge=
+d for two main reasons.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:11.0pt">Challenges</sp=
+an></b></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<ol start=3D"1" type=3D"1" style=3D"margin-top:0cm">
+<li class=3D"x_MsoListParagraph" style=3D"margin-left:0cm"><span style=3D"f=
+ont-size:11.0pt">First and foremost, Perplexity has not yet been through th=
+e university=92s
+</span><span style=3D"font-size:11.0pt; color:black"><a href=3D"https://car=
+leton.ca/its/security/services/risk-assessment/">security and privacy asses=
+sment process</a></span><span style=3D"font-size:11.0pt">.
+</span></li><ol start=3D"1" type=3D"a" style=3D"margin-top:0cm">
+<li class=3D"x_MsoListParagraph" style=3D"margin-left:0cm"><span style=3D"f=
+ont-size:11.0pt">A Data Protection Risk Assessment (DPRA) is a process invo=
+lving the Service Delivery &amp; Quality group, the Information Security gr=
+oup, and the Privacy Office that is used to
+ determine the level of risk to security and privacy of data associated wit=
+h the purchase and use of an IT system or service. The outcome of a DPRA is=
+ a detailed report that lists the risks associated with the IT system or se=
+rvice, a score identifying the risk
+ level, and recommendation(s) to address any significant risks identified. =
+With this report, the client is able to make informed decisions about the p=
+urchase of an IT system or service to protect the users of the system, and =
+the university as a whole.</span></li><li class=3D"x_MsoListParagraph" styl=
+e=3D"margin-left:0cm"><span style=3D"font-size:11.0pt">Before the Hub can b=
+e involved in a session that actively promotes the use of one specific tool=
+ over another, that tool needs to be taken through the university=92s proce=
+ss.
+ &nbsp;As I mentioned before, <a href=3D"https://carleton.ca/its/2024/copil=
+ot-university-recommended-generative-ai-platform/">
+Microsoft Copilot is the University=92s Recommended Generative AI Platform<=
+/a> so as we continue to explore other options, we need to ensure that&nbsp=
+; the same level of due diligence is used.</span></li></ol>
+<li class=3D"x_MsoListParagraph" style=3D"margin-left:0cm"><span style=3D"f=
+ont-size:11.0pt">Secondly, it is important that this session includes some =
+references to the appropriate use of AI in academic work and the importance=
+ of accommodating for academic integrity
+ to be maintained. This continues to be an important topic on campus and a =
+number of faculty members are working alongside students and staff to find =
+appropriate ways to help students leverage the use of AI tools appropriatel=
+y.</span></li><ol start=3D"1" type=3D"a" style=3D"margin-top:0cm">
+<li class=3D"x_MsoListParagraph" style=3D"margin-left:0cm"><span style=3D"f=
+ont-size:11.0pt">The
+<a href=3D"https://charlatan.ca/carleton-senate-explores-generative-ai-in-a=
+cademia/" originalsrc=3D"https://charlatan.ca/carleton-senate-explores-gene=
+rative-ai-in-academia/" shash=3D"B9qZJGWLLnACn+dhsnXxXYGt16oQzAAmqwCSVdTTMh=
+kBIn2U2jhQx2t3GFU0YAz/QcwF8R0Een3MyS+rEuzzoWLgohFFJ8Y8fNPve/pEVfsuhbonEzXXZ=
+P1NqRIuI5SJrNAp68UH8tR96XbKvjnUMXq3q1GNjaQjPsVL+9/SdNE=3D">
+Carleton University Senate met &nbsp;in 2023</a> to discuss the challenges =
+of generative artificial intelligence (AI) and considered recommendations f=
+or its integration in an academic setting. One of the articles written in t=
+he
+<a href=3D"https://charlatan.ca/carleton-senate-explores-generative-ai-in-a=
+cademia/" originalsrc=3D"https://charlatan.ca/carleton-senate-explores-gene=
+rative-ai-in-academia/" shash=3D"CMKY3ppuLUnqHOnT4tZKF4EthNT1Znm21DdWlKBBXw=
+eD/febBoxHRC/dRtVU6nbAfAMEpAIiSW+VGPLuUJzcADPtbVXa4D/pRTFpSF2QPwal+ceGRoga0=
+Y06oSqsUuJ9vRmcrGhG0O8AsdDacnUO1CspZ4j0O5YSbctjn7+Rxk0=3D">
+Charleton</a> noted that =93alongside other post-secondary institutions, Ca=
+rleton University is exploring the use of AI technology in education, which=
+ previously posed academic integrity concerns.&nbsp; The working group on t=
+he use of AI in teaching and learning at
+ Carleton University proposed their report at a meeting on September 23, 20=
+23. The group consisted of Carleton instructors, students and staff aiming =
+to assess AI tools in education as new research becomes available.=94
+</span></li></ol>
+</ol>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:11.0pt">Opportunities<=
+/span></b></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">With those two co=
+nsiderations in mind, I think this creates a fantastic opportunity for us t=
+o work with students and faculty in the TIM program to kickstart a really c=
+ool conversation on campus about using
+ AI tools appropriately to increase the efficiency in the way that they wor=
+k, and by extension, in the way that we tackle assignments, projects and pr=
+oblems in all facets of their lives.&nbsp; &nbsp;I=92ve been really impress=
+ed with how the TIM program has embraced the
+ use of AI and its exploration of a number of tools that are currently avai=
+lable for a host of different tasks and challenges.&nbsp; This will continu=
+e to be an asset for all of us in the future. &nbsp;I know that other depar=
+tments like Computer Science have also included
+ the use of AI in their curriculum as it is changing the way their industri=
+es/academic spaces operate.</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">I am going to ask=
+ Tony, Eduardo and a few other faculty members to help me facilitate a seri=
+es of talks in the Innovation Hub that helps to open this conversation thro=
+ugh an Innovation lens, and I propose
+ that your session be one of the first sessions to kickstart that series. &=
+nbsp;In addition to introducing some of the really good things about Perple=
+xity and the ways that can be used by students in the future, we can includ=
+e some snippets from other units/voices
+ on campus to make sure that the conversation is always balanced.&nbsp; Thi=
+s shifts the presentation from being one that focuses solely on Perplexity =
+(I know that could be a challenge given your position as a campus rep with =
+Perplexity) and focuses mainly on innovative
+ ways to leverage AI tools while learning about that rapidly increasing num=
+ber of options available.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">To make your own =
+role easier, and dare I say more accepted on campus by other groups, we &nb=
+sp;need to &nbsp;ensure that your team has also taken the time to complete =
+the university=92s
+</span><span style=3D"font-size:11.0pt; color:black"><a href=3D"https://car=
+leton.ca/its/security/services/risk-assessment/">security and privacy asses=
+sment process</a></span><span style=3D"font-size:11.0pt">. I am sure that y=
+our colleagues will be able to help you
+ provide the information the university needs to assess Perplexity. </span>=
+</p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">I am happy to adj=
+ust the description of the session so that we can include a few other voice=
+s.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">If you need to ke=
+ep the session in its current form, then you should hold it in a classroom =
+instead of the Hub and then we will incorporate you into the other series o=
+nce it gets up and running.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">Looking forward t=
+o continuing this conversation this week.
+</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">John Nelson &nbsp;</sp=
+an></p>
+<p class=3D"x_MsoNormal" style=3D"background:white"><span style=3D"color:bl=
+ack">Director, Innovation Hub&nbsp;</span></p>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.0pt; font-family:&quot=
+;Calibri&quot;,sans-serif; color:black"><img border=3D"0" width=3D"171" hei=
+ght=3D"46" id=3D"x_Picture_x0020_1" style=3D"width:1.7812in; height:.4791in=
+" data-outlook-trace=3D"F:1|T:1" src=3D"cid:image001.png@01DB656D.37CB90D0"=
+></span></p>
+<p class=3D"x_MsoNormal" style=3D"background:white"><span style=3D"color:bl=
+ack">&nbsp;</span><i><span style=3D"font-size:9.0pt; font-family:&quot;Cali=
+bri&quot;,sans-serif; color:black">&nbsp;</span></i><i><span style=3D"font-=
+size:9.0pt; color:black"><a href=3D"https://outlook.office365.com/owa/calen=
+dar/MeetingswithJohn@cmail.carleton.ca/bookings/" originalsrc=3D"https://ou=
+tlook.office365.com/owa/calendar/MeetingswithJohn@cmail.carleton.ca/booking=
+s/" shash=3D"IaxKwGGFO8BLvZLZEWpRf2adtdCOe1mprKyoco5zrfvLMSL37w4FJAGQPDQM2z=
+GYv3ksWXSIc2Ehs7qbqzGcT9/yYd4r9G35sy9RQkT/qA7WSMpVDPr1w8e0Ig5Qyhh89WaKY9FAH=
+GutfsJGnqvv+brE6p3g7DJEAMFKgn+pTJk=3D"><span style=3D"color:blue">Book
+ time to meet with me</span></a></span></i><i><span style=3D"font-size:9.0p=
+t"></span></i></p>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<p class=3D"x_MsoNormal"><span style=3D"">&nbsp;</span><b><i><span style=3D=
+"font-size:9.0pt"></span></i></b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;</span></p>
+<div>
+<div style=3D"border:none; border-top:solid #E1E1E1 1.0pt; padding:3.0pt 0c=
+m 0cm 0cm">
+<p class=3D"x_MsoNormal"><b><span lang=3D"EN-US" style=3D"font-size:11.0pt;=
+ font-family:&quot;Calibri&quot;,sans-serif">From:</span></b><span lang=3D"=
+EN-US" style=3D"font-size:11.0pt; font-family:&quot;Calibri&quot;,sans-seri=
+f"> Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carleton.ca&gt;
+<br>
+<b>Sent:</b> January 6, 2025 9:44 AM<br>
+<b>To:</b> John Nelson &lt;JohnNelson@Cunet.Carleton.Ca&gt;<br>
+<b>Subject:</b> Request for Support: Perplexity Sharing Session at the Inno=
+vation Hub</span></p>
+</div>
+</div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">Hi John,</span></=
+p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">Happy new year!</=
+span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">As I mentioned ea=
+rlier, I=92m organizing a
+<b>Perplexity Sharing Session</b> at the Innovation Hub this month to showc=
+ase how Perplexity can enhance academic, professional, and personal tasks. =
+The session will focus on interactive demonstrations and practical tips for=
+ using Perplexity Spaces in assignments.
+ I=92ve attached the event plan and my slides for your review.</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">---</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">Here=92s what I n=
+eed your input on:</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:10.5pt">1 . Schedule</=
+span></b><span style=3D"font-size:10.5pt"></span></p>
+</div>
+<ul type=3D"disc" style=3D"margin-top:0cm">
+<li class=3D"x_MsoNormal" style=3D"font-variant-caps:normal; font-stretch:n=
+ormal; font-size-adjust:none; font-kerning:auto; font-variant-alternates:no=
+rmal; font-variant-ligatures:normal; font-variant-numeric:normal; font-vari=
+ant-east-asian:normal; font-feature-settings:normal">
+<span style=3D"font-size:10.5pt">I=92m planning to host the session on eith=
+er <b>January 13, 14, 20, or 21</b> in the afternoon or evening at Innovati=
+on Hub, depending on the schedule.</span></li><li class=3D"x_MsoNormal" sty=
+le=3D"font-variant-caps:normal; font-stretch:normal; font-size-adjust:none;=
+ font-kerning:auto; font-variant-alternates:normal; font-variant-ligatures:=
+normal; font-variant-numeric:normal; font-variant-east-asian:normal; font-f=
+eature-settings:normal">
+<span style=3D"font-size:10.5pt">My preference is <b>January 14 from 4:30=
+=966:00 PM</b> (register can start from 4 PM), if that works for you. If th=
+at=92s too soon, we can consider
+<b>January 20 or 21</b>.</span></li></ul>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:10.5pt">2. Registratio=
+n:</span></b><span style=3D"font-size:10.5pt"> Should we use the Innovation=
+ Hub=92s system, or could we try Luma for better usability? We=92ll need pa=
+rticipant emails to share slides and articles.
+ (or I can share a QR Code for participants for those walk-in attendees.)</=
+span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:10.5pt">3. Promotion:<=
+/span></b><span style=3D"font-size:10.5pt"> Could you help list the event o=
+n the Innovation Hub website and share it on LinkedIn and Instagram? I will=
+ provide the information and the poster.</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><b><span style=3D"font-size:10.5pt">4. Front Desk:=
+</span></b><span style=3D"font-size:10.5pt"> We=92ll need to hand out Perpl=
+exity stickers, raffle numbers, and provide name tag stickers and pens for =
+attendees. (I=92ve requested Perplexity merchandise
+ for this session.)</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">Thanks for your s=
+upport! This will be my first sharing session in Canada and also my first o=
+ne in English. I=92m looking forward to making it a success with your help.=
+</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">&nbsp;</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt">Best,</span></p>
+</div>
+</div>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div class=3D"x_MsoNormal"><span style=3D"color:black">
+<hr size=3D"1" width=3D"210" noshade=3D"" align=3D"left" style=3D"width:157=
+.5pt; color:#B5C4DF">
+</span></div>
+<div>
+<div style=3D"margin-left:7.5pt; margin-top:7.5pt; margin-right:7.5pt; marg=
+in-bottom:7.5pt; position:static!important">
+<div>
+<div>
+<p class=3D"x_MsoNormal" style=3D"text-align:justify"><b><span style=3D"fon=
+t-family:&quot;Helvetica&quot;,sans-serif; color:black">Joe (Beiqiao) Hu</s=
+pan></b><span style=3D"font-size:9.0pt; font-family:&quot;Helvetica&quot;,s=
+ans-serif; color:black">&nbsp;(he/his)</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.5pt; font-family:&quot;Helvetica&quot;,sans-serif; color:black">Tech=
+nology Innovation Management Student at Carleton University</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:10.5pt; font-family:&quot;Helvetica&quot;,sans-serif; color:black">&nbs=
+p;</span></p>
+</div>
+<div>
+<div>
+<p class=3D"x_MsoNormal" style=3D"text-align:justify"><b><span style=3D"fon=
+t-size:10.5pt; font-family:&quot;Helvetica&quot;,sans-serif; color:black">C=
+arleton ID: 101290610</span></b><span style=3D"font-size:10.5pt; font-famil=
+y:&quot;Helvetica&quot;,sans-serif; color:black"></span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal" style=3D"text-align:justify"><span style=3D"font-s=
+ize:11.0pt; font-family:&quot;Calibri&quot;,sans-serif; color:black">&nbsp;=
+</span></p>
+</div>
+</div>
+<div>
+<div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt; font-family:&quot=
+;Segoe UI Emoji&quot;,sans-serif; color:black">&#128241;</span><span style=
+=3D"font-size:10.5pt; font-family:&quot;Helvetica&quot;,sans-serif; color:g=
+ray">+1 579-484-8802</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt; font-family:&quot=
+;Segoe UI Emoji&quot;,sans-serif; color:black">&#128205;</span><span style=
+=3D"font-size:10.5pt; font-family:&quot;Helvetica&quot;,sans-serif; color:g=
+ray">1125 Colonel By Dr, Ottawa, ON K1S 5B6</span></p>
+</div>
+<div>
+<p class=3D"x_MsoNormal"><span style=3D"font-size:10.5pt; font-family:&quot=
+;Segoe UI Emoji&quot;,sans-serif; color:black">&#129489;=9E&#128187;</span>=
+<span style=3D"font-size:10.5pt; font-family:&quot;Helvetica&quot;,sans-ser=
+if; color:gray">hubeiqiao.com</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<p class=3D"x_MsoNormal"><span style=3D"color:black">&nbsp;</span></p>
+</div>
+<p class=3D"x_MsoNormal" style=3D"margin-bottom:12.0pt">&nbsp;</p>
+</div>
+<p class=3D"x_MsoNormal">&nbsp;</p>
+</div>
+</div>
+</div>
+<style>
+<!--
+#x_tableStyle
+	{border-left:9px solid red;
+	background-color:#ffffe6;
+	width:100%;
+	padding:2pt;
+	font-size:10pt;
+	line-height:11pt;
+	font-family:'calibri';
+	color:black;
+	text-align:left}
+#x_strong
+	{font-size:11pt;
+	line-height:12pt;
+	font-family:'Calibri';
+	color:Red;
+	text-align:left}
+#x_div2
+	{font-size:0pt;
+	color:White;
+	display:none;
+	visibility:hidden}
+-->
+</style>
+<table id=3D"x_tableStyle">
+<tbody>
+<tr>
+<td>This email contains links to content or websites. Always be cautious wh=
+en opening external links or attachments.<br>
+<br>
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.<br>
+<br>
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<div id=3D"x_div2">-----End of Disclaimer-----</div>
+&nbsp;
+<p></p>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_--
+
+--_004_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=28604;
+	creation-date="Mon, 13 Jan 2025 09:28:07 GMT";
+	modification-date="Mon, 13 Jan 2025 13:05:03 GMT"
+Content-ID: <image001.png@01DB656D.37CB90D0>
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_YQBPR0101MB4459DBC1F0548C8AA780BC869B1F2YQBPR0101MB4459_--

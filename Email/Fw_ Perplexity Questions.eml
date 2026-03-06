@@ -1,0 +1,423 @@
+Received: from YT1PR01MB9018.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:cd::16)
+ by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Fri, 13 Dec 2024
+ 20:52:51 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YT1PR01MB9018.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:cd::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8251.19; Fri, 13 Dec
+ 2024 20:52:50 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%5]) with mapi id 15.20.8251.015; Fri, 13 Dec 2024
+ 20:52:50 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Fa'Ttima Omran <Fattimaomran@cunet.carleton.ca>, "Joe(Beiqiao) Hu"
+	<BeiqiaoHu@cmail.carleton.ca>
+Subject: Fw: Perplexity Questions
+Thread-Topic: Perplexity Questions
+Thread-Index: AQHbTXimNuue2Kn56kOZJnV6gD7vnrLkorCa
+Date: Fri, 13 Dec 2024 20:52:50 +0000
+Message-ID:
+	<YQBPR0101MB44599B9063BAB91FBEF1DB929B382@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References:
+	<CAPq+Bq-kRPU=9rO7vhkHMWfXmiiKPh6eDxLdVJjRVLqrJBY2WA@mail.gmail.com>
+In-Reply-To:
+	<CAPq+Bq-kRPU=9rO7vhkHMWfXmiiKPh6eDxLdVJjRVLqrJBY2WA@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	da4a2fa3-fa41-4bed-bb93-08dd1bb81b37
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	tgFS0AVOr3UwUqsZVY2LMBNSvlP9jdxCJpsHieDZYRbDtjJLLkrs0+UMUs7sgKx9/FQ+953Zfp6Y7A6hjG0JwL99M55ijLieEL1oM76T/tdp60CzVFpKQB6ugdmOSoXHScjOCsJMAMiGivFIo2YnuZn/UVS2zzWrYs9Uo+8tyd2994FIZcrCV4P1HHFLUI8wUzzA+iSEpMcObDs4HXSG19Qbcod0Yiro/10GkaO2HWl2Th259GQGM8vWZrWpx2CX2yulp8awbzzJ+QB/5KMQcicYJZ7cI9JqMIHYrvSBLnfbU90lTOvvxdcBEvlYp0qz/iewojAzuJnx45prS/Lf227LCPN49osB4DMYO6QPz/MLewb2Vs+crnb4Ft33QE8SK2XHJfAMG45aTW2DquaTUbZ9gbXoOraObMo3g/wTYe37S+XMlUWiLy9npXMuL1KHU9ier0Zwjew4Zq7HIpy+3crtJGo1AV2y5dnK5nRJ8ITHUQC0SaQUbNBaUh+eWLXL3XAtPtAwFglwPKJWgysWUSvy0fza3067sI5UgiFsxd770qk5+uwJLHoszfEymsIFWN1/OOq+WNQHp0NWD7qUonoFCodIq3YDf5+VMaFxURsrN4t50TByeSM5LVzG5p/X4rQtsvi6BTFPJQq6ca1Bh2kg1rK4nO831M+Ab0tGSLgwHhqePqImVrKaFbwbeI2JHgZoKEN6d9mLId54NDucZYmZe9ddIDOVcTbdUfXbd2bWN1o0hHtCujS+vd/26VT8ErmjcEqnYmhzfEm19MLAWBcP9VVBTgM7y+US6UN3w1dl5vzp7VOy+uGMFXkZORxQpwG5wSQq/ftBJphHcHfA1g==
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB44599B9063BAB91FBEF1DB929B382YQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB44599B9063BAB91FBEF1DB929B382YQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Fa'Tima Omran, hello!  Thank you very much for your email.
+
+It is my pleasure to introduce you to Joe Hu, the TIM student who led the P=
+erplexity initiative. Thanks to his efforts individuals with active Carleto=
+n accounts can access Perplexity for free for a year. Joe is the hero for t=
+his initiative.
+
+Joe's answers to your questions are below:
+
+  *
+Has this program benefited students in the department? Yes, Perplexity Pro =
+has been highly useful for students, particularly for research and source i=
+dentification. It saves time by providing AI-powered sourced answers for ac=
+ademic and professional inquiries. Over 500 students use it weekly, averagi=
+ng 25 queries per user. Feedback has been overwhelmingly positive. I=92ve a=
+lso attached a full introduction to Perplexity for reference.
+
+  *   How do students redeem this without being charged? Students simply si=
+gn up with their Carleton email and claim the benefit via the 1-year-free b=
+anner=97no payment or credit card required.
+
+  *   Are there testimonials from Carleton students or others? As a Carleto=
+n student, I=92ve personally benefited greatly from Perplexity, which motiv=
+ated me to dedicate time to making this initiative happen, and many peers h=
+ave expressed similar sentiments. I can gather testimonials if needed. I al=
+so want to thank GSA for their support last month in sharing this program o=
+n Instagram and assisting with poster distribution on campus=97it has been =
+a big help in raising awareness.
+
+  *   How are personal information and IP concerns addressed? Perplexity en=
+sures strict data protection by deidentifying user data and adhering to fra=
+meworks like the EU-U.S. Data Privacy Framework. Users can request data del=
+etion, and personal data is removed within 30 days of account deletion. Ful=
+l details are outlined in their privacy policy<https://can01.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.perplexity.ai%2Fhub%2Ffaq%2Fwha=
+t-data-does-perplexity-collect-about-me%3Ft&data=3D05%7C02%7CBeiqiaoHu%40cm=
+ail.carleton.ca%7Cda4a2fa3fa414bedbb9308dd1bb81b37%7C6ad91895de06485ebc51fc=
+e126cc8530%7C0%7C0%7C638697199715086980%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1=
+hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ=
+%3D%3D%7C0%7C%7C%7C&sdata=3D1lSl%2FGgX9fVuhCiE7Eo4IzfI2U8tZPQBbnryEDJuHOw%3=
+D&reserved=3D0>.
+
+If you need more information or have more questions, please contact Joe dir=
+ectly.
+
+Joe, please meet Fa'Tima Omran who is in charge of Communications for the G=
+SA. Please answer her questions if she has additional questions.
+
+Suggest that the communication to graduate students is sent out soon given =
+that the claim for the free subscription needs to be made before December 3=
+1, 2024.
+
+Please let me know if you need anything else.
+
+Tony B.
+
+
+
+
+________________________________
+From: Fa'Ttima Omran <occ@gsacarleton.ca>
+Sent: Friday, December 13, 2024 11:03 AM
+To: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+Subject: Perplexity Questions
+
+[External Email]
+Hello Tony,
+
+I was curious if you could answer the following question about Perplexity o=
+r direct these inquiries to someone who may be able to?
+
+Has this program benefited students in the department? Have TIMS students b=
+enefited from this project? How would they rate usability and accessibility=
+?
+How do students redeem this without being charged from their credit card?
+While neither Carleton nor Sprott explicitly endorses Perplexity are there =
+any student testimonials to attest to this, in particular Carleton Universi=
+ty students? Other institutions?
+How has this program addressed concerns with personal information and IP?
+
+
+Thanks again!
+
+Fa'Ttima Omran (she/her)
+Director of Communications
+Graduate Students' Association Carleton University (Local 78)
+COPE Local 225
+Email: occ@gsacarleton.ca<mailto:occ@gsacarleton.ca>
+
+This email contains links to content or websites. Always be cautious when o=
+pening external links or attachments.
+
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.
+
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat
+
+-----End of Disclaimer-----
+
+
+--_000_YQBPR0101MB44599B9063BAB91FBEF1DB929B382YQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Fa'Tima Omran, hello!&nbsp; Thank you very much for your email.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+It is my pleasure to introduce you to Joe Hu, the TIM student who led the P=
+erplexity initiative. Thanks to his efforts individuals with active Carleto=
+n accounts can access Perplexity for free for a year. Joe is the hero for t=
+his initiative.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Joe's answers to your questions are below:</div>
+<ul data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" style=
+=3D"list-style-type: disc;">
+<li style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West Eu=
+ropean)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica N=
+eue&quot;, sans-serif; font-size: 14px; color: rgb(36, 36, 36);">
+<div class=3D"elementToProof"><b>Has this program benefited students in the=
+ department?
+</b>Yes, Perplexity Pro has been highly useful for students, particularly f=
+or research and source identification. It saves time by providing AI-powere=
+d sourced answers for academic and professional inquiries. Over 500 student=
+s use it weekly, averaging 25 queries
+ per user. Feedback has been overwhelmingly positive. <span style=3D"color:=
+ rgb(14, 14, 14);">
+I=92ve also attached a full introduction to Perplexity for reference.</span=
+></div>
+</li></ul>
+<ul style=3D"text-align: left; background-color: rgb(255, 255, 255);">
+<li style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West Eu=
+ropean)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica N=
+eue&quot;, sans-serif; font-size: 15px; color: rgb(36, 36, 36);">
+<p class=3D"elementToProof"><span style=3D"font-size: 14px;"><b>How do stud=
+ents redeem this without being charged?
+</b>Students simply sign up with their Carleton email and claim the benefit=
+ via the 1-year-free banner=97no payment or credit card required.</span></p=
+>
+</li><li style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (We=
+st European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvet=
+ica Neue&quot;, sans-serif; font-size: 15px; color: rgb(36, 36, 36);">
+<p class=3D"elementToProof"><span style=3D"font-size: 14px;"><b>Are there t=
+estimonials from Carleton students or others?
+</b>As a Carleton student, I=92ve personally benefited greatly from Perplex=
+ity, which motivated me to dedicate time to making this initiative happen, =
+and many peers have expressed similar sentiments. I can gather testimonials=
+ if needed.
+</span><span style=3D"font-family: &quot;Helvetica Neue&quot;, serif, Emoji=
+Font; font-size: 14px;">I also want to thank GSA for their support last mon=
+th in sharing this program on Instagram and assisting with poster distribut=
+ion on campus=97it has been a big help in raising
+ awareness.</span></p>
+</li><li style=3D"font-family: &quot;Segoe UI&quot;, &quot;Segoe UI Web (We=
+st European)&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvet=
+ica Neue&quot;, sans-serif; font-size: 15px; color: rgb(36, 36, 36);">
+<p class=3D"elementToProof"><span style=3D"font-size: 14px;"><b>How are per=
+sonal information and IP concerns addressed?
+</b>Perplexity ensures strict data protection by deidentifying user data an=
+d adhering to frameworks like the EU-U.S. Data Privacy Framework. Users can=
+ request data deletion, and personal data is removed within 30 days of acco=
+unt deletion. Full details are outlined
+ in their <a href=3D"https://can01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fwww.perplexity.ai%2Fhub%2Ffaq%2Fwhat-data-does-perplexity-col=
+lect-about-me%3Ft&amp;data=3D05%7C02%7CBeiqiaoHu%40cmail.carleton.ca%7Cda4a=
+2fa3fa414bedbb9308dd1bb81b37%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C6=
+38697199715086980%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&am=
+p;sdata=3D1lSl%2FGgX9fVuhCiE7Eo4IzfI2U8tZPQBbnryEDJuHOw%3D&amp;reserved=3D0=
+" originalsrc=3D"https://www.perplexity.ai/hub/faq/what-data-does-perplexit=
+y-collect-about-me?t" shash=3D"wvaPRkj2oXoljvERxutJijjeELf3iw/Rj3ckgOCapkS7=
+QGGUqXXD/LyyO3AMXG16Sqxq72rHV9azEGXyLUiliC8FrPbbKrgDqvUUnnGiVpR9ftk6ptv7bFa=
+q3y+p5z0xtsJXSoQflemQiaRcOuneVV9PW9WJVExZohbjm8ZZqQc=3D" target=3D"_blank" =
+id=3D"OWAa0fa0505-9b12-1e11-4e2e-f97372c351e7" class=3D"OWAAutoLink" title=
+=3D"Original URL: https://www.perplexity.ai/hub/faq/what-data-does-perplexi=
+ty-collect-about-me?t. Click or tap if you trust this link." rel=3D"noopene=
+r noreferrer" originalsrc=3D"https://www.perplexity.ai/hub/faq/what-data-do=
+es-perplexity-collect-about-me?t" data-linkindex=3D"0" data-auth=3D"Verifie=
+d" style=3D"margin: 0px;">
+privacy&nbsp;policy</a>.</span></p>
+</li></ul>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+If you need more information or have more questions, please contact Joe dir=
+ectly.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Joe, please meet Fa'Tima Omran who is in charge of Communications for the G=
+SA. Please answer her questions if she has additional questions.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Suggest that the communication to graduate students is sent out soon given =
+that the claim for the free subscription needs to be made before
+<b>December 31, 2024.&nbsp;</b></div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<b><br>
+</b></div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Please let me know if you need anything else.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Tony B.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+&nbsp;</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><span style=3D"font-family: Calibri, =
+sans-serif; font-size: 11pt; color: rgb(0, 0, 0);"><b>From:</b>&nbsp;Fa'Tti=
+ma Omran &lt;occ@gsacarleton.ca&gt;<br>
+<b>Sent:</b>&nbsp;Friday, December 13, 2024 11:03 AM<br>
+<b>To:</b>&nbsp;Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;<br>
+<b>Subject:</b>&nbsp;Perplexity Questions</span>
+<div>&nbsp;</div>
+</div>
+<table id=3D"x_tableStyle" style=3D"text-align: left; line-height: 11pt; ba=
+ckground-color: rgb(255, 255, 230); width: 100%; color: black;">
+<tbody>
+<tr>
+<td style=3D"text-align: left; line-height: 11pt;">
+<div style=3D"text-align: left; line-height: 11pt; font-family: calibri; fo=
+nt-size: 10pt; color: black;">
+[External Email]</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"direction: ltr;">Hello Tony,</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr;">I was curious if you could answer the follow=
+ing question about Perplexity or direct these inquiries to someone who may =
+be able to?</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr; text-indent: 0px; background-color: rgba(0, 0=
+, 0, 0); font-family: -apple-system, &quot;helvetica neue&quot;; font-size:=
+ 16px; color: rgb(49, 49, 49);">
+Has this program benefited&nbsp;students in the department? Have TIMS stude=
+nts benefited from this project? How would they rate usability and accessib=
+ility?&nbsp;</div>
+<div style=3D"direction: ltr; text-indent: 0px; background-color: rgba(0, 0=
+, 0, 0); font-family: -apple-system, &quot;helvetica neue&quot;; font-size:=
+ 16px; color: rgb(49, 49, 49);">
+How do students redeem&nbsp;this without being charged from their&nbsp;cred=
+it card?</div>
+<div style=3D"direction: ltr; text-indent: 0px; background-color: rgba(0, 0=
+, 0, 0); font-family: aptos, aptos_embeddedfont, aptos_msfontservice, calib=
+ri, helvetica, sans-serif; font-size: 16px; color: rgb(0, 0, 0);">
+<span style=3D"background-color: rgba(0, 0, 0, 0);">While neither Carleton =
+nor Sprott explicitly endorses Perplexity are there any student&nbsp;testim=
+onials to attest to this, in particular Carleton University students? Other=
+ institutions?&nbsp;</span></div>
+<div style=3D"direction: ltr; text-indent: 0px; background-color: rgba(0, 0=
+, 0, 0); font-family: aptos, aptos_embeddedfont, aptos_msfontservice, calib=
+ri, helvetica, sans-serif; font-size: 16px; color: rgb(0, 0, 0);">
+<span style=3D"background-color: rgba(0, 0, 0, 0);">How has this program ad=
+dressed&nbsp;concerns with&nbsp;personal information and&nbsp;IP?</span></d=
+iv>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr;">Thanks again!&nbsp;<br>
+<br>
+</div>
+<div style=3D"direction: ltr;">Fa'Ttima Omran (she/her)</div>
+<div style=3D"direction: ltr;">Director of Communications</div>
+<div style=3D"direction: ltr;">Graduate Students' Association Carleton Univ=
+ersity (Local 78)</div>
+<div style=3D"direction: ltr;">COPE Local 225</div>
+<div style=3D"direction: ltr;">Email: <a href=3D"mailto:occ@gsacarleton.ca"=
+ id=3D"OWA872e2e2a-3296-420b-d267-02a798ebf073" class=3D"OWAAutoLink">
+occ@gsacarleton.ca</a></div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<style>#tableStyle {=0A=
+border-left: 9px solid red; background-color: #ffffe6; width:100%; padding:=
+2pt; font-size:10pt; line-height:11pt; font-family:'calibri'; color:black; =
+text-align: left;=0A=
+}=0A=
+#strong {font-size:11pt; line-height:12pt; font-family:'Calibri'; color:Red=
+; text-align: left;}=0A=
+#div2 {font-size:0pt; color:White; display:none; visibility:hidden;}=0A=
+</style>
+<table id=3D"tableStyle">
+<tbody>
+<tr>
+<td>This email contains links to content or websites. Always be cautious wh=
+en opening external links or attachments.<br>
+<br>
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.<br>
+<br>
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<div id=3D"div2">-----End of Disclaimer-----</div>
+&nbsp;
+<p></p>
+</body>
+</html>
+
+--_000_YQBPR0101MB44599B9063BAB91FBEF1DB929B382YQBPR0101MB4459_--

@@ -1,0 +1,157 @@
+Received: from YT3PR01MB10266.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:8e::13)
+ by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Sun, 8 Jun 2025
+ 00:45:19 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YT3PR01MB10266.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:8e::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8792.38; Sun, 8 Jun
+ 2025 00:45:16 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%5]) with mapi id 15.20.8792.034; Sun, 8 Jun 2025
+ 00:45:16 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>, Jia Shao
+	<JiaShao@cmail.carleton.ca>, "Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>,
+	Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>, Hridesh Kapur
+	<HrideshKapur@cmail.carleton.ca>
+Subject: Best, up to date tutorials for ChatGPT, Claude, CoPilot, Gemini,
+ Grok, and Perplexity 
+Thread-Topic: Best, up to date tutorials for ChatGPT, Claude, CoPilot, Gemini,
+ Grok, and Perplexity 
+Thread-Index: AQHb2AxqqYYsK4T10EWsNrknKZ1oRQ==
+Date: Sun, 8 Jun 2025 00:45:16 +0000
+Message-ID:
+	<YQBPR0101MB4459F9ECEE0D58A71D815CE49B68A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	23551d3a-15b8-415a-6fbd-08dda625bcc0
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	Fs/Wn4rnm7RrTom0NbSq5+B8Oo4CpLPmlaDWspwguhsoWvJFKMQUERykBlAgT9OkXQUl1qCnytnh/tkKTmsUQUntTfq5ZzoOnXGIeV0Jf5hUk4BViRAq/Rmf74yzBTiqcrQIS0MmoWCtZNb6Hg3EhPN586p4+stqca1194WzJMiYTzD5mwFSjKHG09/tkbHcAPrVNe+WnZcVUdxtBCOrWI6l/0Tf9kVFMCAb5GXZtegKzaUOVp9dlgSMWiM012N3zrmXMmqFyA3nw9evQcPzvFOqOrm9PWgVdDHLbOugvzdD8woJCh/PNS/XMayjMAQfNu7OHRS8/gObg7hgd7lzwXQBdQQolbUxyec0EN90dDaGwwD0zbrKCaSKbyU2VT84kYsgDmvMgLnhoj7qLP7ZBClGpeHu1R1oqXiTspyR2mnzlKUvEXua1dtIV6TgBaRCf0/ECG6Xcj2Y/ZgU6mYWEJcHZGax7O25yMB61/6wVuKMAuMDrNccBW8rUqkLUnaPo15vC1VypB1qd0MQMlVZuO4NX6TtYaPtv/UI50iXl08lfVHGoBFyycGftcJKRtMkowhwZzTClJiCKv4gkjuEaJ3YNqcRCS+x7zNFqxO5ksWiyZOE8kEzQisrHJeNN0jYhds0Vf1t55+8knyyuwtZ6jNOFV7UeEF7DPHGpg32tFTgEUVeIprgO29YFZS1dR7dh7LkEZD4YUj6kdaXZbr0rRY9HEesjlx+gcvSury+23z0AszT5ioy53wRWar5sE42MmR57sYuxctOdU9IZYoRzz8xF9Awd6yg1b6bxoqs/Mw=
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB4459F9ECEE0D58A71D815CE49B68AYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB4459F9ECEE0D58A71D815CE49B68AYQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,
+I=92m putting together the June 10 slide deck and would really appreciate y=
+our help!
+Could you please send me links (titles and URLs) to the best YouTube tutori=
+als on the following AI tools:
+
+  *
+ChatGPT
+  *
+Claude
+  *
+Copilot
+  *
+Gemini
+  *
+Grok
+  *
+Perplexity
+
+By "best tutorials" I mean "high-quality, up-to-date, comprehensive, and ea=
+sy-to-follow content."
+Thanks in advance for your help!
+Best,
+Tony B
+
+
+--_000_YQBPR0101MB4459F9ECEE0D58A71D815CE49B68AYQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Hi everyone,</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+I=92m putting together the June 10 slide deck and would really appreciate y=
+our help!</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Could you please send me links (titles and URLs) to the best YouTube tutori=
+als on the following AI tools:</div>
+<ul data-start=3D"383" data-end=3D"452">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" style=3D"margin-top: 1em; margin-bottom: 1em;">C=
+hatGPT</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" style=3D"margin-top: 1em; margin-bottom: 1em;">C=
+laude</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"margin-top: 1e=
+m; margin-bottom: 1em;">
+Copilot</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" style=3D"margin-top: 1em; margin-bottom: 1em;">G=
+emini</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" style=3D"margin-top: 1em; margin-bottom: 1em;">G=
+rok</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" style=3D"margin-top: 1em; margin-bottom: 1em;">P=
+erplexity</div>
+</li></ul>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+By &quot;best tutorials&quot; I mean &quot;high-quality, up-to-date, compre=
+hensive, and easy-to-follow content.&quot;</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Thanks in advance for your help!</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Best,</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Tony B</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB4459F9ECEE0D58A71D815CE49B68AYQBPR0101MB4459_--

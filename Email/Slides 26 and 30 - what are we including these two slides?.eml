@@ -1,0 +1,161 @@
+Received: from YT2PR01MB10556.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:f4::18)
+ by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Mon, 9 Jun 2025
+ 01:53:52 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YT2PR01MB10556.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:f4::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8792.41; Mon, 9 Jun
+ 2025 01:53:49 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%6]) with mapi id 15.20.8792.038; Mon, 9 Jun 2025
+ 01:53:48 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>, "Joe(Beiqiao) Hu"
+	<BeiqiaoHu@cmail.carleton.ca>, Hridesh Kapur
+	<HrideshKapur@cmail.carleton.ca>, Dan Premachuk
+	<DanPremachuk@CUNET.CARLETON.CA>
+Subject: Slides 26 and 30 - what are we including these two slides? 
+Thread-Topic: Slides 26 and 30 - what are we including these two slides? 
+Thread-Index: AQHb2N+3IBUuKWyNFE+OgJxmda8z+A==
+Date: Mon, 9 Jun 2025 01:53:48 +0000
+Message-ID:
+	<YQBPR0101MB44595D02AEE315CE3578F5049B6BA@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	961f5534-1232-4c10-1716-08dda6f879f1
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	l4pj0Y2f0xZhTXcxnv17pe1XPZT3rzpK+X1rZk2/Ex3bddSpggMWFJMb95qr6MfF20uGsk+LMv9Qq5vXbw7nd/H2sY+TJcic7ZWJu5XLAjE2v1NkYOjwIit8Uqv0sH5L8LJquDxLhZhVTi29+PBXW1JXDNmCwsrRWzKS1PjQNptIcZbZyI1/R4HLilZbj/Excq2laZOkXt6WaNxvPMRfPkdCV9rFvQO6MyJh8cjsz3cfwb0EJegz3LCLf/F9sk/4ikK6mrdZoMOxQWqDzaObDWCXH/E7VRhxF1tZllCuO0eTaM7R3/zxHTpFJU1yZpfvjvoL97LjdU0MBAVr+g95hFqQeFgZEC/DhlzrqqyjHHDf4H6h2FI0J7EDCm07SnWNQnRKiTAYKtXXIbnwRwFIbjH8yWTkg3b4uLJ36SiXV+m9v69ndPCwDnxojlPFRHyKWv3M09Bk7vOWYip4QUmZ23UR7rTTeYbSNWl8nV7cQyV8yKFOw68eKUrj/z0MWvnLtwmNXtQo6A6sptxlt2D35nl8oX9y/p5D8gp7sQiLVo3UwNvsuH/rAy7xzwH51Hbqmek2KH1SsBYb9C2DORXoj68gO3JHbBwMYVfLS20pdb/5WJAUp+08xgnfCJfiUIfP5/vTvVhuKE8Tltw4bGGj12RgmEwSw8HNjPCJVpGAONoxQP+Hp0tQNLys6m9iFJjayg0fWSE0pw+pBBu79fnUwEZT54nBBcFB2Wy6JyFJukojftchmD88PsXyYz8EmU5/55g5IaZzJBJ+oqKNO795Vu8rBBZ+u72bb6R47gGZiec=
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB44595D02AEE315CE3578F5049B6BAYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB44595D02AEE315CE3578F5049B6BAYQBPR0101MB4459_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+To all:
+Attached you will find the updated presentation.  Please provide feedback o=
+n what we need to change to improve the slide deck.
+
+We are almost there!
+
+Hridesh and Sonny, please provide me with slides 26 and 30 asap. What are w=
+e going to place on these two slides?
+
+Dan, ease make sure that the links from the slide deck to the shared folder=
+ works going to and returning from. Also check how participants will downlo=
+ad material stored on the shared folder.
+
+I plan to distribute the slide deck to the rest y of the TIM and TiE folks =
+tomorrow morning. Therefore, I need a decision on what sides 26 & 30 will l=
+ook like
+
+Thanks to all.
+
+Tony B
+
+
+--_000_YQBPR0101MB44595D02AEE315CE3578F5049B6BAYQBPR0101MB4459_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<b>To all:</b></div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Attached you will find the updated presentation.&nbsp; Please provide feedb=
+ack on what we need to change to improve the slide deck.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+We are almost there!&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<b>Hridesh and Sonny</b>, please provide me with slides 26 and 30 asap. Wha=
+t are we going to place on these two slides?</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<b>Dan</b>, ease make sure that the links from the slide deck to the shared=
+ folder works going to and returning from. Also check how participants will=
+ download material stored on the shared folder.&nbsp;&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+I plan to distribute the slide deck to the rest y of the TIM and TiE folks =
+tomorrow morning. Therefore, I need a decision on what sides 26 &amp; 30 wi=
+ll look like</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Thanks to all.</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+Tony B</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB44595D02AEE315CE3578F5049B6BAYQBPR0101MB4459_--

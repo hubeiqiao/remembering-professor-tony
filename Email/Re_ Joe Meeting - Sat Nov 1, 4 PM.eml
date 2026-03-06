@@ -1,0 +1,278 @@
+Received: from YQBPR0101MB6393.CANPRD01.PROD.OUTLOOK.COM
+ (2603:10b6:c01:48::10) by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with
+ HTTPS; Sat, 1 Nov 2025 17:02:38 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YQBPR0101MB6393.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:48::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9275.15; Sat, 1 Nov
+ 2025 17:02:35 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%6]) with mapi id 15.20.9275.013; Sat, 1 Nov 2025
+ 17:02:35 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: "Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>
+Subject: Re: Joe Meeting - Sat Nov 1, 4 PM
+Thread-Topic: Joe Meeting - Sat Nov 1, 4 PM
+Thread-Index: AQHcSz3taoSPBwiueU2DImsBiXGoXrTd5YIZgAAjEdg=
+Date: Sat, 1 Nov 2025 17:02:34 +0000
+Message-ID:
+	<YQBPR0101MB4459D58E23EBAF8B6A21B7039BF9A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References:
+	<YQBPR0101MB43246694F38F95AADF9C4D77FBF9A@YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<YQBPR0101MB43246694F38F95AADF9C4D77FBF9A@YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	15c1d671-f5aa-46ed-b641-08de19687429
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	Y7o4iVbGSWKLPcwX6xEi1iI05s/caSY0DDOf7la4HcPF0KGlzVyGeL+zuJE1ba+zTbCchBLWW+s9bnVfJ9BOmOhAklFYj8qL5TPmmXW0l9eAz3TQ0sY1piI+LkmDK8Ea38IWB+6Faz7ultD4L426MSnRvAcJrF4KFNhphxJ3UP7ccqp9dEDo4THaHAm3qYtktkkcPm2QARFQgJibbrGTP/ycD6aPt2e9cLCm82kM+yeL21Lyi2TBEaYp4W02MsqAeIxsUInpSF3+XsdlyCgLuiotGC4B9zzwunQlcNMr8ZJdo4NlAy+uvrJo4b4pe8SpMLHHoH/xxj79dYmvYs2WrGFjcQwmrYlYG2CGcefLkEJurgXjpHlS0Y9/x5An+D8ZskkUvZihEdBxF0P6OZbQ2mos5a+irOKEduKrW/oUY/wRxb69Qv4jiwAVOw7itYJCpj6UNdfgpL1gVXpkMcqiq7o63MF1vd9NdNIs7A/l8//csemeGnQg8P/3IT0/vIRbHfBrc2qcGL298XA+qnPB8L3QKYjxfa0O/Y8Iyerz7IZx5BTdHYEVuY/nC1Oeg+GUbJFsECT6hXT8L+Zk8JzQF68sk4C4IkPL5qiTQRCc3xWVgrmXI0fqSuYwYXAEODALWPzIp92iXuMG/bwDz7qv6GIt0ZWXiQHRn0LTwiUD3DSdyCNV5SNVjCFxKzV3LJNAI5tsFiADEXv4N/7irqo7t8aLlaW7p7uDt51tzm87lrvgd8YqZUp+qK/ZB9+bc4mVNUdDU9gMWj/z1/YgUK+yDongFAILU+6pbfwNAybMS/lgdwSHmQSWR93o1HSDs2cvdPVLJUF1ll2IIn5Gvhp1LQ==
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB4459D58E23EBAF8B6A21B7039BF9AYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB4459D58E23EBAF8B6A21B7039BF9AYQBPR0101MB4459_
+Content-Type: text/plain; charset="big5"
+Content-Transfer-Encoding: base64
+
+SGkgSm9lLA0KVGhhbmtzIGZvciBzaGFyaW5nIHlvdXIgR2F0ZSAwIHByZXNlbnRhdGlvbi4gSaGm
+dmUgcmV2aWV3ZWQgeW91ciBtYXRlcmlhbHMsIGFuZCBjb25jbHVkZSB0aGF0IG92ZXJhbGwgdGhp
+cyBpcyBhIHN0cm9uZyBhbmQgd2VsbC1hbGlnbmVkIHByb2plY3QgZm9yIHRoZSBUSU0gcHJvZ3Jh
+bSBhbmQgZm9yIEFHSSBWZW50dXJlIENhbmFkYS4NCg0KQmVsb3cgaXMgYSBzdW1tYXJ5IG9mIHRo
+ZSBhc3Nlc3NtZW50IGFuZCB0aGUgbWFpbiBpdGVtcyB0byB0aWdodGVuIGJlZm9yZSB0aGUgbmV4
+dCBnYXRlLg0KDQogICogICBZb3WhpnZlIGZyYW1lZCBhIHJlYWwgY2xpZW50IHByb2JsZW06IEFJ
+IEVTTCB0b29scyBsb29rIHNpbWlsYXIsIHNvIGludmVzdG9ycyBjYW6hpnQgZWFzaWx5IHNlZSBk
+ZWZlbnNpYmxlIHZhbHVlLg0KICAqICAgWW91ciBwbGFuIHRvIGxpbmsgYmVoYXZpb3JhbCBsZWFy
+bmluZyBtZWNoYW5pc21zIKH3IHByb2R1Y3QgZmVhdHVyZXMgofcgY29tcGV0aXRpdmUgbW9hdCBp
+cyBjbGVhciBhbmQgdGltZWx5Lg0KICAqICAgWW91ciBkZWxpdmVyYWJsZXMgYXJlIHByYWN0aWNh
+bCAoZnJhbWV3b3JrLCBwcm90b3R5cGUgd2l0aCB1c2VyIGV2aWRlbmNlLCBmZWF0dXJlLWxldmVs
+IG1vYXQgYW5hbHlzaXMsIGFuZCBicmllZiBmb3IgQUdJKS4NCiAgKiAgIFlvdaGmdmUgc2hvd24g
+Y2xpZW50IGVuZ2FnZW1lbnQgYW5kIHJlbGV2YW5jZSB0byBBR0ksIHdoaWNoIGRlLXJpc2tzIHRo
+ZSBwcm9qZWN0Lg0KDQpLZXkgaW1wcm92ZW1lbnRzIHRvIG1ha2Ugbm93DQoNCiAgKiAgIERlZmlu
+ZSChp3ZhbGlkYXRlZCBwcm90b3R5cGUuoaggU3BlbGwgb3V0IHdoYXQgY291bnRzIGFzIHZhbGlk
+YXRpb24gZm9yIHlvdTogZS5nLiAyMCsgdXNlcnMgY29tcGxldGluZyB0YXNrcywgZXZpZGVuY2Ug
+b2YgZmVhdHVyZSBzYWxpZW5jZSwgb3IgZWFybHkgbGVhcm5pbmcvZW5nYWdlbWVudCBzaWduYWxz
+Lg0KICAqICAgTWFrZSB0aGUgbWl4ZWQtbWV0aG9kcyBwbGFuIGNvbmNyZXRlLiBJZGVudGlmeTog
+d2hvIHRoZSAyMCB1c2VycyBhcmUsIGhvdyB5b3WhpmxsIHJlY3J1aXQgdGhlbSwgd2hhdCBkYXRh
+IHlvdaGmbGwgY29sbGVjdCAobG9ncywgaW50ZXJ2aWV3cywgdGFza3MpLCBhbmQgaG93IHlvdaGm
+bGwgaW50ZWdyYXRlIHF1YWwgKyBxdWFudC4NCiAgKiAgIFN0YW5kYXJkaXplIHlvdXIgbW9hdCBh
+bmFseXNpcy4gQ3JlYXRlIGEgc2ltcGxlIGNvbXBhcmlzb24gbWF0cml4IChlLmcuIHRlY2huaWNh
+bCBkZWZlbnNpYmlsaXR5LCBwZWRhZ29naWNhbCBkaXN0aW5jdGl2ZW5lc3MsIGRhdGEvd29ya2Zs
+b3cgbG9jay1pbiwgYnVzaW5lc3MgbW9kZWwgbGV2ZXJhZ2UpIHNvIHlvdXIgcmVzdWx0cyBhcmUg
+cmVwZWF0YWJsZSBhbmQgdXNhYmxlIGJ5IEFHSS4NCiAgKiAgIEFkZCBldGhpY3MvcHJpdmFjeSBu
+b3Rlcy4gRXZlbiBpZiB0aGlzIGlzIGxvdy1yaXNrOiBzYXkgaG93IHlvdaGmbGwgb2J0YWluIGNv
+bnNlbnQgYW5kIHByb3RlY3QgdXNlciBkYXRhIGZyb20gdGhlIHByb3RvdHlwZS4NCiAgKiAgIERv
+Y3VtZW50IHJpc2tzIGFuZCBtaXRpZ2F0aW9ucy4gRm9yIGV4YW1wbGU6IHNtYWxsIHNhbXBsZSwg
+ZGVwZW5kZW5jeSBvbiBBR0kgYXZhaWxhYmlsaXR5LCBvciBMTE0vQVNSIGNvc3RzLg0KDQpRdWVz
+dGlvbnMgdG8gcmVmbGVjdCBvbiBiZWZvcmUgdGhlIG5leHQgRzANCg0KICAqICAgSG93IGV4YWN0
+bHkgd2lsbCB5b3Uga25vdyB0aGF0IGEgdGhlb3J5LWRyaXZlbiBmZWF0dXJlIGlzIG1vcmUgoadk
+ZWZlbnNpYmxloaggdGhhbiBhIGxvb2stYWxpa2UgZmVhdHVyZT8NCiAgKiAgIFdoYXShpnMgdGhl
+IHByaW1hcnkgb3V0Y29tZSB5b3Ugd2lsbCByZXBvcnQgdG8gQUdJOiBsZWFybmluZywgZW5nYWdl
+bWVudCwgb3IgZGVmZW5zaWJpbGl0eT8NCiAgKiAgIElmIHZlcnkgZmV3IHVzZXJzIGNvbXBsZXRl
+IHRoZSBmdWxsIGZsb3csIHdoYXQgaXMgeW91ciBmYWxsYmFjayBhbmFseXNpcyBwbGFuPw0KDQpJ
+ZiB5b3UgdXBkYXRlIHlvdXIgc2xpZGVzIHRvIGFkZHJlc3MgdGhlIHBvaW50cyBhYm92ZSwgdGhp
+cyB3aWxsIHB1dCB5b3UgaW4gYSBnb29kIHBvc2l0aW9uIGZvciB0aGUgbmV4dCByZXZpZXcgYW5k
+IG1ha2UgdGhlIHByb2plY3QgbW9yZSBjb252aW5jaW5nIHRvIHRoZSBjbGllbnQuDQpOaWNlIHdv
+cmsgc28gZmFyIKFYIGtlZXAgZ29pbmcuDQpCZXN0LA0KVG9ueSBCDQoNCl9fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fDQpGcm9tOiBKb2UoQmVpcWlhbykgSHUgPEJlaXFpYW9IdUBjbWFp
+bC5jYXJsZXRvbi5jYT4NClNlbnQ6IFNhdHVyZGF5LCBOb3ZlbWJlciAxLCAyMDI1IDEwOjQ0IEFN
+DQpUbzogVG9ueSBCYWlsZXR0aSA8VG9ueUJhaWxldHRpQGN1bmV0LmNhcmxldG9uLmNhPg0KU3Vi
+amVjdDogQWNjZXB0ZWQ6IEpvZSBNZWV0aW5nIC0gU2F0IE5vdiAxLCA0IFBNDQpXaGVuOiBTYXR1
+cmRheSwgTm92ZW1iZXIgMSwgMjAyNSA4OjMwIFBNLTk6MDAgUE0uDQpXaGVyZTogaHR0cHM6Ly9j
+YXJsZXRvbi1jYS56b29tLnVzL2ovOTQ2Mzg5NDM0ODENCg0KDQpUaGlzIGVtYWlsIGNvbnRhaW5z
+IGxpbmtzIHRvIGNvbnRlbnQgb3Igd2Vic2l0ZXMuIEFsd2F5cyBiZSBjYXV0aW91cyB3aGVuIG9w
+ZW5pbmcgZXh0ZXJuYWwgbGlua3Mgb3IgYXR0YWNobWVudHMuDQoNClBsZWFzZSB2aXNpdCBodHRw
+czovL2NhcmxldG9uLmNhL2l0cy9oZWxwLWNlbnRyZS9yZXBvcnQtcGhpc2hpbmcvIGZvciBpbmZv
+cm1hdGlvbiBvbiByZXBvcnRpbmcgcGhpc2hpbmcgbWVzc2FnZXMuDQoNCldoZW4gaW4gZG91YnQs
+IHRoZSBJVFMgU2VydmljZSBEZXNrIGNhbiBwcm92aWRlIGFzc2lzdGFuY2UuIGh0dHBzOi8vY2Fy
+bGV0b24uY2EvaXRzL2NoYXQNCg0KLS0tLS1FbmQgb2YgRGlzY2xhaW1lci0tLS0tDQoNCg==
+
+--_000_YQBPR0101MB4459D58E23EBAF8B6A21B7039BF9AYQBPR0101MB4459_
+Content-Type: text/html; charset="big5"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dbig5">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<article data-turn=3D"assistant" data-scroll-anchor=3D"true" data-testid=3D=
+"conversation-turn-4" data-turn-id=3D"7f0e4045-d40c-483b-be43-7ffdb95c8ff1"=
+ dir=3D"auto" tabindex=3D"-1" class=3D"text-token-text-primary w-full focus=
+:outline-none [--shadow-height:45px] has-data-writing-block:pointer-events-=
+none has-data-writing-block:-mt-(--shadow-height) has-data-writing-block:pt=
+-(--shadow-height) [&amp;:has([data-writing-block])&gt;*]:pointer-events-au=
+to [content-visibility:auto] supports-[content-visibility:auto]:[contain-in=
+trinsic-size:auto_100lvh] scroll-mt-[calc(var(--header-height)+min(200px,ma=
+x(70px,20svh)))]">
+<div style=3D"direction: ltr; line-height: 1.38; margin: 0cm 0cm 8pt; font-=
+family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica,=
+ sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof=
+">
+Hi Joe,</div>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Thanks for sharing your Gate 0 presentation. I=A1=A6ve reviewed your materi=
+als, and conclude that overall this is a strong and well-aligned project&nb=
+sp;for the TIM program and for AGI Venture Canada.<br>
+<br>
+Below is a summary of the assessment and the main items to tighten before t=
+he next gate.</div>
+<ul style=3D"margin-top: 0cm; margin-right: 0cm;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-h=
+eight: 115%; margin: 0cm 0cm 8pt;">
+You=A1=A6ve framed a real client problem: AI ESL tools look similar, so inv=
+estors can=A1=A6t easily see defensible value.</li><li style=3D"font-family=
+: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-=
+serif; font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; margin: 0cm=
+ 0cm 8pt;">
+Your plan to link behavioral learning mechanisms =A1=F7 product features =
+=A1=F7 competitive moat&nbsp;is clear and timely.</li><li style=3D"font-fam=
+ily: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sa=
+ns-serif; font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; margin: =
+0cm 0cm 8pt;">
+Your deliverables are practical&nbsp;(framework, prototype with user eviden=
+ce, feature-level moat analysis, and brief for AGI).</li><li style=3D"font-=
+family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica,=
+ sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; margi=
+n: 0cm 0cm 8pt;">
+You=A1=A6ve shown client engagement and relevance&nbsp;to AGI, which de-ris=
+ks the project.</li></ul>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<b>Key improvements to make now</b></div>
+<ul style=3D"margin-top: 0cm; margin-right: 0cm; padding-left: 0px;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-h=
+eight: 115%; margin: 0cm 0cm 0cm 36pt;">
+Define =A1=A7validated prototype.=A1=A8&nbsp;Spell out what counts as valid=
+ation for you: e.g. 20+ users completing tasks, evidence of feature salienc=
+e, or early learning/engagement signals.</li><li style=3D"font-family: Apto=
+s, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;=
+ font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; margin: 0cm 0cm 0=
+cm 36pt;">
+Make the mixed-methods plan concrete.&nbsp;Identify: who the 20 users are, =
+how you=A1=A6ll recruit them, what data you=A1=A6ll collect (logs, intervie=
+ws, tasks), and how you=A1=A6ll integrate qual + quant.</li><li style=3D"fo=
+nt-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helveti=
+ca, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; ma=
+rgin: 0cm 0cm 0cm 36pt;">
+Standardize your moat analysis.&nbsp;Create a simple comparison matrix (e.g=
+. technical defensibility, pedagogical distinctiveness, data/workflow lock-=
+in, business model leverage) so your results are repeatable and usable by A=
+GI.</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontSe=
+rvice, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0)=
+; line-height: 115%; margin: 0cm 0cm 0cm 36pt;">
+Add ethics/privacy notes.&nbsp;Even if this is low-risk: say how you=A1=A6l=
+l obtain consent and protect user data from the prototype.</li><li style=3D=
+"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-height: 115%;=
+ margin: 0cm 0cm 0cm 36pt;">
+Document risks and mitigations.&nbsp;For example: small sample, dependency =
+on AGI availability, or LLM/ASR costs.&nbsp;</li></ul>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<b>Questions to reflect on before the next G0</b></div>
+<ul style=3D"margin-top: 0cm; margin-right: 0cm; padding-left: 0px;">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); line-h=
+eight: 115%; margin: 0cm 0cm 0cm 36pt;">
+How exactly will you know that a theory-driven feature is more =A1=A7defens=
+ible=A1=A8 than a look-alike feature?</li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fo=
+nt-size: 12pt; color: rgb(0, 0, 0); line-height: 115%; margin: 0cm 0cm 0cm =
+36pt;">
+What=A1=A6s the primary outcome you will report to AGI: learning, engagemen=
+t, or defensibility?</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFon=
+t, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; co=
+lor: rgb(0, 0, 0); line-height: 115%; margin: 0cm 0cm 8pt 36pt;">
+If very few users complete the full flow, what is your fallback analysis pl=
+an?</li></ul>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+If you update your slides to address the points above, this will put you in=
+ a good position for the next review and make the project more convincing t=
+o the client.</div>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Nice work so far =A1X keep going.</div>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Best,</div>
+<div style=3D"line-height: 1.38; margin: 0cm 0cm 8pt; font-family: Aptos, A=
+ptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; fon=
+t-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Tony B</div>
+</article>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+11pt; color: rgb(0, 0, 0);">
+<b>From:</b>&nbsp;Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carleton.ca&gt;<br>
+<b>Sent:</b>&nbsp;Saturday, November 1, 2025 10:44 AM<br>
+<b>To:</b>&nbsp;Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;<br>
+<b>Subject:</b>&nbsp;Accepted: Joe Meeting - Sat Nov 1, 4 PM<br>
+<b>When:</b>&nbsp;Saturday, November 1, 2025 8:30 PM-9:00 PM.<br>
+<b>Where:</b>&nbsp;https://carleton-ca.zoom.us/j/94638943481</div>
+<div style=3D"direction: ltr;">&nbsp;</div>
+</div>
+<div style=3D"font-size: 11pt;">&nbsp;</div>
+<style>#tableStyle {=0A=
+border-left: 9px solid red; background-color: #ffffe6; width:100%; padding:=
+2pt; font-size:10pt; line-height:11pt; font-family:'calibri'; color:black; =
+text-align: left;=0A=
+}=0A=
+#strong {font-size:11pt; line-height:12pt; font-family:'Calibri'; color:Red=
+; text-align: left;}=0A=
+#div2 {font-size:0pt; color:White; display:none; visibility:hidden;}=0A=
+</style>
+<table id=3D"tableStyle">
+<tbody>
+<tr>
+<td>This email contains links to content or websites. Always be cautious wh=
+en opening external links or attachments.<br>
+<br>
+Please visit https://carleton.ca/its/help-centre/report-phishing/ for infor=
+mation on reporting phishing messages.<br>
+<br>
+When in doubt, the ITS Service Desk can provide assistance. https://carleto=
+n.ca/its/chat<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<div id=3D"div2">-----End of Disclaimer-----</div>
+&nbsp;
+<p></p>
+</body>
+</html>
+
+--_000_YQBPR0101MB4459D58E23EBAF8B6A21B7039BF9AYQBPR0101MB4459_--

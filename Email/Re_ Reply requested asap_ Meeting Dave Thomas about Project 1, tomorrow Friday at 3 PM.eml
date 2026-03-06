@@ -1,0 +1,599 @@
+Received: from YT2PR01MB10486.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:75::16)
+ by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Fri, 12 Sep 2025
+ 00:34:51 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YT2PR01MB10486.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:b01:75::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9094.22; Fri, 12 Sep
+ 2025 00:34:40 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%6]) with mapi id 15.20.9094.021; Fri, 12 Sep 2025
+ 00:34:40 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>, Hridesh Kapur
+	<HrideshKapur@cmail.carleton.ca>, Lizhao Luo <LizhaoLuo@cmail.carleton.ca>,
+	Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>
+CC: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>, Jia Shao
+	<JiaShao@cmail.carleton.ca>, "Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>,
+	Earl Tamayo <EarlTamayo@cmail.carleton.ca>
+Subject: Re: Reply requested asap: Meeting Dave Thomas about Project 1,
+ tomorrow Friday at 3 PM  
+Thread-Topic: Reply requested asap: Meeting Dave Thomas about Project 1,
+ tomorrow Friday at 3 PM  
+Thread-Index: AQHcI3G6hR0n/xnJ4kODWz5+EIWRgbSOqhsAgAAJDgA=
+Date: Fri, 12 Sep 2025 00:34:40 +0000
+Message-ID:
+	<YQBPR0101MB4459316246C4BD5D1EB566849B08A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+References:
+	<YQBPR0101MB44593E01FDB93393843D491D9B09A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB4459451C892E80177FB8C1359B09A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB4459480D748C5E8373EB5B849B09A@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+ <YQBPR0101MB4081944C0499D7A5D21A8A558B08A@YQBPR0101MB4081.CANPRD01.PROD.OUTLOOK.COM>
+In-Reply-To:
+	<YQBPR0101MB4081944C0499D7A5D21A8A558B08A@YQBPR0101MB4081.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	aafad50f-4632-4f07-4294-08ddf1942906
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	QDnplg8xUE7oUH5hZ2fJ2LuVOai2kvFrABW1dknX1c0Mk0V7m4ALxlYqNTbVJWpjgBfK0wFPJTpHe/yLvsqx4lYOZZ5FB01HbAAr++zoziXZjueOpbzCC2j+Wl51xmzH2UQmQtgusWDkleDIWVz1gQ6z4R6ItxIC7ouhkHf1GlK478DCcjENL23L14RHGFQl0v9Ls9iCJ9WpvK3IgHJf2Av5B1VkmEduHwk4HwysutWwbHs+SLefwv+yHFArkrYMYshubbHAK4+jATt8EYrXhm7cEkl8YrRu/50PbdnBT17f7NkxF41ITrAsRwBjb+d2/zMlAWa/c50T5+Riec4Yd3Uca+thIoYOj94Ojz0RKSAl8EI93SPt4Y7QGPf6wulHwVhMmt18LFKJNazj0yLNDJfWdmKTZS2JuO+TUdr+A2jTthYZ5bqEoXBn5vJEbbObU1x6SEVFp2UlGucQxG/8qpM1j1xJlpci0nTOsxxHl0Ip4BrMhqMSZgDlcljGI5S6BP9d6iRTBm8/l25SLeZfQDOs3ZBOxHErSzsloGG0bDIft0oUUhUBEpyhgCf7zGvqfTbpOcade2i7CFXV+/Aik7OxuxSNGVm0Y4iIwJwZF0/9wGwq8hTONwCvDuNYpxnArzjgvj5aLTAfvt9QylBSdOq8fkteENqXgku1IzRg9kFD8fZUmbdf6S6YXJPwZRnAVlMN1NHwUvPGjdnlqa7vQFweamuMfnG/aG/bYsCGZlVhHb3vEaxQU+zBOO1MFMoeGV9gnwP9Zo9V++E9Mw9cAAXt88nKObsGL005mmYvCZQ=
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB4459316246C4BD5D1EB566849B08AYQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB4459316246C4BD5D1EB566849B08AYQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Yaki, Hridesh, Sonny and Richard, hello.
+
+Looks like meeting with Dave tomorrow, Friday Sep12 is not possible.
+
+How about meeting online Saturday at 3:30 PM? Can we make that work?
+
+Tony B.
+________________________________
+From: Earl Tamayo <EarlTamayo@cmail.carleton.ca>
+Sent: Thursday, September 11, 2025 8:02 PM
+To: Tony Bailetti <TonyBailetti@cunet.carleton.ca>; Yaqi Zhao <YaqiZhao@cma=
+il.carleton.ca>; Hridesh Kapur <HrideshKapur@cmail.carleton.ca>; Lizhao Luo=
+ <LizhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>
+Cc: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>; Jia Shao <JiaShao@cmail=
+.carleton.ca>; Joe(Beiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>
+Subject: Re: Reply requested asap: Meeting Dave Thomas about Project 1, tom=
+orrow Friday at 3 PM
+
+Dear Professor Tony,
+Thank you for all the updates so far. I really appreciate the range of opti=
+ons that have been made available thanks to the hard work you and Dan have =
+put in.
+As discussed, I will be attending JLR's meeting in person tomorrow with que=
+stions prepared for the client. I will develop further project details afte=
+r the meeting.
+Thanks again,
+Earl
+________________________________
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+Sent: Thursday, September 11, 2025 7:13 PM
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>; Hridesh Kapur <HrideshKapur@cma=
+il.carleton.ca>; Earl Tamayo <EarlTamayo@cmail.carleton.ca>; Lizhao Luo <Li=
+zhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>
+Cc: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>; Jia Shao <JiaShao@cmail=
+.carleton.ca>; Joe(Beiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>
+Subject: Reply requested asap: Meeting Dave Thomas about Project 1, tomorro=
+w Friday at 3 PM
+
+Yaqi, Hridesh, Earl, Richard, and Sonny, hello.
+Dave Thomas is available to meet with us regarding Project 1 either tomorro=
+w (Friday, Sept 12) or Saturday, Sept 13. He is flexible and will accommoda=
+te the time we propose. Before committing, he will need to review your CVs.=
+ Therefore, anyone still interested in pursuing Project 1 after meeting wit=
+h him will need to send their CVs directly to him.
+I propose that those interested in Project 1 meet with Dave, Dan, and me to=
+morrow (Friday, Sept 12) at 3:00 PM.
+Also, please let me know if anyone is interested in Project 2.
+Best regards,
+Tony B.
+
+
+
+
+________________________________
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+Sent: Thursday, September 11, 2025 12:46 PM
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>; Hridesh Kapur <HrideshKapur@cma=
+il.carleton.ca>; Earl Tamayo <EarlTamayo@cmail.carleton.ca>; Lizhao Luo <Li=
+zhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>
+Cc: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>; Jia Shao <JiaShao@cmail=
+.carleton.ca>; Joe(Beiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>
+Subject: Cancellation of Friday 11 AM meeting
+
+Hello everyone,
+Tomorrow=92s Up Our Game Canada (UOGC) meeting is cancelled, as we=92ll be =
+meeting with a potential client for a TIM project instead.
+Right now, the priority is clear: let=92s focus on securing strong, excitin=
+g projects for each of you. Jia and Joe are already well on their way, and =
+I=92m confident that with the same momentum, we can line up excellent oppor=
+tunities for the five of you. Once everyone has a solid project in motion, =
+we=92ll restart our UOGC meetings and put fresh energy into advancing the c=
+ommunity project together.
+This is a great moment =97 let=92s move quickly to secure your TIM projects=
+ and begin shaping them into something impactful. I can't wait to see the g=
+reat work you=92ll produce.
+Best,
+Tony B.
+
+________________________________
+From: Tony Bailetti
+Sent: Thursday, September 11, 2025 12:31 PM
+To: Yaqi Zhao <YaqiZhao@cmail.carleton.ca>; Hridesh Kapur <HrideshKapur@cma=
+il.carleton.ca>; Earl Tamayo <EarlTamayo@cmail.carleton.ca>; Lizhao Luo <Li=
+zhaoLuo@cmail.carleton.ca>; Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>; Joe(B=
+eiqiao) Hu <BeiqiaoHu@cmail.carleton.ca>; Jia Shao <JiaShao@cmail.carleton.=
+ca>
+Cc: Dan Premachuk <DanPremachuk@CUNET.CARLETON.CA>
+Subject: TIM project opportunities related to investors
+
+Hello there! Two things: Bedarra TIM projects & CAN event. Request immediat=
+e reply if you are interested in any of these opportunities.
+
+Bedarra TIM projects
+Dave Thomas, Bedarra's CEO, has proposed the two TIM projects outlined in t=
+he attached slide deck attached.
+If you are interested in one of these two projects, please let me know and =
+I will set up a meeting with Dave right away,
+
+CAN event & potential TIM projects
+CAN has expressed interest in covering the topics below. I believe we can t=
+urn some of these topics into very interesting TIM projects.
+
+If you are interested in one of these topics please let me know immediately=
+. We meet CAN next Monday morning.
+
+Topics suggested by CAN for the Oct 23 40 minute talk include:
+
+presentation:
+
+  1.  What is the difference between an "AI first or AI as a cornerstone" v=
+enture and an =93AI enabled=94 venture? How can we differentiate and how sh=
+ould we approach investment or due diligence in each case?
+
+  1.  What is the difference between all the AI models? What is essential?
+
+  1.  Fundamentals of AI and AI Investing, =85going beyond the =93story=94.=
+ What should we look for? What questions should we ask?
+
+  1.  The value, importance, and cost of DATA to AI ventures?  Current data=
+ options and the implications for the future in terms of sustainability and=
+ cost?
+
+  1.  What about =93data sovereignty=94? What does it mean, is it important=
+ and what should we know?
+
+  1.  What are the current and future limitations of AI?  What are the =93r=
+ed flags=94 we need to be aware of?
+
+  1.  Quote from our meeting =93 Most AI deployments fail=85they solve a po=
+int problem, but they don=92t solve a need=94. How do you move from =93poin=
+t solutions=94 to =93system solutions?
+
+  1.  How do you assess the mindset of a team in an AI venture?  Are there =
+stand out signs?  How do you assess if the team has AI First thinking?
+
+  1.
+Unit economics now & down the road
+  2.
+Models for Angel Investable AI / AI enabled ventures (not overly capital in=
+tensive) that are most likely to be sustained
+
+Warm regards.
+Tiny B.
+
+
+
+
+--_000_YQBPR0101MB4459316246C4BD5D1EB566849B08AYQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+Yaki, Hridesh, Sonny and Richard, hello.&nbsp;</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+Looks like meeting with Dave tomorrow, Friday Sep12 is not possible.&nbsp;<=
+/div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+How about meeting online Saturday at 3:30 PM? Can we make that work?&nbsp;<=
+br>
+<br>
+Tony B.&nbsp;</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Earl Tamayo &lt;EarlT=
+amayo@cmail.carleton.ca&gt;<br>
+<b>Sent:</b> Thursday, September 11, 2025 8:02 PM<br>
+<b>To:</b> Tony Bailetti &lt;TonyBailetti@cunet.carleton.ca&gt;; Yaqi Zhao =
+&lt;YaqiZhao@cmail.carleton.ca&gt;; Hridesh Kapur &lt;HrideshKapur@cmail.ca=
+rleton.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai &=
+lt;JiuhuiCai@cmail.carleton.ca&gt;<br>
+<b>Cc:</b> Dan Premachuk &lt;DanPremachuk@CUNET.CARLETON.CA&gt;; Jia Shao &=
+lt;JiaShao@cmail.carleton.ca&gt;; Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carle=
+ton.ca&gt;<br>
+<b>Subject:</b> Re: Reply requested asap: Meeting Dave Thomas about Project=
+ 1, tomorrow Friday at 3 PM
+</font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_elementToProof" style=3D"margin-top:1em; margin-bottom:1em;=
+ font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica=
+,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Dear Professor Tony,</div>
+<div class=3D"x_elementToProof" style=3D"margin-top:1em; margin-bottom:1em;=
+ font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica=
+,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Thank you for all the updates so far. I really appreciate the range of opti=
+ons that have been made available thanks to the hard work you and Dan have =
+put in.</div>
+<div class=3D"x_elementToProof" style=3D"margin-top:1em; margin-bottom:1em;=
+ font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica=
+,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+As discussed, I will be attending JLR's meeting in person tomorrow with que=
+stions prepared for the client. I will develop further project details afte=
+r the meeting.</div>
+<div class=3D"x_elementToProof" style=3D"margin-top:1em; margin-bottom:1em;=
+ font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helvetica=
+,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Thanks again,</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Earl</div>
+<div id=3D"x_appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" =
+color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Tony Bailetti &lt;T=
+onyBailetti@cunet.carleton.ca&gt;<br>
+<b>Sent:</b> Thursday, September 11, 2025 7:13 PM<br>
+<b>To:</b> Yaqi Zhao &lt;YaqiZhao@cmail.carleton.ca&gt;; Hridesh Kapur &lt;=
+HrideshKapur@cmail.carleton.ca&gt;; Earl Tamayo &lt;EarlTamayo@cmail.carlet=
+on.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai &lt;J=
+iuhuiCai@cmail.carleton.ca&gt;<br>
+<b>Cc:</b> Dan Premachuk &lt;DanPremachuk@CUNET.CARLETON.CA&gt;; Jia Shao &=
+lt;JiaShao@cmail.carleton.ca&gt;; Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carle=
+ton.ca&gt;<br>
+<b>Subject:</b> Reply requested asap: Meeting Dave Thomas about Project 1, =
+tomorrow Friday at 3 PM
+</font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:1e=
+m; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helveti=
+ca,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Yaqi, Hridesh, Earl, Richard, and Sonny, hello.&nbsp;</div>
+<div class=3D"x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:1e=
+m; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helveti=
+ca,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Dave Thomas is available to meet with us regarding <b>Project 1</b>&nbsp;ei=
+ther tomorrow (Friday, Sept 12) or Saturday, Sept 13. He is flexible and wi=
+ll accommodate the time we propose. Before committing, he will need to revi=
+ew your CVs. Therefore, anyone still
+ interested in pursuing Project 1 after meeting with him will need to send =
+their CVs directly to him.</div>
+<div class=3D"x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:1e=
+m; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helveti=
+ca,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+I propose that those interested in Project 1 meet with Dave, Dan, and me to=
+morrow (Friday, Sept 12) at 3:00 PM.</div>
+<div class=3D"x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:1e=
+m; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helveti=
+ca,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Also, please let me know if anyone is interested in <b>Project 2</b>.</div>
+<div class=3D"x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:1e=
+m; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helveti=
+ca,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Best regards,<br>
+Tony B.</div>
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+<br>
+</div>
+<div id=3D"x_x_appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif=
+" color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Tony Bailetti &lt=
+;TonyBailetti@cunet.carleton.ca&gt;<br>
+<b>Sent:</b> Thursday, September 11, 2025 12:46 PM<br>
+<b>To:</b> Yaqi Zhao &lt;YaqiZhao@cmail.carleton.ca&gt;; Hridesh Kapur &lt;=
+HrideshKapur@cmail.carleton.ca&gt;; Earl Tamayo &lt;EarlTamayo@cmail.carlet=
+on.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai &lt;J=
+iuhuiCai@cmail.carleton.ca&gt;<br>
+<b>Cc:</b> Dan Premachuk &lt;DanPremachuk@CUNET.CARLETON.CA&gt;; Jia Shao &=
+lt;JiaShao@cmail.carleton.ca&gt;; Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.carle=
+ton.ca&gt;<br>
+<b>Subject:</b> Cancellation of Friday 11 AM meeting</font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:=
+1em; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helve=
+tica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Hello everyone,</div>
+<div class=3D"x_x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:=
+1em; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helve=
+tica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Tomorrow=92s Up Our Game Canada (UOGC) meeting is cancelled, as we=92ll be =
+meeting with a potential client for a TIM project instead.</div>
+<div class=3D"x_x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:=
+1em; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helve=
+tica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Right now, the priority is clear: let=92s focus on securing strong, excitin=
+g projects for each of you. Jia and Joe are already well on their way, and =
+I=92m confident that with the same momentum, we can line up excellent oppor=
+tunities for the five of you. Once everyone
+ has a solid project in motion, we=92ll restart our UOGC meetings and put f=
+resh energy into advancing the community project together.</div>
+<div class=3D"x_x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:=
+1em; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helve=
+tica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+This is a great moment =97 let=92s move quickly to secure your TIM projects=
+ and begin shaping them into something impactful. I can't wait to see the g=
+reat work you=92ll produce.</div>
+<div class=3D"x_x_x_elementToProof" style=3D"margin-top:1em; margin-bottom:=
+1em; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calibri,Helve=
+tica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Best,<br>
+Tony B.</div>
+<div class=3D"x_x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedd=
+edFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div id=3D"x_x_x_appendonsend"></div>
+<hr style=3D"display:inline-block; width:98%">
+<div id=3D"x_x_x_divRplyFwdMsg">
+<div style=3D"direction:ltr; font-family:Calibri,sans-serif; font-size:11pt=
+; color:rgb(0,0,0)">
+<b>From:</b>&nbsp;Tony Bailetti<br>
+<b>Sent:</b>&nbsp;Thursday, September 11, 2025 12:31 PM<br>
+<b>To:</b>&nbsp;Yaqi Zhao &lt;YaqiZhao@cmail.carleton.ca&gt;; Hridesh Kapur=
+ &lt;HrideshKapur@cmail.carleton.ca&gt;; Earl Tamayo &lt;EarlTamayo@cmail.c=
+arleton.ca&gt;; Lizhao Luo &lt;LizhaoLuo@cmail.carleton.ca&gt;; Jiuhui Cai =
+&lt;JiuhuiCai@cmail.carleton.ca&gt;; Joe(Beiqiao) Hu &lt;BeiqiaoHu@cmail.ca=
+rleton.ca&gt;;
+ Jia Shao &lt;JiaShao@cmail.carleton.ca&gt;<br>
+<b>Cc:</b>&nbsp;Dan Premachuk &lt;DanPremachuk@CUNET.CARLETON.CA&gt;<br>
+<b>Subject:</b>&nbsp;TIM project opportunities related to investors</div>
+<div style=3D"direction:ltr">&nbsp;</div>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Hello there! Two things: Bedarra TIM projects &amp; CAN event. Request imme=
+diate reply if you are interested in any of these opportunities.&nbsp;</div=
+>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Bedarra TIM projects</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Dave Thomas, Bedarra's CEO, has proposed the two TIM projects outlined in t=
+he attached slide deck attached.&nbsp;</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+If you are interested in one of these two projects, please let me know and =
+I will set up a meeting with Dave right away,</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+CAN event &amp; potential TIM projects</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+CAN has expressed interest in covering the topics below. I believe we can t=
+urn some of these topics into very interesting TIM projects.&nbsp;</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+If you are interested in one of these topics please let me know immediately=
+. We meet CAN next Monday morning.&nbsp;<br>
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Topics suggested by CAN for the Oct 23 40 minute talk include:</div>
+<p style=3D"direction:ltr; text-align:left; text-indent:0px; background-col=
+or:rgb(255,255,255); margin:0px">
+<span style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black">p=
+resentation:</span></p>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"1" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+What is the difference between an &quot;<b><i>AI first or AI as a cornersto=
+ne</i></b>&quot; venture and an =93<b><i>AI enabled</i></b>=94 venture? How=
+ can we differentiate and how should we approach investment or due diligenc=
+e in each case?</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"2" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+<span role=3D"presentation" style=3D"background-color:white">What is the di=
+fference between all the AI models? What is essential?</span></li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"3" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+Fundamentals of AI and AI Investing, =85going beyond the =93story=94. What =
+should we look for? What questions should we ask?</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"4" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+The value, importance, and cost of DATA to AI ventures? &nbsp;Current data =
+options and the implications for the future in terms of sustainability and =
+cost? &nbsp;</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"5" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+What about =93data sovereignty=94? What does it mean, is it important and w=
+hat should we know?</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"6" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+What are the current and future limitations of AI? &nbsp;What are the =93re=
+d flags=94 we need to be aware of?</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"7" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+Quote from our meeting =93 Most AI deployments fail=85they solve a point pr=
+oblem, but they don=92t solve a need=94. How do you move from =93point solu=
+tions=94 to =93system solutions?</li></ol>
+</div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px">
+<ol start=3D"8" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ flex-direction:column; display:flex">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; dir=
+ection:ltr; align-self:start; text-indent:0px; margin:0px">
+How do you assess the mindset of a team in an AI venture? &nbsp;Are there s=
+tand out signs? &nbsp;How do you assess if the team has AI First thinking?<=
+/li></ol>
+</div>
+<ol start=3D"9" style=3D"direction:ltr; text-align:left; margin-bottom:0px;=
+ background-color:rgb(255,255,255)">
+<li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black; mar=
+gin:0px">
+<div role=3D"presentation" style=3D"direction:ltr">Unit economics now &amp;=
+ down the road</div>
+</li><li style=3D"font-family:Aptos,sans-serif; font-size:12pt; color:black=
+; margin-right:0px; margin-left:0px">
+<div role=3D"presentation" style=3D"direction:ltr">Models for Angel Investa=
+ble AI / AI enabled ventures (not overly capital intensive) that are most l=
+ikely to be sustained&nbsp;</div>
+</li></ol>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+Warm regards.</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+Tiny B.&nbsp;</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"direction:ltr; font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSF=
+ontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB4459316246C4BD5D1EB566849B08AYQBPR0101MB4459_--

@@ -1,0 +1,607 @@
+Received: from YQBPR0101MB5701.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:38::5)
+ by YQBPR0101MB4324.CANPRD01.PROD.OUTLOOK.COM with HTTPS; Sun, 23 Feb 2025
+ 06:18:48 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:16::8)
+ by YQBPR0101MB5701.CANPRD01.PROD.OUTLOOK.COM (2603:10b6:c01:38::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8466.19; Sun, 23 Feb
+ 2025 06:18:46 +0000
+Received: from YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5]) by YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9379:7b68:2dee:40e5%2]) with mapi id 15.20.8466.016; Sun, 23 Feb 2025
+ 06:18:46 +0000
+From: Tony Bailetti <TonyBailetti@cunet.carleton.ca>
+To: Howard Nemiroff <HowardNemiroff@Cunet.Carleton.Ca>, Emily Gray
+	<EmilyGray@CUNET.CARLETON.CA>, Jerry Tomberlin
+	<JerryTomberlin@cunet.carleton.ca>, Ian Lee <IanLee@Cunet.Carleton.Ca>, Mika
+ Westerlund <MikaWesterlund@CUNET.CARLETON.CA>, Nusa Fain
+	<NusaFain@cunet.carleton.ca>, Stoyan Tanev <StoyanTanev@cunet.carleton.ca>,
+	Troy Anderson <TroyAnderson@CUNET.CARLETON.CA>, Robert Helal
+	<RobertHelal@cunet.carleton.ca>, Eduardo Bailetti
+	<EduardoBailetti@cunet.carleton.ca>, Kimberley Swartz
+	<KimberleySwartz@Cunet.Carleton.Ca>, Elizabeth Lariviere
+	<ElisabethLariviere@cunet.carleton.ca>, Dan Premachuk
+	<DanPremachuk@CUNET.CARLETON.CA>, Calvin Tong <CalvinTong@Cunet.Carleton.Ca>,
+	Jaclyn Debutte <JaclynDebutte@cunet.carleton.ca>, Shoma Sinha
+	<ShomaSinha@cunet.carleton.ca>, Enoh Akpan <EnohAkpan@cunet.carleton.ca>,
+	"Joe(Beiqiao) Hu" <BeiqiaoHu@cmail.carleton.ca>, Hridesh Kapur
+	<HrideshKapur@cmail.carleton.ca>, Mohammad Amin Bahmaei Nezhad
+	<MohammadAminBahmaeiN@cmail.carleton.ca>, Zeyi Ohikere
+	<ZeyiOhikere@cunet.carleton.ca>, Jiuhui Cai <JiuhuiCai@cmail.carleton.ca>,
+	Kelly Phelan <KellyPhelan@cunet.carleton.ca>, Breck Agyekum
+	<OnwonaAgyekum@cmail.carleton.ca>, Favour Taiwo
+	<FavourTaiwo@cmail.carleton.ca>
+Subject:
+	=?Windows-1252?Q?Action_Required:_Updated_Deliverables_for_=93Up_Our_Game?=
+ =?Windows-1252?Q?,_Canada!=94_(Due_April_28,_2025)?=
+Thread-Topic:
+	=?Windows-1252?Q?Action_Required:_Updated_Deliverables_for_=93Up_Our_Game?=
+ =?Windows-1252?Q?,_Canada!=94_(Due_April_28,_2025)?=
+Thread-Index: AQHbhbZjHqlV6SEWB0OKucBz915UMQ==
+Date: Sun, 23 Feb 2025 06:18:46 +0000
+Message-ID:
+	<YQBPR0101MB445907032F4706948C5995089BC12@YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	YQBPR0101MB4459.CANPRD01.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	ac32e1ab-7ca9-4f4a-850f-08dd53d1ee1a
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-exchange-crosstenant-id: 6ad91895-de06-485e-bc51-fce126cc8530
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(425001)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	W8XdDxZgKE/umEAnvhU6oPu9Uwz0Fc/pVLoCRCAe9vVlDFlzPC7edJ//Zj182Bwpn8kk+M4TlkLuRahJg6qDw4NBo1Sb6L3gGj5ryJiHHDdHSbvmOdqM8M8vjBatsL2S9iqgYBSNzwBGy4goq2Q72jJcBm/mKA6Zy3STDhWZ881/6ImCMdETY5+RwEZOcO4hdrUf+dqVr57b5c2y3XJfZ6KzwtWlSAJNn7ZVjQbtRPb0J0NQ1NUAm2jdwfmhhQosVB6IEaqga2so1VejNcV3rCrmI0edj147RmPTIhoDUNaL5YsYF8ue3BysSq7zzAHdJzrs0DSAsRfDzFiB5W3yRRqHFix9swgpdfNfn6at9bsuTt1wZNyWCogaSpqfWq3T3A4E0HSSSjK+uquXOuODL8EZj+8ysBgmO1+mMiO8q1QOZ6T5BJIiakD/Ecd+xktodEJHQoZZGiPTgJbV0rMCT2aF8q7WGhOvlWPs7X40EdD6c17uQaGEO9GKE0Raz7e5G8ztxE7K2bXoSiyZiYQc7W6Db/Ij2a5y1fFWm+Sr2+vj/qhoP1DlKMqarzlVqQ49NH5KWy11ch8uEu7ycA91MALC8MhpJ/F84IbmU3xqMKOuGf0DoqOKWmtTkTwEqPj/rnXlns8LUnm5VqqySxNWjSdqLN1FfTyBwpBfHmzUDd5i6mOXi6LGW6eOkeu0jHZc0Uzj8v87fEPhk1DxtfGq1r0BWcNKNFfywF29CxH22gHnQz5kwEs9v7PrH4LzayteeTc3uTNapskErs/4M5ClYIpqcOX9XyYz6YJzQEDyM5t2CjquLa+1P8JVxxBy3wod
+Content-Type: multipart/alternative;
+	boundary="_000_YQBPR0101MB445907032F4706948C5995089BC12YQBPR0101MB4459_"
+MIME-Version: 1.0
+
+--_000_YQBPR0101MB445907032F4706948C5995089BC12YQBPR0101MB4459_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Team,
+Good evening! We are moving to the next milestone.
+Please note that the next set of project deliverables for the =93Up Our Gam=
+e, Canada!=94 program is due on Monday, April 28, 2025. Below is a draft of=
+ the deliverables table, which features specific descriptions and clearly a=
+ssigned responsibilities for each sub-domain.
+I kindly request that you review the table and share any feedback or indica=
+te if adjustments are required. Your prompt response will help ensure that =
+we are all aligned and on track for the next project phase.
+Thank you for your attention and cooperation. Should you have any questions=
+ or need further clarification, please do not hesitate to reach out.
+Best regards,
+Tony B.
+28 of April Deliverables Table - Draft for your comments
+PROPOSED APRIL 28 DELIVERABLES =96 DRAFT FOR COMMENTS
+Sub-domain
+Deliverable
+Assigned To
+Competences
+A diverse team from Carleton and external experts demonstrating three core =
+competencies: research-informed content, agile development of training mate=
+rials, and innovative use of AI tools.
+All participants in =93Up Our Game, Canada!=94
+Business Development
+Strategy for =93Up Our Game, Canada!=94 by establishing SME core profile ta=
+rgets, articulating competitive advantages, identifying offers with validat=
+ed value propositions, and finalizing a business model for validation.
+Calvin, Dan, Emily, Howard, Jaclyn, Kim, Mika, Nusa, Stoyan, Tony
+Business Development
+Partnership agreements for program expansion on the website
+Shoma and designated replacement for Mawuena
+Program Development
+Content for five new modules=97including videos, transcripts, and podcasts.
+Enoh, Tony, and additional team members (TBA)
+Program Development
+Three workshops delivered and website upgraded
+Dan, Eduardo, Elizabeth, Jaclyn, Kim, Tony
+Participant Acquisition
+Results of a targeted social media campaign to attract SME top management t=
+eams for workshop attendance and website engagement.
+Kim, Elizabeth, Dan, Tony
+Partner Acquisition
+At least six potential partners engaged (e.g., OBOT, uOttawa, U of T, and f=
+oreign partners).
+Dan, Calvin, Jaclyn, Jerry, Justin, Tony, Troy, others
+Program Expansion
+Results of post-event follow-ups and list of participants.
+Dan, Kelly, Tony
+Operations
+A robust registration and payment platform with pre-approved, PCI-compliant=
+ processes vetted by Carleton=92s Legal, IT, Finance, and Procurement teams=
+.
+Calvin, Jaclyn
+Technology Enhancement
+Corpus integrated with Notebook, Perplexity, and ChatGPT, and new functiona=
+lities to enhance value for SME top management teams formulated
+Enoh, Joe, Richard
+Technology Enhancement
+A chatbot to facilitate user interaction with website resources.
+Richard
+Technology Enhancement
+At least two new value-added features across resources, the website, or the=
+ integrated corpus with AI tools.
+Enoh, Hridesh, Joe, Richard, Sonny, Tony
+Technology Enhancement
+Operational sign-up management and feedback tools.
+Eduardo and two from: Hridesh, Joe, Richard, Sonny
+Research Projects
+SRA forms for three TIM projects (focused on foreign market expansion and A=
+I tools) at the G1 stage.
+Amin (foreign market expansion), Breck (AI tools), Zeyi (foreign market exp=
+ansion)
+Directed Studies
+Report and presentations on AI-driven systematic and scoping literature rev=
+iews that add value to =93Up Our Game, Canada!=94
+Favour
+________________________________
+
+
+
+
+
+
+--_000_YQBPR0101MB445907032F4706948C5995089BC12YQBPR0101MB4459_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Dear Team,</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Good evening! We are moving to the next milestone.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Please note that the next set of project deliverables for the =93Up Our Gam=
+e, Canada!=94 program is due on Monday, April 28, 2025. Below is a draft of=
+ the deliverables table, which features specific descriptions and clearly a=
+ssigned responsibilities for each sub-domain.</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+I kindly request that you review the table and share any feedback or indica=
+te if adjustments are required. Your prompt response will help ensure that =
+we are all aligned and on track for the next project phase.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Thank you for your attention and cooperation. Should you have any questions=
+ or need further clarification, please do not hesitate to reach out.</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Best regards,</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Tony B.&nbsp;</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+28 of April Deliverables Table - Draft for your comments</div>
+<div class=3D"elementToProof" style=3D"line-height: 1.38; margin: 0cm 0cm 8=
+pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, H=
+elvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<b>PROPOSED APRIL 28 DELIVERABLES =96 DRAFT FOR COMMENTS</b></div>
+<table class=3D"elementToProof" cellspacing=3D"5" cellpadding=3D"0" style=
+=3D"box-sizing: border-box; border-collapse: collapse; border-spacing: 0px;=
+">
+<tbody>
+<tr>
+<td style=3D"width: 122.755px; height: 21.25px; padding: 0.75pt;">
+<div style=3D"text-align: center; line-height: normal; margin: 0cm; font-fa=
+mily: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, s=
+ans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<b>Sub-domain</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 21.25px; padding: 0.75pt;">
+<div style=3D"text-align: center; line-height: normal; margin: 0cm; font-fa=
+mily: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, s=
+ans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<b>Deliverable</b></div>
+</td>
+<td style=3D"width: 190.266px; height: 21.25px; padding: 0.75pt;">
+<div style=3D"text-align: center; line-height: normal; margin: 0cm; font-fa=
+mily: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, s=
+ans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<b>Assigned To</b></div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 79.0278px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Competences</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 79.0278px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+A diverse team from Carleton and external experts demonstrating three core =
+competencies: research-informed content, agile development of training mate=
+rials, and innovative use of AI tools.</div>
+</td>
+<td style=3D"width: 190.266px; height: 79.0278px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+All participants in =93Up Our Game, Canada!=94</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 98.287px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Business Development</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 98.287px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Strategy for =93Up Our Game, Canada!=94 by establishing SME core profile ta=
+rgets, articulating competitive advantages, identifying offers with validat=
+ed value propositions, and finalizing a business model for validation.</div=
+>
+</td>
+<td style=3D"width: 190.266px; height: 98.287px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Calvin, Dan, Emily, Howard, Jaclyn, Kim, Mika, Nusa, Stoyan, Tony</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Business Development</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Partnership agreements for program expansion on the website</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Shoma and designated replacement for Mawuena</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Program Development</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Content for five new modules=97including videos, transcripts, and podcasts.=
+</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Enoh, Tony, and additional team members (TBA)</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Program Development</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Three workshops delivered and website upgraded&nbsp;</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Dan, Eduardo, Elizabeth, Jaclyn, Kim, Tony</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Participant Acquisition</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Results of a targeted social media campaign to attract SME top management t=
+eams for workshop attendance and website engagement.</div>
+</td>
+<td style=3D"width: 190.266px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Kim, Elizabeth, Dan, Tony</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Partner Acquisition</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+At least six potential partners engaged (e.g., OBOT, uOttawa, U of T, and f=
+oreign partners).</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Dan, Calvin, Jaclyn, Jerry, Justin, Tony, Troy, others</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Program Expansion</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Results of post-event follow-ups and list of participants.</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Dan, Kelly, Tony</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Operations</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+A robust registration and payment platform with pre-approved, PCI-compliant=
+ processes vetted by Carleton=92s Legal, IT, Finance, and Procurement teams=
+.</div>
+</td>
+<td style=3D"width: 190.266px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Calvin, Jaclyn</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Technology Enhancement</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Corpus integrated with Notebook, Perplexity, and ChatGPT, and new functiona=
+lities to enhance value for SME top management teams formulated</div>
+</td>
+<td style=3D"width: 190.266px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Enoh, Joe, Richard</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Technology Enhancement</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+A chatbot to facilitate user interaction with website resources.</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Richard</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Technology Enhancement</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+At least two new value-added features across resources, the website, or the=
+ integrated corpus with AI tools.</div>
+</td>
+<td style=3D"width: 190.266px; height: 40.5093px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Enoh, Hridesh, Joe, Richard, Sonny, Tony</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Technology Enhancement</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Operational sign-up management and feedback tools.</div>
+</td>
+<td style=3D"width: 190.266px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Eduardo and two from: Hridesh, Joe, Richard, Sonny</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 79.0278px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Research Projects</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 79.0278px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+SRA forms for three TIM projects (focused on foreign market expansion and A=
+I tools) at the G1 stage.</div>
+</td>
+<td style=3D"width: 190.266px; height: 79.0278px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Amin (foreign market expansion), Breck (AI tools), Zeyi (foreign market exp=
+ansion)</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 122.755px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<b>Directed Studies</b></div>
+</td>
+<td style=3D"width: 395.347px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Report and presentations on AI-driven systematic and scoping literature rev=
+iews that add value to =93Up Our Game, Canada!=94</div>
+</td>
+<td style=3D"width: 190.266px; height: 59.7685px; padding: 0.75pt; vertical=
+-align: top;">
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Favour</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr align=3D"center" style=3D"line-height: normal; margin-right: 0cm; margi=
+n-left: 0cm; width: 100%;">
+<div class=3D"elementToProof" style=3D"line-height: normal; margin: 0cm 0cm=
+ 8pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri,=
+ Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<b><br>
+</b></div>
+<div class=3D"elementToProof" style=3D"line-height: 1.38; margin: 0cm 0cm 8=
+pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, H=
+elvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+&nbsp;</div>
+<div class=3D"elementToProof" style=3D"line-height: 1.38; margin: 0cm 0cm 8=
+pt; font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, H=
+elvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+&nbsp;</div>
+<div class=3D"elementToProof" style=3D"margin-top: 1em; margin-bottom: 1em;=
+ font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helv=
+etica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+</body>
+</html>
+
+--_000_YQBPR0101MB445907032F4706948C5995089BC12YQBPR0101MB4459_--
