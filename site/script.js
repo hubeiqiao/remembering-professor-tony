@@ -21,3 +21,4 @@ if (reduceMotion) {
 
   revealTargets.forEach((target) => revealObserver.observe(target));
 }
+
