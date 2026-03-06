@@ -5,3 +5,7 @@ Photos/202411-TIM Reunion-video.MOV
 professor-tony-source-timeline.md
 I am sorry to share that Professor Tony Bailetti has passed away.eml
 .wrangler/
+.codex-artifacts/
+node_modules/
+.DS_Store
+fix-hero.css

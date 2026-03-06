@@ -1,0 +1,12 @@
+{
+  "name": "remembering-professor-tony",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "deploy:preview": "wrangler versions upload",
+    "test": "node --test tests/memorial.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.61.1"
+  }
+}
