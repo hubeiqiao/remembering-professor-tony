@@ -12,9 +12,10 @@ const shareCardPath = path.join(siteDir, 'share-card.html');
 const readmePath = path.join(rootDir, 'README.md');
 const memorialDraftPath = path.join(rootDir, 'how-professor-tony-encouraged-me.md');
 const assetsDir = path.join(siteDir, 'assets');
+const gaMeasurementId = 'G-E2KZJJP1BP';
 
 const publicUrl = 'https://tony.hubeiqiao.com/';
-const ogImageUrl = `${publicUrl}assets/social/og-image.png`;
+const ogImageUrl = `${publicUrl}assets/social/og-image.jpg`;
 
 function read(filePath) {
   return fs.readFileSync(filePath, 'utf8');
@@ -27,8 +28,8 @@ test('site scaffold and memorial assets exist', () => {
   assert.ok(fs.existsSync(shareCardPath), 'expected site/share-card.html to exist');
   assert.ok(fs.existsSync(memorialDraftPath), 'expected memorial draft markdown to exist');
   assert.ok(
-    fs.existsSync(path.join(assetsDir, 'social', 'og-image.png')),
-    'expected og image export to exist',
+    fs.existsSync(path.join(assetsDir, 'social', 'og-image.jpg')),
+    'expected jpeg og image export to exist',
   );
 });
 
@@ -51,14 +52,28 @@ test('memorial page ships dark memorial metadata and a tribute-first closing ton
   assert.match(html, new RegExp(`<link rel="canonical" href="${publicUrlPattern}"\\s*\\/?>`, 'i'));
   assert.match(html, new RegExp(`<meta property="og:url" content="${publicUrlPattern}"\\s*\\/?>`, 'i'));
   assert.match(html, new RegExp(`<meta property="og:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
+  assert.match(html, new RegExp(`<meta property="og:image:secure_url" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
   assert.match(html, /<meta property="og:image:width" content="1200"\s*\/?>/i);
   assert.match(html, /<meta property="og:image:height" content="630"\s*\/?>/i);
+  assert.match(html, /<meta property="og:image:type" content="image\/jpeg"\s*\/?>/i);
   assert.match(html, new RegExp(`<meta name="twitter:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
   assert.match(html, /<meta name="twitter:image:alt" content="Remembering Professor Tony: The Story of How He Changed Me"\s*\/?>/i);
   assert.match(html, /Remembering a builder, mentor, and friend\./i);
   assert.match(html, /The best way I can remember him is to keep building\./i);
   assert.doesNotMatch(html, /JoeSpeaking\.com/i);
   assert.doesNotMatch(html, /real product and a real company/i);
+});
+
+test('memorial page includes the shared GA4 tag', () => {
+  const html = read(htmlPath);
+
+  assert.match(
+    html,
+    new RegExp(`<script async src="https://www.googletagmanager.com/gtag/js\\?id=${gaMeasurementId}"><\\/script>`, 'i'),
+  );
+  assert.match(html, /window\.dataLayer = window\.dataLayer \|\| \[\];/i);
+  assert.match(html, /function gtag\(\)\s*\{\s*dataLayer\.push\(arguments\);\s*\}/i);
+  assert.match(html, new RegExp(`gtag\\('config', '${gaMeasurementId}'\\);`, 'i'));
 });
 
 test('memorial page includes skip navigation, focus hooks, and explicit media attributes', () => {
