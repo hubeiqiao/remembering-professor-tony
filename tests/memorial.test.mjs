@@ -9,128 +9,103 @@ const htmlPath = path.join(siteDir, 'index.html');
 const cssPath = path.join(siteDir, 'styles.css');
 const jsPath = path.join(siteDir, 'script.js');
 const shareCardPath = path.join(siteDir, 'share-card.html');
+const memorialDraftPath = path.join(rootDir, 'how-professor-tony-encouraged-me.md');
 const assetsDir = path.join(siteDir, 'assets');
+
+const publicUrl = 'https://hubeiqiao.com/professor-tony/';
+const ogImageUrl = `${publicUrl}assets/social/og-image.png`;
 
 function read(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
-test('site scaffold and og export exist', () => {
+test('site scaffold and memorial assets exist', () => {
   assert.ok(fs.existsSync(htmlPath), 'expected site/index.html to exist');
   assert.ok(fs.existsSync(cssPath), 'expected site/styles.css to exist');
   assert.ok(fs.existsSync(jsPath), 'expected site/script.js to exist');
   assert.ok(fs.existsSync(shareCardPath), 'expected site/share-card.html to exist');
-  assert.ok(
-    fs.existsSync(path.join(assetsDir, 'images', 'orientation-04.jpg')),
-    'expected premium orientation image export to exist',
-  );
-  assert.ok(
-    fs.existsSync(path.join(assetsDir, 'images', 'tim-ai-workshop-02-wide.jpg')),
-    'expected premium workshop image export to exist',
-  );
-  assert.ok(
-    fs.existsSync(path.join(assetsDir, 'images', 'perplexity-03.jpg')),
-    'expected premium Perplexity image export to exist',
-  );
-  assert.ok(
-    fs.existsSync(path.join(assetsDir, 'images', 'scoping-review.webp')),
-    'expected scoping review image export to exist',
-  );
+  assert.ok(fs.existsSync(memorialDraftPath), 'expected memorial draft markdown to exist');
   assert.ok(
     fs.existsSync(path.join(assetsDir, 'social', 'og-image.png')),
     'expected og image export to exist',
   );
 });
 
-test('memorial page follows the premium narrative structure and source details', () => {
-  const html = read(htmlPath);
+test('memorial draft stays publishable and avoids internal notes or product promotion', () => {
+  const draft = read(memorialDraftPath);
 
-  assert.match(html, /<title>Remembering Professor Tony: The Story of How He Changed Me/i);
-  assert.match(html, /id="hero"/i);
-  assert.match(html, /id="threshold"/i);
-  assert.match(html, /id="backed-ideas"/i);
-  assert.match(html, /id="superpower"/i);
-  assert.match(html, /id="personal"/i);
-  assert.match(html, /id="build"/i);
-  assert.match(html, /id="legacy-end"/i);
-
-  assert.match(html, /Remembering Professor Tony: The Story of How He Changed Me/i);
-  assert.match(html, /how he encouraged me step by step/i);
-  assert.match(html, /August 2024/i);
-  assert.match(html, /use my Carleton email/i);
-  assert.match(html, /Perplexity is an important AI tool for us at TIM/i);
-  assert.match(html, /Very proud of you/i);
-  assert.match(html, /This is YOUR course/i);
-  assert.match(html, /Joe, congratulations! Make it happen/i);
-  assert.match(html, /last project I supervise at Carleton since I joined the university in 1979/i);
-  assert.match(html, /JoeSpeaking/i);
-  assert.match(html, /Theories and Mechanisms for AI-Powered ESL Speaking System Design/i);
-  assert.match(html, /https:\/\/eslr\.hubeiqiao\.com\//i);
-  assert.match(html, /https:\/\/joespeaking\.com\//i);
-
-  assert.match(html, /assets\/images\/orientation-04\.jpg/i);
-  assert.match(html, /assets\/images\/tim-ai-workshop-02-wide\.jpg/i);
-  assert.match(html, /assets\/images\/perplexity-03\.jpg/i);
-  assert.match(html, /assets\/images\/scoping-review\.webp/i);
-  assert.match(html, /story-content--media-first/i);
-  assert.match(html, /story-plate story-plate--lead[\s\S]*tim-reunion-community\.webp/i);
-  assert.match(html, /story-plate story-plate--fit[\s\S]*tim-ai-workshop-02-wide\.jpg/i);
-  assert.match(html, /story-aside story-aside--bottom/i);
-
-  assert.doesNotMatch(html, /assets\/images\/orientation-community\.webp/i);
-  assert.doesNotMatch(html, /assets\/images\/perplexity-workshop\.webp/i);
-  assert.doesNotMatch(html, /assets\/images\/ai-workshop-stage\.webp/i);
-
-  assert.doesNotMatch(html, /I am dying/i);
-  assert.doesNotMatch(html, /Please focus on developing your entrepreneurial skills\./i);
+  assert.match(draft, /^# Remembering Professor Tony: The Story of How He Changed Me/m);
+  assert.match(draft, /Thank you, Professor Tony\./);
+  assert.doesNotMatch(draft, /## Notes for Future Use/i);
+  assert.doesNotMatch(draft, /starting from JoeSpeaking\.com/i);
+  assert.doesNotMatch(draft, /real product and a real company/i);
 });
 
-test('memorial page removes click-heavy exhibit UI and keeps accessible media', () => {
+test('memorial page ships dark memorial metadata and a tribute-first closing tone', () => {
   const html = read(htmlPath);
 
-  assert.doesNotMatch(html, /Exhibit Path/i);
-  assert.doesNotMatch(html, /progress-rail/i);
-  assert.doesNotMatch(html, /<details\b/i);
-  assert.doesNotMatch(html, /<summary/i);
-  assert.doesNotMatch(html, /data-scene-link/i);
+  assert.match(html, /<title>Remembering Professor Tony: The Story of How He Changed Me<\/title>/i);
+  assert.match(html, /<meta name="theme-color" content="#0a0a0b"\s*\/?>/i);
+  assert.match(html, /<link rel="canonical" href="https:\/\/hubeiqiao\.com\/professor-tony\/"\s*\/?>/i);
+  assert.match(html, /<meta property="og:url" content="https:\/\/hubeiqiao\.com\/professor-tony\/"\s*\/?>/i);
+  assert.match(html, new RegExp(`<meta property="og:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
+  assert.match(html, new RegExp(`<meta name="twitter:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
+  assert.match(html, /Remembering a builder, mentor, and friend\./i);
+  assert.match(html, /The best way I can remember him is to keep building\./i);
+  assert.doesNotMatch(html, /JoeSpeaking\.com/i);
+  assert.doesNotMatch(html, /real product and a real company/i);
+});
 
-  assert.match(html, /property="og:image"/i);
-  assert.match(html, /name="twitter:card"/i);
-  assert.match(html, /<figure/gi);
-  assert.match(html, /<figcaption/gi);
+test('memorial page includes skip navigation, focus hooks, and explicit media attributes', () => {
+  const html = read(htmlPath);
+
+  assert.match(html, /<a class="skip-link" href="#memorial-content">Skip to memorial<\/a>/i);
+  assert.match(html, /<main id="memorial-content">/i);
+  assert.match(html, /<link rel="preload" as="image" href="assets\/images\/hero-joe-tony-premium\.jpg"/i);
+  assert.match(html, /hero-joe-tony-premium\.jpg"[^>]*fetchpriority="high"/i);
 
   const imgTags = html.match(/<img\b[^>]*>/gi) ?? [];
-  assert.ok(imgTags.length >= 6, 'expected at least 6 images in the memorial page');
+  assert.ok(imgTags.length >= 10, 'expected at least 10 images in the memorial page');
   imgTags.forEach((tag) => {
     assert.match(tag, /\salt="[^"]+"/i);
-    assert.doesNotMatch(tag, /\salt=""/i);
+    assert.match(tag, /\swidth="[^"]+"/i);
+    assert.match(tag, /\sheight="[^"]+"/i);
+  });
+
+  const heroTag = imgTags.find((tag) => /hero-joe-tony-premium\.jpg/i.test(tag));
+  const orientationTag = imgTags.find((tag) => /orientation-04\.jpg/i.test(tag));
+  const boundariesTag = imgTags.find((tag) => /kanata-north-01\.jpg/i.test(tag));
+  assert.ok(heroTag, 'expected hero image tag');
+  assert.ok(orientationTag, 'expected orientation image tag');
+  assert.ok(boundariesTag, 'expected boundaries image tag');
+  assert.doesNotMatch(heroTag, /\sloading="lazy"/i);
+  assert.doesNotMatch(orientationTag, /\sloading="lazy"/i);
+  assert.doesNotMatch(boundariesTag, /\sloading="lazy"/i);
+
+  const blankLinks = html.match(/<a\b[^>]*target="_blank"[^>]*>/gi) ?? [];
+  assert.ok(blankLinks.length >= 4, 'expected multiple external links');
+  blankLinks.forEach((tag) => {
+    assert.match(tag, /\srel="[^"]*noopener[^"]*"/i);
   });
 });
 
-test('styles and scripts reflect a restrained editorial scroll experience and safe og hooks', () => {
+test('styles, script hooks, and share card reflect the memorial polish work', () => {
   const css = read(cssPath);
   const js = read(jsPath);
   const shareCard = read(shareCardPath);
 
-  assert.match(css, /\.hero\b/i);
-  assert.match(css, /\.story-band\b/i);
-  assert.match(css, /\.quote-panel\b/i);
-  assert.match(css, /\.full-bleed\b/i);
-  assert.match(css, /\.hero-kicker\b/i);
-  assert.match(css, /\.story-content--media-first\b/i);
-  assert.match(css, /\.story-plate--lead\b/i);
-  assert.match(css, /\.story-aside--bottom\b/i);
-  assert.match(css, /margin-bottom:\s*clamp\(/i);
+  assert.match(css, /\.skip-link\b/i);
+  assert.match(css, /:focus-visible/i);
+  assert.match(css, /scroll-margin-top:/i);
   assert.match(css, /prefers-reduced-motion/i);
-
-  assert.doesNotMatch(css, /\.progress-rail\b/i);
-  assert.doesNotMatch(css, /\.artifact-drawer\b/i);
+  assert.doesNotMatch(css, /outline:\s*none/i);
 
   assert.match(js, /IntersectionObserver/i);
-  assert.match(js, /reveal/i);
-  assert.doesNotMatch(js, /data-scene-link/i);
+  assert.match(js, /prefers-reduced-motion/i);
 
-  assert.match(shareCard, /safe-frame/i);
-  assert.match(shareCard, /safe-copy/i);
-  assert.match(shareCard, /Remembering Professor Tony: The Story of How He Changed Me/i);
+  assert.match(shareCard, /--paper:\s*#0a0a0b/i);
+  assert.match(shareCard, /Remembering Professor Tony/i);
+  assert.match(shareCard, /A public memorial from Joe Hu/i);
+  assert.match(shareCard, /\swidth="1200"/i);
+  assert.match(shareCard, /\sheight="1800"/i);
 });

@@ -12,11 +12,11 @@
     />
     <style>
       :root {
-        --paper: #f3ede4;
-        --paper-bright: #fbf7f1;
-        --ink: #181412;
-        --ink-soft: #5f544b;
-        --accent: #8b2f28;
+        --paper: #0a0a0b;
+        --paper-bright: #121214;
+        --ink: #f0ebe1;
+        --ink-soft: #b3aca3;
+        --accent: #d33c3c;
       }
 
       * {
@@ -26,10 +26,10 @@
       body {
         margin: 0;
         background:
-          radial-gradient(circle at 15% 0%, rgba(139, 47, 40, 0.08), transparent 24%),
-          linear-gradient(180deg, #f8f4ed 0%, var(--paper) 100%);
+          radial-gradient(circle at 18% 0%, rgba(211, 60, 60, 0.18), transparent 24%),
+          linear-gradient(180deg, #0f0f10 0%, var(--paper) 100%);
         color: var(--ink);
-        font-family: "Instrument Sans", "Segoe UI", sans-serif;
+        font-family: "Instrument Sans", sans-serif;
       }
 
       .stage {
@@ -44,10 +44,12 @@
         gap: 24px;
         height: 100%;
         padding: 30px;
-        border: 1px solid rgba(24, 20, 18, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 34px;
-        background: rgba(255, 251, 245, 0.86);
-        box-shadow: 0 28px 80px rgba(52, 35, 27, 0.1);
+        background:
+          linear-gradient(140deg, rgba(15, 15, 16, 0.96), rgba(19, 19, 21, 0.82)),
+          rgba(10, 10, 11, 0.94);
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
       }
 
       .safe-copy {
@@ -75,6 +77,7 @@
         line-height: 0.92;
         font-weight: 600;
         letter-spacing: -0.06em;
+        text-wrap: balance;
       }
 
       h1 span {
@@ -106,7 +109,7 @@
         width: 100%;
         padding: 12px;
         border-radius: 30px;
-        background: linear-gradient(160deg, rgba(255, 252, 248, 0.94), rgba(224, 205, 180, 0.44));
+        background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(211, 60, 60, 0.14));
       }
 
       .safe-media img {
@@ -116,6 +119,8 @@
         border-radius: 22px;
         object-fit: cover;
         object-position: center 16%;
+        filter: grayscale(100%) contrast(1.08);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
       }
     </style>
   </head>
@@ -125,11 +130,11 @@
         <div class="safe-copy">
           <span class="eyebrow">Public Memorial</span>
           <h1>Remembering Professor Tony: <span>The Story of How He Changed Me</span></h1>
+          <div class="credit">A public memorial from Joe Hu</div>
           <p>
-            How he encouraged me step by step until building something real
-            felt possible.
+            The story of how his encouragement turned uncertainty into
+            confidence, research into action, and building into a path.
           </p>
-          <div class="credit">Joe Hu</div>
           <div class="meta">47 years at Carleton • Founder of TIM</div>
         </div>
 
@@ -138,6 +143,8 @@
             <img
               src="assets/images/hero-joe-tony-premium.jpg"
               alt="Joe Hu and Professor Tony Bailetti smiling together."
+              width="1200"
+              height="1800"
             />
           </div>
         </figure>

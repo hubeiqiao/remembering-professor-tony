@@ -20,6 +20,7 @@
 }
 
 html {
+  color-scheme: dark;
   scroll-behavior: smooth;
   font-size: 16px;
   overflow-x: hidden;
@@ -33,6 +34,26 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+.skip-link {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 10001;
+  padding: 0.75rem 1rem;
+  background: rgba(10, 10, 11, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  transform: translateY(-220%);
+  transition: transform 0.25s ease-out, border-color 0.25s ease-out;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .page-grain {
@@ -63,12 +84,23 @@ img:hover {
 a {
   color: inherit;
   text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 main {
   width: 90vw;
   max-width: 1320px;
   margin: 0 auto;
+}
+
+section[id],
+h2[id] {
+  scroll-margin-top: 5rem;
 }
 
 /* --- CINEMATIC HERO --- */
@@ -187,6 +219,7 @@ main {
   text-transform: uppercase;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 100%;
+  text-wrap: balance;
 }
 
 .hero-text h1 span.nobr {
@@ -381,6 +414,7 @@ main {
 
 .story-content {
   max-width: 65ch;
+  min-width: 0;
 }
 
 .story-band h2 {
@@ -391,6 +425,7 @@ main {
   letter-spacing: -0.04em;
   /* Tighter kerning */
   margin: 0 0 2.5rem 0;
+  text-wrap: balance;
 }
 
 .story-content p {

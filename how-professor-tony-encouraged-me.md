@@ -28,24 +28,14 @@ With his guidance, I did much better research. He helped me take my work serious
 
 Somewhere in that period, with his guidance and encouragement, and with AI becoming much more powerful, I started to believe that I could build my own thing. Not just study. Not just present. Not just complete a project. Build.
 
-By the end, that path became very clear. My project was becoming a real product and a real company. When I told him I registered my first company, he replied, "Joe, congratulations! Make it happen." That was Professor Tony. Simple, direct, and still pushing me forward.
+By the end, that path became very clear. I was no longer thinking only about assignments or presentations. I was starting to believe the work could become something useful in the world. When I told him I registered my first company, he replied, "Joe, congratulations! Make it happen." That was Professor Tony. Simple, direct, and still pushing me forward.
 
-Professor Tony helped me become more bold. He significantly increased my confidence. He gave me opportunities, guided my research, and encouraged me to build my own venture. If I had not met him, I would not be the person you see today.
+Professor Tony helped me become more bold. He significantly increased my confidence. He gave me opportunities, guided my research, and encouraged me to build work that could help other people. If I had not met him, I would not be the person you see today.
 
 For in-person interaction, Professor Tony was the best teacher I have ever met. He was my professor, but he was also more than that. He was someone who made building something real feel possible.
 
-I also cannot forget the line he wrote to me: "Your project will be the last project I supervise at Carleton since I joined the university in 1979." That line stays with me. It makes me want to try my best to make this into a great product.
+I also cannot forget the line he wrote to me: "Your project will be the last project I supervise at Carleton since I joined the university in 1979." That line stays with me. It makes me want to do work he would recognize as serious, useful, and alive in the world.
 
-The best way I can remember him is not only with words. It is by continuing to build in the spirit he gave me. For me, that means continuing to build my own product and company, starting from JoeSpeaking.com.
+The best way I can remember him is not only with words. It is by continuing to build in the spirit he gave me. For me, that means trying to build carefully, help other people, and stay equal to the standards he set for me.
 
 Thank you, Professor Tony.
-
-## Notes for Future Use
-
-- Public background: 47 years at Carleton, founder of TIM, remembered by Carleton and Sprott as an entrepreneurship leader and mentor.
-- Core story: he raised my standards, pushed me beyond safe plans, gave me confidence through real opportunities, guided my research, and encouraged me to build my own venture.
-- Key quotes:
-  - "This is YOUR course."
-  - "Be assured that we are supporting your efforts 1,000%."
-  - "Joe, congratulations! Make it happen."
-  - "Your project will be the last project I supervise at Carleton since I joined the university in 1979."
