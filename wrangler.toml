@@ -1,0 +1,11 @@
+name = "remembering-professor-tony"
+compatibility_date = "2026-03-06"
+workers_dev = false
+
+[assets]
+directory = "./site"
+not_found_handling = "404-page"
+
+[[routes]]
+pattern = "tony.hubeiqiao.com"
+custom_domain = true
