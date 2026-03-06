@@ -9,10 +9,11 @@ const htmlPath = path.join(siteDir, 'index.html');
 const cssPath = path.join(siteDir, 'styles.css');
 const jsPath = path.join(siteDir, 'script.js');
 const shareCardPath = path.join(siteDir, 'share-card.html');
+const readmePath = path.join(rootDir, 'README.md');
 const memorialDraftPath = path.join(rootDir, 'how-professor-tony-encouraged-me.md');
 const assetsDir = path.join(siteDir, 'assets');
 
-const publicUrl = 'https://hubeiqiao.com/professor-tony/';
+const publicUrl = 'https://tony.hubeiqiao.com/';
 const ogImageUrl = `${publicUrl}assets/social/og-image.png`;
 
 function read(filePath) {
@@ -43,13 +44,17 @@ test('memorial draft stays publishable and avoids internal notes or product prom
 
 test('memorial page ships dark memorial metadata and a tribute-first closing tone', () => {
   const html = read(htmlPath);
+  const publicUrlPattern = publicUrl.replace(/\//g, '\\/');
 
   assert.match(html, /<title>Remembering Professor Tony: The Story of How He Changed Me<\/title>/i);
   assert.match(html, /<meta name="theme-color" content="#0a0a0b"\s*\/?>/i);
-  assert.match(html, /<link rel="canonical" href="https:\/\/hubeiqiao\.com\/professor-tony\/"\s*\/?>/i);
-  assert.match(html, /<meta property="og:url" content="https:\/\/hubeiqiao\.com\/professor-tony\/"\s*\/?>/i);
+  assert.match(html, new RegExp(`<link rel="canonical" href="${publicUrlPattern}"\\s*\\/?>`, 'i'));
+  assert.match(html, new RegExp(`<meta property="og:url" content="${publicUrlPattern}"\\s*\\/?>`, 'i'));
   assert.match(html, new RegExp(`<meta property="og:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
+  assert.match(html, /<meta property="og:image:width" content="1200"\s*\/?>/i);
+  assert.match(html, /<meta property="og:image:height" content="630"\s*\/?>/i);
   assert.match(html, new RegExp(`<meta name="twitter:image" content="${ogImageUrl.replace(/\//g, '\\/')}"\\s*\\/?>`, 'i'));
+  assert.match(html, /<meta name="twitter:image:alt" content="Remembering Professor Tony: The Story of How He Changed Me"\s*\/?>/i);
   assert.match(html, /Remembering a builder, mentor, and friend\./i);
   assert.match(html, /The best way I can remember him is to keep building\./i);
   assert.doesNotMatch(html, /JoeSpeaking\.com/i);
@@ -106,6 +111,22 @@ test('styles, script hooks, and share card reflect the memorial polish work', ()
   assert.match(shareCard, /--paper:\s*#0a0a0b/i);
   assert.match(shareCard, /Remembering Professor Tony/i);
   assert.match(shareCard, /A public memorial from Joe Hu/i);
+  assert.match(shareCard, /For Professor Tony Bailetti/i);
+  assert.match(shareCard, /This is the story of how he encouraged me step by step/i);
+  assert.match(shareCard, /47 years at Carleton • Founder of TIM • Mentor and builder/i);
   assert.match(shareCard, /\swidth="1200"/i);
   assert.match(shareCard, /\sheight="1800"/i);
+});
+
+test('readme explains the memorial in plain language', () => {
+  assert.ok(fs.existsSync(readmePath), 'expected README.md to exist');
+
+  const readme = read(readmePath);
+
+  assert.match(readme, /^# Remembering Professor Tony/m);
+  assert.match(readme, /https:\/\/tony\.hubeiqiao\.com\//i);
+  assert.match(readme, /a public memorial from Joe Hu/i);
+  assert.match(readme, /why this exists/i);
+  assert.match(readme, /what this memorial holds/i);
+  assert.doesNotMatch(readme, /npm|yarn|pnpm|build|deploy|localhost/i);
 });

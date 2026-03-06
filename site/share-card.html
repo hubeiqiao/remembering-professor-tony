@@ -13,9 +13,9 @@
     <style>
       :root {
         --paper: #0a0a0b;
-        --paper-bright: #121214;
         --ink: #f0ebe1;
-        --ink-soft: #b3aca3;
+        --ink-soft: rgba(240, 235, 225, 0.74);
+        --line: rgba(255, 255, 255, 0.14);
         --accent: #d33c3c;
       }
 
@@ -23,49 +23,121 @@
         box-sizing: border-box;
       }
 
+      html,
       body {
         margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
         background:
-          radial-gradient(circle at 18% 0%, rgba(211, 60, 60, 0.18), transparent 24%),
-          linear-gradient(180deg, #0f0f10 0%, var(--paper) 100%);
+          radial-gradient(circle at 12% 14%, rgba(211, 60, 60, 0.24), transparent 26%),
+          linear-gradient(180deg, #111113 0%, var(--paper) 100%);
         color: var(--ink);
-        font-family: "Instrument Sans", sans-serif;
+        font-family: "Instrument Sans", "Helvetica Neue", sans-serif;
+      }
+
+      body {
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+        mix-blend-mode: overlay;
+        opacity: 0.55;
+        pointer-events: none;
       }
 
       .stage {
+        position: relative;
         width: 1200px;
         height: 630px;
-        padding: 28px;
+        padding: 24px;
       }
 
-      .safe-frame {
-        display: grid;
-        grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.42fr);
-        gap: 24px;
+      .hero-card {
+        position: relative;
         height: 100%;
-        padding: 30px;
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 34px;
+        overflow: hidden;
         background:
-          linear-gradient(140deg, rgba(15, 15, 16, 0.96), rgba(19, 19, 21, 0.82)),
-          rgba(10, 10, 11, 0.94);
-        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+          linear-gradient(115deg, rgba(14, 14, 15, 0.96), rgba(10, 10, 11, 0.84)),
+          rgba(10, 10, 11, 0.96);
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
       }
 
-      .safe-copy {
+      .hero-photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 56%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+        filter: grayscale(100%) contrast(1.08);
+        mask-image: linear-gradient(to right, transparent 0%, black 26%, black 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 26%, black 100%);
+      }
+
+      .hero-scrim {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(10, 10, 11, 0.92) 0%, rgba(10, 10, 11, 0.82) 44%, rgba(10, 10, 11, 0.1) 100%),
+          linear-gradient(180deg, rgba(10, 10, 11, 0.12) 0%, rgba(10, 10, 11, 0.45) 100%);
+      }
+
+      .hero-copy {
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 18px;
-        min-width: 0;
+        width: 58%;
+        height: 100%;
+        padding: 32px 40px 34px;
       }
 
-      .eyebrow,
-      .credit {
+      .hero-masthead {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 11px;
+        font-weight: 600;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 16px;
+      }
+
+      .masthead-label {
+        display: block;
+        margin-bottom: 8px;
         color: var(--accent);
-        font-size: 14px;
+      }
+
+      .masthead-note {
+        margin: 0;
+        color: rgba(240, 235, 225, 0.7);
+        line-height: 1.45;
+      }
+
+      .hero-body {
+        margin: auto 0 0;
+      }
+
+      .hero-kicker {
+        display: inline-block;
+        margin-bottom: 22px;
+        padding: 7px 12px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
       }
 
@@ -73,81 +145,94 @@
         margin: 0;
         max-width: 9ch;
         font-family: "Newsreader", Georgia, serif;
-        font-size: 54px;
-        line-height: 0.92;
-        font-weight: 600;
+        font-size: 68px;
+        line-height: 0.9;
         letter-spacing: -0.06em;
-        text-wrap: balance;
-      }
-
-      h1 span {
-        display: block;
-      }
-
-      p {
-        margin: 0;
-        max-width: 520px;
-        color: var(--ink-soft);
-        font-size: 22px;
-        line-height: 1.35;
-      }
-
-      .meta {
-        color: var(--ink-soft);
-        font-size: 13px;
-        letter-spacing: 0.12em;
         text-transform: uppercase;
+        text-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
       }
 
-      .safe-media {
-        margin: 0;
-        display: flex;
-        align-items: center;
+      h1 .nobr {
+        white-space: nowrap;
       }
 
-      .safe-media-frame {
-        width: 100%;
-        padding: 12px;
-        border-radius: 30px;
-        background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(211, 60, 60, 0.14));
+      h1 .sub {
+        display: block;
+        margin-top: 14px;
+        max-width: 13ch;
+        font-family: "Instrument Sans", sans-serif;
+        font-size: 25px;
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.9);
       }
 
-      .safe-media img {
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 2 / 3;
-        border-radius: 22px;
-        object-fit: cover;
-        object-position: center 16%;
-        filter: grayscale(100%) contrast(1.08);
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+      .hero-lead {
+        margin: 24px 0 0;
+        max-width: 31ch;
+        padding-left: 18px;
+        border-left: 1px solid var(--line);
+        color: var(--ink-soft);
+        font-size: 21px;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+      }
+
+      .hero-lead strong {
+        color: var(--ink);
+        font-weight: 500;
+      }
+
+      .hero-caption {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        max-width: 38ch;
+        color: rgba(240, 235, 225, 0.62);
+        font-size: 12px;
+        line-height: 1.45;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
       }
     </style>
   </head>
   <body>
     <main class="stage">
-      <section class="safe-frame">
-        <div class="safe-copy">
-          <span class="eyebrow">Public Memorial</span>
-          <h1>Remembering Professor Tony: <span>The Story of How He Changed Me</span></h1>
-          <div class="credit">A public memorial from Joe Hu</div>
-          <p>
-            The story of how his encouragement turned uncertainty into
-            confidence, research into action, and building into a path.
-          </p>
-          <div class="meta">47 years at Carleton • Founder of TIM</div>
-        </div>
+      <section class="hero-card">
+        <img
+          class="hero-photo"
+          src="assets/images/hero-joe-tony-premium.jpg"
+          alt="Joe Hu and Professor Tony Bailetti smiling together at a TIM gathering."
+          width="1200"
+          height="1800"
+        />
+        <div class="hero-scrim"></div>
 
-        <figure class="safe-media">
-          <div class="safe-media-frame">
-            <img
-              src="assets/images/hero-joe-tony-premium.jpg"
-              alt="Joe Hu and Professor Tony Bailetti smiling together."
-              width="1200"
-              height="1800"
-            />
+        <div class="hero-copy">
+          <header class="hero-masthead">
+            <div>
+              <span class="masthead-label">For Professor Tony Bailetti</span>
+              <p class="masthead-note">A public memorial from Joe Hu</p>
+            </div>
+            <p class="masthead-note">47 years at Carleton • Founder of TIM • Mentor and builder</p>
+          </header>
+
+          <div class="hero-body">
+            <span class="hero-kicker">Public Memorial</span>
+            <h1>
+              Remembering <span class="nobr">Professor Tony:</span>
+              <span class="sub">The Story of How He Changed Me</span>
+            </h1>
+            <p class="hero-lead">
+              This is the story of how he encouraged me step by step until building something real felt possible.
+            </p>
+            <p class="hero-caption">
+              One of the last photos I have with him, and still the one that feels most like his warmth.
+            </p>
           </div>
-        </figure>
+        </div>
       </section>
     </main>
   </body>
