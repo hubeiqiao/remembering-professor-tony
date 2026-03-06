@@ -1,0 +1,20 @@
+{
+  "name": "remembering-professor-tony-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.jsx",
+    "capture": "node ./scripts/capture.mjs",
+    "check": "node ./scripts/check.mjs",
+    "render": "node ./scripts/render.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.366",
+    "@remotion/media": "^4.0.366",
+    "@remotion/transitions": "^4.0.366",
+    "playwright": "^1.53.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "remotion": "^4.0.366"
+  }
+}
