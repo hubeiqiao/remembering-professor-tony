@@ -1,4 +1,4 @@
-# How Professor Tony Encouraged Me
+# Remembering Professor Tony: The Story of How He Changed Me
 
 For people who did not know Professor Tony Bailetti, he was much more than a professor at Carleton. He spent 47 years there, created and led the Technology Innovation Management (TIM) program, and helped many students and founders. Carleton called him ["Mr. Entrepreneurship."](https://carleton.ca/news/story/tony-bailetti-mr-entrepreneurship/) Sprott remembered him as a mentor and community builder.
 
