@@ -4,11 +4,12 @@ import path from 'node:path';
 import {spawn} from 'node:child_process';
 
 import {
-  CAPTURE_TARGETS,
+  VARIANTS,
+  getCaptureTargetsForVariant,
+  getCompositionId,
 } from '../src/data/walkthrough.mjs';
 import {resolveRenderProps} from '../src/lib/render-props.mjs';
 import {
-  CAPTURE_ROOT,
   SOURCE_VIDEO_FILES,
   assertCaptureAnchorsExist,
   assertWalkthroughManifestIsValid,
@@ -18,20 +19,38 @@ import {
 
 const remotionBin = path.join(process.cwd(), 'node_modules', '.bin', 'remotion');
 
+const getRequestedVariants = () => {
+  const variantFlag = process.argv.find((arg) => arg.startsWith('--variant='));
+  const variantValue =
+    variantFlag?.split('=')[1] ??
+    (process.argv.includes('--variant') ? process.argv[process.argv.indexOf('--variant') + 1] : null) ??
+    'desktop';
+
+  if (variantValue === 'all') {
+    return VARIANTS;
+  }
+
+  if (!VARIANTS.includes(variantValue)) {
+    throw new Error(`Unknown check variant: ${variantValue}`);
+  }
+
+  return [variantValue];
+};
+
 const assertFileExists = (filePath, label) => {
   if (!fs.existsSync(filePath)) {
     throw new Error(`Missing ${label}: ${filePath}`);
   }
 };
 
-const runRemotionStill = (frame, outputPath, renderProps) =>
+const runRemotionStill = (variant, frame, outputPath, renderProps) =>
   new Promise((resolve, reject) => {
     const child = spawn(
       remotionBin,
       [
         'still',
         'src/index.jsx',
-        'ProfessorTonyWebsiteWalkthrough16x9',
+        getCompositionId(variant),
         outputPath,
         `--frame=${frame}`,
         `--props=${JSON.stringify(renderProps)}`,
@@ -54,27 +73,34 @@ const runRemotionStill = (frame, outputPath, renderProps) =>
   });
 
 const main = async () => {
-  assertWalkthroughManifestIsValid();
-  assertCaptureAnchorsExist();
+  const requestedVariants = getRequestedVariants();
 
-  for (const target of CAPTURE_TARGETS) {
-    assertFileExists(getCaptureOutputPath(target.file), `capture target ${target.id}`);
-  }
+  assertWalkthroughManifestIsValid('all');
+  assertCaptureAnchorsExist();
 
   for (const video of SOURCE_VIDEO_FILES) {
     assertFileExists(video.publicPath, `source video ${video.id}`);
   }
 
-  const [introFrame, closingFrame] = getSmokeStillFrames();
-  const introOutput = path.join(os.tmpdir(), 'professor-tony-video-smoke-intro.png');
-  const closingOutput = path.join(os.tmpdir(), 'professor-tony-video-smoke-closing.png');
-  const renderProps = resolveRenderProps();
+  for (const variant of requestedVariants) {
+    for (const target of getCaptureTargetsForVariant(variant)) {
+      assertFileExists(getCaptureOutputPath(target.file), `${variant} capture target ${target.id}`);
+    }
 
-  await runRemotionStill(introFrame, introOutput, renderProps);
-  await runRemotionStill(closingFrame, closingOutput, renderProps);
+    const [introFrame, closingFrame] = getSmokeStillFrames(variant);
+    const introOutput = path.join(os.tmpdir(), `professor-tony-video-${variant}-smoke-intro.png`);
+    const closingOutput = path.join(
+      os.tmpdir(),
+      `professor-tony-video-${variant}-smoke-closing.png`,
+    );
+    const renderProps = resolveRenderProps({variant});
+
+    await runRemotionStill(variant, introFrame, introOutput, renderProps);
+    await runRemotionStill(variant, closingFrame, closingOutput, renderProps);
+  }
 
   console.log(
-    `Validated captures in ${CAPTURE_ROOT} and rendered smoke stills for frames ${introFrame} and ${closingFrame}.`,
+    `Validated ${requestedVariants.join(', ')} captures and rendered smoke stills for each requested variant.`,
   );
 };
 

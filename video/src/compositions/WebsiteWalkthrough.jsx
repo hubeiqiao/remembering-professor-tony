@@ -15,21 +15,27 @@ import {
   useVideoConfig,
 } from 'remotion';
 
-import {BrowserShell} from '../components/BrowserShell.jsx';
-import {CAPTURE_TARGETS, WALKTHROUGH_SCENES} from '../data/walkthrough.mjs';
 import {
+  CAPTURE_TARGETS,
+  MOBILE_CAPTURE_TARGETS,
+  getWalkthroughScenesForVariant,
+} from '../data/walkthrough.mjs';
+import {
+  getSceneRenderProfile,
   MOTION_PRESETS,
   SOUNDTRACK_EDIT,
   TRANSITION_PRESETS,
-  getCaptureRenderProfile,
   getSceneFocusProfile,
   getSoundtrackWindow,
 } from '../data/walkthrough-rendering.mjs';
 
 const clampConfig = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
-const CAPTURE_MODES = Object.fromEntries(
-  CAPTURE_TARGETS.map((target) => [target.id, target.captureMode]),
-);
+const CAPTURE_MODES = {
+  desktop: Object.fromEntries(CAPTURE_TARGETS.map((target) => [target.id, target.captureMode])),
+  mobile: Object.fromEntries(
+    MOBILE_CAPTURE_TARGETS.map((target) => [target.id, target.captureMode]),
+  ),
+};
 
 const getTransitionConfig = (preset) => {
   const transitionPreset = TRANSITION_PRESETS[preset] ?? TRANSITION_PRESETS['scroll-push'];
@@ -63,13 +69,17 @@ const getTransitionConfig = (preset) => {
   }
 };
 
-const MediaLayer = ({scene}) => {
+const MediaLayer = ({scene, variant}) => {
   const frame = useCurrentFrame();
   const {durationInFrames, fps} = useVideoConfig();
   const preset = MOTION_PRESETS[scene.motionPreset];
-  const captureMode = CAPTURE_MODES[scene.id] ?? 'viewport';
-  const renderProfile = getCaptureRenderProfile(captureMode);
-  const sceneFocus = getSceneFocusProfile(scene.id);
+  const captureMode = CAPTURE_MODES[variant]?.[scene.id] ?? 'viewport';
+  const renderProfile = getSceneRenderProfile({
+    captureMode,
+    sceneKind: scene.kind,
+    variant,
+  });
+  const sceneFocus = getSceneFocusProfile(scene.id, variant);
   const settle = spring({
     fps,
     frame,
@@ -125,22 +135,24 @@ const MediaLayer = ({scene}) => {
     width: '100%',
   };
 
+  const backgroundStyle = {
+    filter: `blur(${renderProfile.backgroundBlurPx}px) brightness(${renderProfile.backgroundBrightness}) saturate(${renderProfile.backgroundSaturate})`,
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center center',
+    opacity: renderProfile.backgroundOpacity,
+    transform: `translate3d(${(translateX + focusTranslateX) * 0.18}px, ${(translateY + focusTranslateY) * 0.18}px, 0) scale(${renderProfile.backgroundScale})`,
+    width: '100%',
+  };
+
   return (
     <AbsoluteFill style={{background: '#050608'}}>
       {scene.kind === 'capture' ? (
-        captureMode === 'element' ? (
+        renderProfile.hasBackdrop ? (
           <>
             <Img
               src={staticFile(`captures/${scene.captureFile}`)}
-              style={{
-                filter: `blur(${renderProfile.backgroundBlurPx}px) brightness(${renderProfile.backgroundBrightness}) saturate(${renderProfile.backgroundSaturate})`,
-                height: '100%',
-                objectFit: 'cover',
-                objectPosition: 'center center',
-                opacity: renderProfile.backgroundOpacity,
-                transform: `translate3d(${(translateX + focusTranslateX) * 0.18}px, ${(translateY + focusTranslateY) * 0.18}px, 0) scale(${renderProfile.backgroundScale})`,
-                width: '100%',
-              }}
+              style={backgroundStyle}
             />
             <AbsoluteFill style={{padding: renderProfile.foregroundInsetPx}}>
               <Img src={staticFile(`captures/${scene.captureFile}`)} style={sharedStyle} />
@@ -150,13 +162,34 @@ const MediaLayer = ({scene}) => {
           <Img src={staticFile(`captures/${scene.captureFile}`)} style={sharedStyle} />
         )
       ) : (
-        <Video
-          src={staticFile(`source-video/${scene.clipFile}`)}
-          style={sharedStyle}
-          muted
-          playbackRate={preset.playbackRate ?? 1}
-          trimAfter={scene.durationInFrames}
-        />
+        renderProfile.hasBackdrop ? (
+          <>
+            <Video
+              src={staticFile(`source-video/${scene.clipFile}`)}
+              style={backgroundStyle}
+              muted
+              playbackRate={preset.playbackRate ?? 1}
+              trimAfter={scene.durationInFrames}
+            />
+            <AbsoluteFill style={{padding: renderProfile.foregroundInsetPx}}>
+              <Video
+                src={staticFile(`source-video/${scene.clipFile}`)}
+                style={sharedStyle}
+                muted
+                playbackRate={preset.playbackRate ?? 1}
+                trimAfter={scene.durationInFrames}
+              />
+            </AbsoluteFill>
+          </>
+        ) : (
+          <Video
+            src={staticFile(`source-video/${scene.clipFile}`)}
+            style={sharedStyle}
+            muted
+            playbackRate={preset.playbackRate ?? 1}
+            trimAfter={scene.durationInFrames}
+          />
+        )
       )}
       <AbsoluteFill
         style={{
@@ -177,17 +210,10 @@ const MediaLayer = ({scene}) => {
   );
 };
 
-const WalkthroughScene = ({scene}) => {
-  return (
-    <BrowserShell sectionLabel={scene.sectionLabel} urlLabel={scene.urlLabel}>
-      <MediaLayer scene={scene} />
-    </BrowserShell>
-  );
-};
-
-export const WebsiteWalkthrough = ({muted = true, musicFile = null}) => {
+export const WebsiteWalkthrough = ({muted = true, musicFile = null, variant = 'desktop'}) => {
   const {durationInFrames} = useVideoConfig();
   const soundtrackWindow = getSoundtrackWindow({durationInFrames});
+  const scenes = getWalkthroughScenesForVariant(variant);
 
   return (
     <AbsoluteFill style={{background: '#07080b'}}>
@@ -218,13 +244,13 @@ export const WebsiteWalkthrough = ({muted = true, musicFile = null}) => {
       ) : null}
 
       <TransitionSeries>
-        {WALKTHROUGH_SCENES.map((scene) => {
+        {scenes.map((scene) => {
           const transitionConfig = getTransitionConfig(scene.transitionPreset);
 
           return (
             <React.Fragment key={scene.id}>
               <TransitionSeries.Sequence durationInFrames={scene.durationInFrames}>
-                <WalkthroughScene scene={scene} />
+                <MediaLayer scene={scene} variant={variant} />
               </TransitionSeries.Sequence>
               {scene.transitionInFrames > 0 ? (
                 <TransitionSeries.Transition

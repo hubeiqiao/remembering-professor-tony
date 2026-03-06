@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import {DEFAULT_PROPS} from '../data/walkthrough.mjs';
+import {getDefaultPropsForVariant} from '../data/walkthrough.mjs';
 import {SOUNDTRACK_EDIT} from '../data/walkthrough-rendering.mjs';
 import {MUSIC_ROOT, REPO_ROOT} from './walkthrough-validation.mjs';
 
@@ -14,18 +14,20 @@ export const resolveMusicFile = ({musicRoot = MUSIC_ROOT} = {}) => {
 
 export const resolveRenderProps = ({
   musicRoot = MUSIC_ROOT,
-  outputBasename = DEFAULT_PROPS.outputBasename,
+  outputBasename,
+  variant = 'desktop',
 } = {}) => {
   const musicFile = resolveMusicFile({musicRoot});
+  const defaultProps = getDefaultPropsForVariant(variant);
 
   return {
     muted: musicFile === null,
     musicFile,
-    outputBasename,
+    outputBasename: outputBasename ?? defaultProps.outputBasename,
   };
 };
 
 export const getRenderOutputPath = ({
-  outputBasename = DEFAULT_PROPS.outputBasename,
+  outputBasename = getDefaultPropsForVariant('desktop').outputBasename,
   repoRoot = REPO_ROOT,
 } = {}) => path.join(repoRoot, 'site', 'assets', 'video', `${outputBasename}.mp4`);

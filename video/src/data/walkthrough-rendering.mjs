@@ -1,67 +1,159 @@
-export const CAPTURE_RENDER_PROFILES = {
-  viewport: {
-    foregroundInsetPx: 0,
-    foregroundObjectFit: 'cover',
-    foregroundObjectPosition: 'center center',
-    hasBackdrop: false,
+export const SCENE_RENDER_PROFILES = {
+  desktop: {
+    capture: {
+      viewport: {
+        foregroundInsetPx: 0,
+        foregroundObjectFit: 'cover',
+        foregroundObjectPosition: 'center center',
+        hasBackdrop: false,
+      },
+      element: {
+        backgroundBlurPx: 26,
+        backgroundBrightness: 0.34,
+        backgroundOpacity: 0.34,
+        backgroundSaturate: 0.78,
+        backgroundScale: 1.04,
+        foregroundInsetPx: 18,
+        foregroundObjectFit: 'contain',
+        foregroundObjectPosition: 'center center',
+        hasBackdrop: true,
+      },
+    },
+    clip: {
+      foregroundInsetPx: 0,
+      foregroundObjectFit: 'cover',
+      foregroundObjectPosition: 'center center',
+      hasBackdrop: false,
+    },
   },
-  element: {
-    backgroundBlurPx: 26,
-    backgroundBrightness: 0.34,
-    backgroundOpacity: 0.34,
-    backgroundSaturate: 0.78,
-    backgroundScale: 1.04,
-    foregroundInsetPx: 18,
-    foregroundObjectFit: 'contain',
-    foregroundObjectPosition: 'center center',
-    hasBackdrop: true,
+  mobile: {
+    capture: {
+      viewport: {
+        foregroundInsetPx: 0,
+        foregroundObjectFit: 'cover',
+        foregroundObjectPosition: 'center top',
+        hasBackdrop: false,
+      },
+      element: {
+        backgroundBlurPx: 34,
+        backgroundBrightness: 0.28,
+        backgroundOpacity: 0.42,
+        backgroundSaturate: 0.82,
+        backgroundScale: 1.1,
+        foregroundInsetPx: 12,
+        foregroundObjectFit: 'contain',
+        foregroundObjectPosition: 'center top',
+        hasBackdrop: true,
+      },
+    },
+    clip: {
+      backgroundBlurPx: 36,
+      backgroundBrightness: 0.26,
+      backgroundOpacity: 0.44,
+      backgroundSaturate: 0.8,
+      backgroundScale: 1.1,
+      foregroundInsetPx: 72,
+      foregroundObjectFit: 'contain',
+      foregroundObjectPosition: 'center center',
+      hasBackdrop: true,
+    },
   },
 };
 
-export const getCaptureRenderProfile = (captureMode = 'viewport') =>
-  CAPTURE_RENDER_PROFILES[captureMode] ?? CAPTURE_RENDER_PROFILES.viewport;
+export const getCaptureRenderProfile = (captureMode = 'viewport', variant = 'desktop') =>
+  SCENE_RENDER_PROFILES[variant]?.capture[captureMode] ??
+  SCENE_RENDER_PROFILES.desktop.capture.viewport;
+
+export const getSceneRenderProfile = ({
+  captureMode = 'viewport',
+  sceneKind = 'capture',
+  variant = 'desktop',
+} = {}) =>
+  sceneKind === 'clip'
+    ? SCENE_RENDER_PROFILES[variant]?.clip ?? SCENE_RENDER_PROFILES.desktop.clip
+    : getCaptureRenderProfile(captureMode, variant);
 
 export const SCENE_FOCUS_PROFILES = {
-  'threshold-burst': {
-    fromX: 0,
-    originX: '50%',
-    originY: '50%',
-    toX: 0,
-    fromY: 72,
-    toY: 8,
-    scale: 1.36,
+  desktop: {
+    'threshold-burst': {
+      fromX: 0,
+      originX: '50%',
+      originY: '50%',
+      toX: 0,
+      fromY: 72,
+      toY: 8,
+      scale: 1.36,
+    },
+    'backed-ideas-focus': {
+      fromX: 0,
+      originX: '50%',
+      originY: '50%',
+      toX: 0,
+      fromY: 62,
+      toY: 12,
+      scale: 1.32,
+    },
+    'superpower-build-rush': {
+      fromX: 0,
+      originX: '50%',
+      originY: '50%',
+      toX: 0,
+      fromY: 68,
+      toY: 10,
+      scale: 1.34,
+    },
+    'legacy-focus': {
+      fromX: 0,
+      originX: '50%',
+      originY: '24%',
+      toX: 0,
+      fromY: 104,
+      toY: 60,
+      scale: 1.6,
+    },
   },
-  'backed-ideas-focus': {
-    fromX: 0,
-    originX: '50%',
-    originY: '50%',
-    toX: 0,
-    fromY: 62,
-    toY: 12,
-    scale: 1.32,
-  },
-  'superpower-build-rush': {
-    fromX: 0,
-    originX: '50%',
-    originY: '50%',
-    toX: 0,
-    fromY: 68,
-    toY: 10,
-    scale: 1.34,
-  },
-  'legacy-focus': {
-    fromX: 0,
-    originX: '50%',
-    originY: '24%',
-    toX: 0,
-    fromY: 104,
-    toY: 60,
-    scale: 1.6,
+  mobile: {
+    'threshold-burst': {
+      fromX: 0,
+      originX: '50%',
+      originY: '20%',
+      toX: 0,
+      fromY: 54,
+      toY: 12,
+      scale: 1.12,
+    },
+    'backed-ideas-focus': {
+      fromX: 0,
+      originX: '50%',
+      originY: '12%',
+      toX: 0,
+      fromY: 172,
+      toY: -134,
+      scale: 1.38,
+    },
+    'superpower-build-rush': {
+      fromX: 0,
+      originX: '50%',
+      originY: '12%',
+      toX: 0,
+      fromY: 288,
+      toY: -340,
+      scale: 1.76,
+    },
+    'legacy-focus': {
+      fromX: 0,
+      originX: '50%',
+      originY: '16%',
+      toX: 0,
+      fromY: 60,
+      toY: 24,
+      scale: 1.16,
+    },
   },
 };
 
-export const getSceneFocusProfile = (sceneId) =>
-  SCENE_FOCUS_PROFILES[sceneId] ?? {
+export const getSceneFocusProfile = (sceneId, variant = 'desktop') =>
+  SCENE_FOCUS_PROFILES[variant]?.[sceneId] ?? {
     fromX: 0,
     originX: '50%',
     originY: '50%',

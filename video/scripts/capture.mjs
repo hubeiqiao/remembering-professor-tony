@@ -2,11 +2,12 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 
-import {chromium} from 'playwright';
+import {chromium, devices} from 'playwright';
 
 import {
-  CAPTURE_TARGETS,
-  WALKTHROUGH_SCENES,
+  VARIANTS,
+  getCaptureTargetsForVariant,
+  getWalkthroughScenesForVariant,
 } from '../src/data/walkthrough.mjs';
 import {
   CAPTURE_ROOT,
@@ -19,8 +20,29 @@ import {
   getCaptureOutputPath,
 } from '../src/lib/walkthrough-validation.mjs';
 
+const MOBILE_DEVICE = devices['iPhone 14 Pro Max'];
+
+const getRequestedVariants = () => {
+  const variantFlag = process.argv.find((arg) => arg.startsWith('--variant='));
+  const variantValue =
+    variantFlag?.split('=')[1] ??
+    (process.argv.includes('--variant') ? process.argv[process.argv.indexOf('--variant') + 1] : null) ??
+    'desktop';
+
+  if (variantValue === 'all') {
+    return VARIANTS;
+  }
+
+  if (!VARIANTS.includes(variantValue)) {
+    throw new Error(`Unknown capture variant: ${variantValue}`);
+  }
+
+  return [variantValue];
+};
+
 const ensureDirectories = async () => {
   await fs.mkdir(CAPTURE_ROOT, {recursive: true});
+  await fs.mkdir(path.join(CAPTURE_ROOT, 'mobile'), {recursive: true});
   await fs.mkdir(SOURCE_VIDEO_ROOT, {recursive: true});
   await fs.mkdir(MUSIC_ROOT, {recursive: true});
 };
@@ -60,8 +82,8 @@ const waitForImages = async (page) => {
   });
 };
 
-const captureTargets = async (page, baseUrl) => {
-  for (const target of CAPTURE_TARGETS) {
+const captureTargets = async (page, baseUrl, targets) => {
+  for (const target of targets) {
     await page.goto(`${baseUrl}${target.anchor}`, {waitUntil: 'domcontentloaded'});
     await waitForImages(page);
     await page.waitForTimeout(target.waitMs);
@@ -84,8 +106,24 @@ const captureTargets = async (page, baseUrl) => {
   }
 };
 
+const getContextOptionsForVariant = (variant) =>
+  variant === 'mobile'
+    ? {
+        ...MOBILE_DEVICE,
+        colorScheme: 'dark',
+        deviceScaleFactor: 3,
+        reducedMotion: 'no-preference',
+      }
+    : {
+        colorScheme: 'dark',
+        reducedMotion: 'no-preference',
+        viewport: {width: 1920, height: 1080},
+      };
+
 const main = async () => {
-  assertWalkthroughManifestIsValid();
+  const requestedVariants = getRequestedVariants();
+
+  assertWalkthroughManifestIsValid('all');
   assertCaptureAnchorsExist();
 
   const baseUrl = pathToFileURL(path.join(SITE_ROOT, 'index.html')).href;
@@ -95,19 +133,22 @@ const main = async () => {
     await ensureDirectories();
     await syncSourceVideos();
 
-    const page = await browser.newPage({
-      viewport: {width: 1920, height: 1080},
-      colorScheme: 'dark',
-      reducedMotion: 'no-preference',
-    });
+    for (const variant of requestedVariants) {
+      const context = await browser.newContext(getContextOptionsForVariant(variant));
 
-    await captureTargets(page, baseUrl);
+      try {
+        const page = await context.newPage();
+        await captureTargets(page, baseUrl, getCaptureTargetsForVariant(variant));
+      } finally {
+        await context.close();
+      }
+    }
   } finally {
     await browser.close();
   }
 
   console.log(
-    `Captured ${CAPTURE_TARGETS.length} screenshots and synced ${SOURCE_VIDEO_FILES.length} videos for ${WALKTHROUGH_SCENES.length} scenes.`,
+    `Captured ${requestedVariants.length} variant(s) of screenshots in ${CAPTURE_ROOT} and synced ${SOURCE_VIDEO_FILES.length} videos for ${getWalkthroughScenesForVariant('desktop').length} scenes.`,
   );
 };
 

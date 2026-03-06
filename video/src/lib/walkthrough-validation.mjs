@@ -4,8 +4,12 @@ import {fileURLToPath} from 'node:url';
 
 import {
   CAPTURE_TARGETS,
+  MOBILE_CAPTURE_TARGETS,
+  VARIANTS,
   WALKTHROUGH_SCENES,
+  getCaptureTargetsForVariant,
   getLastFrame,
+  getWalkthroughScenesForVariant,
 } from '../data/walkthrough.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -33,7 +37,7 @@ export const SOURCE_VIDEO_FILES = [
   },
 ];
 
-export const getSmokeStillFrames = () => [0, getLastFrame()];
+export const getSmokeStillFrames = (variant = 'desktop') => [0, getLastFrame(variant)];
 
 export const getCaptureOutputPath = (fileName) => path.join(CAPTURE_ROOT, fileName);
 
@@ -47,18 +51,20 @@ export const assertCaptureAnchorsExist = () => {
   }
 };
 
-export const assertWalkthroughManifestIsValid = () => {
-  const captureIds = new Set(CAPTURE_TARGETS.map((target) => target.id));
+const assertVariantWalkthroughManifestIsValid = (variant) => {
+  const captureTargets = getCaptureTargetsForVariant(variant);
+  const scenes = getWalkthroughScenesForVariant(variant);
+  const captureIds = new Set(captureTargets.map((target) => target.id));
   const clipFiles = new Set(SOURCE_VIDEO_FILES.map((file) => file.fileName));
   const sceneIds = new Set();
 
-  for (const target of CAPTURE_TARGETS) {
+  for (const target of captureTargets) {
     if (!['viewport', 'element'].includes(target.captureMode)) {
       throw new Error(`Capture target ${target.id} must declare a valid captureMode`);
     }
   }
 
-  for (const scene of WALKTHROUGH_SCENES) {
+  for (const scene of scenes) {
     if (sceneIds.has(scene.id)) {
       throw new Error(`Duplicate scene id: ${scene.id}`);
     }
@@ -91,7 +97,7 @@ export const assertWalkthroughManifestIsValid = () => {
       }
 
       if (!captureIds.has(scene.id)) {
-        throw new Error(`Capture scene ${scene.id} does not match a capture target`);
+        throw new Error(`Capture scene ${scene.id} does not match a ${variant} capture target`);
       }
     }
 
@@ -105,4 +111,16 @@ export const assertWalkthroughManifestIsValid = () => {
       }
     }
   }
+};
+
+export const assertWalkthroughManifestIsValid = (variant = 'desktop') => {
+  if (variant === 'all') {
+    for (const variantName of VARIANTS) {
+      assertVariantWalkthroughManifestIsValid(variantName);
+    }
+
+    return;
+  }
+
+  assertVariantWalkthroughManifestIsValid(variant);
 };

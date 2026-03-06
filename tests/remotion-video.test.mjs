@@ -8,6 +8,7 @@ const rootDir = '/Users/joehu/Final Project_Local/Professor Tony';
 const rootPackagePath = path.join(rootDir, 'package.json');
 const videoDir = path.join(rootDir, 'video');
 const videoPackagePath = path.join(videoDir, 'package.json');
+const rootCompositionPath = path.join(videoDir, 'src', 'Root.jsx');
 const walkthroughModulePath = path.join(videoDir, 'src', 'data', 'walkthrough.mjs');
 const validationModulePath = path.join(videoDir, 'src', 'lib', 'walkthrough-validation.mjs');
 const captureReadinessModulePath = path.join(videoDir, 'src', 'lib', 'capture-readiness.mjs');
@@ -23,6 +24,15 @@ const EXPECTED_CAPTURE_IDS = [
   'superpower-build-rush',
   'legacy-focus',
   'closing-settle',
+];
+
+const EXPECTED_MOBILE_CAPTURE_FILES = [
+  'mobile/hero-open.png',
+  'mobile/threshold-burst.png',
+  'mobile/backed-ideas-focus.png',
+  'mobile/superpower-build-rush.png',
+  'mobile/legacy-focus.png',
+  'mobile/closing-settle.png',
 ];
 
 const EXPECTED_SCENE_IDS = [
@@ -45,8 +55,11 @@ test('root package exposes remotion proxy scripts', () => {
 
   assert.equal(pkg.scripts['video:dev'], 'npm --prefix video run dev');
   assert.equal(pkg.scripts['video:capture'], 'npm --prefix video run capture');
+  assert.equal(pkg.scripts['video:capture:mobile'], 'npm --prefix video run capture:mobile');
   assert.equal(pkg.scripts['video:check'], 'npm --prefix video run check');
+  assert.equal(pkg.scripts['video:check:mobile'], 'npm --prefix video run check:mobile');
   assert.equal(pkg.scripts['video:render'], 'npm --prefix video run render');
+  assert.equal(pkg.scripts['video:render:mobile'], 'npm --prefix video run render:mobile');
 });
 
 test('video workspace declares remotion and capture tooling', () => {
@@ -56,8 +69,11 @@ test('video workspace declares remotion and capture tooling', () => {
   assert.equal(pkg.private, true);
   assert.equal(pkg.scripts.dev, 'remotion studio src/index.jsx');
   assert.equal(pkg.scripts.capture, 'node ./scripts/capture.mjs');
+  assert.equal(pkg.scripts['capture:mobile'], 'node ./scripts/capture.mjs --variant mobile');
   assert.equal(pkg.scripts.check, 'node ./scripts/check.mjs');
+  assert.equal(pkg.scripts['check:mobile'], 'node ./scripts/check.mjs --variant mobile');
   assert.equal(pkg.scripts.render, 'node ./scripts/render.mjs');
+  assert.equal(pkg.scripts['render:mobile'], 'node ./scripts/render.mjs --variant mobile');
   assert.ok(pkg.dependencies.remotion, 'expected remotion dependency');
   assert.ok(pkg.dependencies['@remotion/cli'], 'expected @remotion/cli dependency');
   assert.ok(pkg.dependencies.react, 'expected react dependency');
@@ -89,7 +105,15 @@ test('walkthrough data exports planned capture targets and scene timing', async 
     ['viewport', 'element', 'element', 'element', 'element', 'viewport'],
   );
   assert.deepEqual(
+    walkthrough.MOBILE_CAPTURE_TARGETS.map((target) => target.file),
+    EXPECTED_MOBILE_CAPTURE_FILES,
+  );
+  assert.deepEqual(
     walkthrough.WALKTHROUGH_SCENES.map((scene) => scene.id),
+    EXPECTED_SCENE_IDS,
+  );
+  assert.deepEqual(
+    walkthrough.MOBILE_WALKTHROUGH_SCENES.map((scene) => scene.id),
     EXPECTED_SCENE_IDS,
   );
   assert.deepEqual(
@@ -118,9 +142,22 @@ test('walkthrough data exports planned capture targets and scene timing', async 
   assert.equal(walkthrough.DEFAULT_PROPS.muted, true);
   assert.equal(walkthrough.DEFAULT_PROPS.musicFile, null);
   assert.equal(walkthrough.DEFAULT_PROPS.outputBasename, 'professor-tony-site-walkthrough-16x9');
+  assert.equal(walkthrough.MOBILE_DEFAULT_PROPS.outputBasename, 'professor-tony-site-walkthrough-9x16');
   assert.equal(walkthrough.getTotalDurationInFrames(), 1086);
+  assert.equal(walkthrough.getTotalDurationInFrames('mobile'), 1086);
   assert.equal(walkthrough.getLastFrame(), 1085);
+  assert.equal(walkthrough.getLastFrame('mobile'), 1085);
   assert.equal(walkthrough.getSceneCount(), 8);
+  assert.equal(walkthrough.getSceneCount('mobile'), 8);
+});
+
+test('root registers both horizontal and vertical compositions', () => {
+  const rootSource = fs.readFileSync(rootCompositionPath, 'utf8');
+
+  assert.match(rootSource, /ProfessorTonyWebsiteWalkthrough16x9/);
+  assert.match(rootSource, /ProfessorTonyWebsiteWalkthrough9x16/);
+  assert.match(rootSource, /width=\{1080\}/);
+  assert.match(rootSource, /height=\{1920\}/);
 });
 
 test('walkthrough validation exposes smoke frames and source video requirements', async () => {
@@ -168,10 +205,15 @@ test('capture readiness ignores offscreen lazy images but blocks on visible inco
   );
 });
 
-test('teaser composition removes memorial copy overlays and keeps only minimal chrome', () => {
+test('teaser composition renders directly without fake browser chrome', () => {
   const browserShellSource = fs.readFileSync(browserShellPath, 'utf8');
   const compositionSource = fs.readFileSync(compositionPath, 'utf8');
 
+  assert.doesNotMatch(compositionSource, /BrowserShell/);
+  assert.doesNotMatch(compositionSource, /sectionLabel/);
+  assert.doesNotMatch(compositionSource, /urlLabel/);
+  assert.doesNotMatch(browserShellSource, /tony\.hubeiqiao\.com/i);
+  assert.doesNotMatch(browserShellSource, /ff6b5e/i);
   assert.doesNotMatch(browserShellSource, /Memorial walkthrough/i);
   assert.doesNotMatch(browserShellSource, /caption/i);
   assert.doesNotMatch(compositionSource, /Guided focus/i);
@@ -212,6 +254,18 @@ test('rendering presets avoid aggressive crop on section captures and align soun
     rendering.getSceneFocusProfile('legacy-focus').fromY >
       rendering.getSceneFocusProfile('legacy-focus').toY,
   );
+  assert.ok(rendering.getSceneFocusProfile('backed-ideas-focus', 'mobile').scale >= 1.18);
+  assert.ok(
+    rendering.getSceneFocusProfile('backed-ideas-focus', 'mobile').fromY -
+      rendering.getSceneFocusProfile('backed-ideas-focus', 'mobile').toY >=
+      72,
+  );
+  assert.ok(rendering.getSceneFocusProfile('superpower-build-rush', 'mobile').scale >= 1.18);
+  assert.ok(
+    rendering.getSceneFocusProfile('superpower-build-rush', 'mobile').fromY -
+      rendering.getSceneFocusProfile('superpower-build-rush', 'mobile').toY >=
+      72,
+  );
   assert.equal(rendering.TRANSITION_PRESETS['closing-settle'].type, 'fade');
   assert.deepEqual(
     rendering.getSoundtrackWindow({
@@ -234,6 +288,11 @@ test('soundtrack auto-detection stays muted without soundtrack and enables music
       muted: true,
       outputBasename: 'professor-tony-site-walkthrough-16x9',
     });
+    assert.deepEqual(renderProps.resolveRenderProps({musicRoot: tempMusicDir, variant: 'mobile'}), {
+      musicFile: null,
+      muted: true,
+      outputBasename: 'professor-tony-site-walkthrough-9x16',
+    });
 
     fs.writeFileSync(path.join(tempMusicDir, 'soundtrack.mp3'), 'placeholder');
 
@@ -241,6 +300,11 @@ test('soundtrack auto-detection stays muted without soundtrack and enables music
       musicFile: 'soundtrack.mp3',
       muted: false,
       outputBasename: 'professor-tony-site-walkthrough-16x9',
+    });
+    assert.deepEqual(renderProps.resolveRenderProps({musicRoot: tempMusicDir, variant: 'mobile'}), {
+      musicFile: 'soundtrack.mp3',
+      muted: false,
+      outputBasename: 'professor-tony-site-walkthrough-9x16',
     });
   } finally {
     fs.rmSync(tempMusicDir, {recursive: true, force: true});

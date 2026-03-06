@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "remotion studio src/index.jsx",
     "capture": "node ./scripts/capture.mjs",
+    "capture:mobile": "node ./scripts/capture.mjs --variant mobile",
     "check": "node ./scripts/check.mjs",
-    "render": "node ./scripts/render.mjs"
+    "check:mobile": "node ./scripts/check.mjs --variant mobile",
+    "render": "node ./scripts/render.mjs",
+    "render:mobile": "node ./scripts/render.mjs --variant mobile"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.366",
