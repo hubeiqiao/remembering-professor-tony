@@ -276,6 +276,64 @@ main {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 4rem;
+  position: relative;
+}
+
+/* --- THE TIMELINE SPINE --- */
+.timeline-spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 216px;
+  /* Align with the label */
+  width: 1px;
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 10%,
+      rgba(255, 255, 255, 0.15) 90%,
+      transparent 100%);
+  z-index: 0;
+}
+
+.story-label {
+  position: sticky;
+  top: 6rem;
+  z-index: 10;
+}
+
+.story-label span {
+  font-family: "Newsreader", serif;
+  font-size: 4rem;
+  line-height: 0.8;
+  color: var(--accent);
+  display: inline-block;
+  position: relative;
+}
+
+/* The Glowing Node */
+.story-label span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -52px;
+  /* Position on the spine */
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(10, 10, 11, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active node state driven by JS */
+.story-band.is-active .story-label span::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+  transform: translateY(-50%) scale(1.2);
 }
 
 .story-label {
@@ -321,6 +379,28 @@ main {
   margin: 0 0 1.5rem 0;
 }
 
+/* Premium Typography Updates */
+.story-content p strong {
+  color: var(--ink);
+  font-weight: 500;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  font-family: "Newsreader", serif;
+  font-size: 1.05em;
+  /* Slight bump for rhythm */
+  letter-spacing: -0.01em;
+}
+
+.drop-cap {
+  float: left;
+  font-family: "Newsreader", serif;
+  font-size: 5rem;
+  line-height: 0.8;
+  padding-top: 0.15em;
+  padding-right: 0.1em;
+  padding-left: 0;
+  color: var(--ink);
+}
+
 /* Feature grid variations */
 .story-band--feature .story-content {
   max-width: none;
@@ -336,13 +416,70 @@ main {
   gap: 4rem;
 }
 
+/* Cinematic Images */
 .story-plate {
   margin: 0;
+  position: relative;
 }
 
 .story-plate img {
   border-radius: 0;
   width: 100%;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-plate:hover img {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, var(--shadow-deep);
+}
+
+/* Artifact 3D Tilt */
+.story-plate--research img {
+  transform: perspective(1000px) rotateY(4deg) scale(1.02);
+  box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.story-plate--research:hover img {
+  transform: perspective(1000px) rotateY(0deg) scale(1);
+}
+
+/* Spotlight Mask */
+.story-plate--spotlight img {
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+  filter: grayscale(100%) contrast(1.2);
+  transform: scale(1.05);
+  /* Account for mask clipping */
+}
+
+/* Glassmorphic Breakout Panel */
+.glass-panel {
+  grid-column: 1 / -1;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4rem 2rem;
+  margin: 2rem calc(-50vw + 50%);
+  width: 100vw;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel .quote-row {
+  max-width: 1320px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.glass-panel .quote-panel {
+  border-left: none;
+  padding: 0;
+  margin: 0;
+}
+
+.glass-panel blockquote {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 40px rgba(211, 60, 60, 0.15);
 }
 
 .story-link {
@@ -375,22 +512,125 @@ main {
 
 /* --- CLOSING --- */
 .story-band--ending {
-  padding-bottom: 20vh;
-  border-bottom: 1px solid var(--line);
+  padding-bottom: 25vh;
+  border-bottom: none;
+  /* Removed line for cleaner finish */
+  text-align: center;
+}
+
+.story-band--ending .story-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.quote-panel--monument {
+  border-left: none;
+  padding: 0;
+  margin: 4rem 0;
 }
 
 .quote-panel--monument blockquote {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 6rem);
   margin-bottom: 3rem;
+  line-height: 1;
+  background: linear-gradient(to bottom, #fff 20%, rgba(255, 255, 255, 0.3) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
 }
 
-.closing-signature {
-  margin-top: 4rem;
+.closing-author {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.author-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.closing-signature-link {
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: "Newsreader", serif;
   font-style: italic;
   font-weight: 400;
+  text-shadow: 0 0 20px rgba(211, 60, 60, 0.4);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.closing-signature-link:hover {
+  opacity: 0.8;
+}
+
+.closing-date {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.full-text-link-wrapper {
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  margin-bottom: -2rem;
+}
+
+.full-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 1rem 1.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.full-text-link svg {
+  transition: transform 0.3s ease;
+}
+
+.full-text-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.full-text-link:hover svg {
+  transform: translateX(4px);
 }
 
 /* --- ANIMATIONS --- */
