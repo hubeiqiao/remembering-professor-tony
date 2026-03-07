@@ -13,6 +13,7 @@ const robotsPath = path.join(siteDir, 'robots.txt');
 const sitemapPath = path.join(siteDir, 'sitemap.xml');
 const llmsPath = path.join(siteDir, 'llms.txt');
 const llmsFullPath = path.join(siteDir, 'llms-full.txt');
+const assetsIgnorePath = path.join(siteDir, '.assetsignore');
 const summaryPath = path.join(siteDir, 'summary', 'index.html');
 const faqPath = path.join(siteDir, 'faq', 'index.html');
 const sourcesPath = path.join(siteDir, 'sources', 'index.html');
@@ -40,6 +41,7 @@ test('site scaffold and memorial assets exist', () => {
   assert.ok(fs.existsSync(sitemapPath), 'expected site/sitemap.xml to exist');
   assert.ok(fs.existsSync(llmsPath), 'expected site/llms.txt to exist');
   assert.ok(fs.existsSync(llmsFullPath), 'expected site/llms-full.txt to exist');
+  assert.ok(fs.existsSync(assetsIgnorePath), 'expected site/.assetsignore to exist');
   assert.ok(fs.existsSync(summaryPath), 'expected site/summary/index.html to exist');
   assert.ok(fs.existsSync(faqPath), 'expected site/faq/index.html to exist');
   assert.ok(fs.existsSync(sourcesPath), 'expected site/sources/index.html to exist');
@@ -50,6 +52,19 @@ test('site scaffold and memorial assets exist', () => {
   assert.ok(
     fs.existsSync(path.join(assetsDir, 'social', 'og-image.jpg')),
     'expected jpeg og image export to exist',
+  );
+});
+
+test('workers assets ignore local Remotion exports that exceed Cloudflare size limits', () => {
+  const assetsIgnore = read(assetsIgnorePath);
+
+  assert.match(
+    assetsIgnore,
+    /^assets\/video\/professor-tony-site-walkthrough-16x9\.mp4$/m,
+  );
+  assert.match(
+    assetsIgnore,
+    /^assets\/video\/professor-tony-site-walkthrough-9x16\.mp4$/m,
   );
 });
 
